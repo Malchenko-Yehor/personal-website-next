@@ -1,5 +1,23 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@atoms/*": [
+        "components/atoms/*"
+      ],
+      "@molecules/*": [
+        "components/molecules/*"
+      ],
+      "@organisms/*": [
+        "components/organisms/*"
+      ],
+      "@helpers/*": [
+        "helpers/*"
+      ],
+      "@styles/*": [
+        "styles/*"
+      ]
+    },
     "target": "es5",
     "lib": [
       "dom",

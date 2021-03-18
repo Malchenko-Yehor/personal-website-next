@@ -1,7 +1,10 @@
 import { FC } from 'react';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
-import queryApi from '../helpers/apollo';
+import { Col, Row } from 'styled-bootstrap-grid';
+import CTA from '@atoms/CTA';
+import queryApi from '@helpers/apollo';
+import Container from '@styles/Container';
 
 interface HomepageProps {
   title: string,
@@ -17,8 +20,17 @@ export const Homepage: FC<HomepageProps> = ({ title, intro }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>{title}</h1>
-      <p>{intro}</p>
+      <Container>
+        <Row>
+          <Col col={6}>
+            <CTA label="This is link" href="#test" />
+          </Col>
+          <Col col={6}>
+            <CTA label="This is Button" />
+          </Col>
+        </Row>
+      </Container>
+
     </div>
   )
 };
