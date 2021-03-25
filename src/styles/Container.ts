@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { media, Container as sbgContainer } from 'styled-bootstrap-grid';
 
 const Container = styled(sbgContainer)`
+  box-sizing: border-box;
   padding-right: 20px;
   padding-left: 20px;
 
