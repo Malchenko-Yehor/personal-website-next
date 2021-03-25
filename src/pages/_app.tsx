@@ -1,3 +1,4 @@
+import React from 'react';
 import { GridThemeProvider } from 'styled-bootstrap-grid';
 import type { AppProps } from 'next/app'
 import gridTheme from '../styles/grid';

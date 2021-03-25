@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import { Col, Row } from 'styled-bootstrap-grid';
