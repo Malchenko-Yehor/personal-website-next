@@ -15,5 +15,8 @@ module.exports = {
     "@organisms/(.*)": "<rootDir>/src/components/organisms/$1",
     "@helpers/(.*)": "<rootDir>/src/helpers/$1",
     "@styles/(.*)": "<rootDir>/src/styles/$1",
-  }
+  },
+  "setupFilesAfterEnv": [
+    "<rootDir>/setupTests.ts"
+  ]
 };
