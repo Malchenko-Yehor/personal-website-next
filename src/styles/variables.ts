@@ -12,6 +12,10 @@ export const devices = {
     width: 576,
     height: 812,
   },
+  tabletPortrait: {
+    width: 768,
+    height: 1024,
+  },
   tablet: {
     width: 1024,
     height: 768
