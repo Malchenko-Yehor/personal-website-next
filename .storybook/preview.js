@@ -3,6 +3,7 @@ import GlobalStyle from '@styles/global';
 import { GridThemeProvider } from 'styled-bootstrap-grid';
 import gridTheme from '@styles/grid';
 import { devices } from '@styles/variables';
+import * as NextImage from "next/image"
 
 export const decorators = [
   (Story) => (
@@ -34,6 +35,14 @@ const getCustomViewports = () => {
 export const parameters = {
   layout: 'fullscreen',
   viewport: {
-    viewports: getCustomViewports(), // newViewports would be an ViewportMap. (see below for examples)
+    viewports: getCustomViewports()
   },
 }
+
+// Override Next.js image component
+const OriginalNextImage = NextImage.default;
+
+Object.defineProperty(NextImage, 'default', {
+  configurable: true,
+  value: (props) => <OriginalNextImage {...props} unoptimized />,
+});
