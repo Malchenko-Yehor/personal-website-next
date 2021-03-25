@@ -27,4 +27,11 @@ describe('<CTA>', () => {
 
     expect(anchorEl).toBeTruthy();
   });
+
+  test('renders label correctly', () => {
+    const label = 'test';
+    const { getByText } = render(<CTA label={label} href="https://google.com" />);
+
+    expect(getByText(label)).toBeInTheDocument();
+  });
 });

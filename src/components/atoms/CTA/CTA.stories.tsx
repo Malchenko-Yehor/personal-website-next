@@ -1,3 +1,4 @@
+import React from 'react';
 import CTA, { CTAProps } from "./CTA";
 
 export default {
