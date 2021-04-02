@@ -1,11 +1,15 @@
 import React, { FC } from 'react';
 import * as S from './Section.styled';
+export interface SectionProps {
+  noTopIndent?: boolean,
+  noBottomIndent?: boolean
+};
 
-export interface SectionProps {};
-
-const Section: FC<SectionProps> = props => {
+const Section: FC<SectionProps> = ({ children, noTopIndent, noBottomIndent }) => {
   return (
-    <div></div>
+    <S.Section noTopIndent={noTopIndent} noBottomIndent={noBottomIndent}>
+      {children}
+    </S.Section>
   );
 };
 
