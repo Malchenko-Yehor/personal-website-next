@@ -1,10 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
-import { cDarkBlue } from './variables';
+import { cDarkBlue, cWhite } from './variables';
 
 const GlobalStyle = createGlobalStyle`
   body {
     padding: 0;
     background-color: ${cDarkBlue};
+    color: ${cWhite};
   }
 `;
 

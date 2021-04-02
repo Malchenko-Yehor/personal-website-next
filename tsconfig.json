@@ -16,6 +16,9 @@
       ],
       "@styles/*": [
         "styles/*"
+      ],
+      "@icons/*": [
+        "assets/icons/*"
       ]
     },
     "target": "es5",
@@ -39,7 +42,8 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "src/__mocks__/svgr-mock.js"
   ],
   "exclude": [
     "node_modules"
