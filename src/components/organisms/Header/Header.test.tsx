@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import { ImageProps } from 'next/image';
 import React from 'react';
-import Header from './Header';
+import Header from './index';
 
 const imageProps: ImageProps = {
   src: 'test',

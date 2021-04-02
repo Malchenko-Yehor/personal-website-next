@@ -1,5 +1,5 @@
 import React from 'react';
-import DateRange, { DateRangeProps } from "./DateRange";
+import DateRange, { DateRangeProps } from "./index";
 
 export default {
   title: 'Molecules/DateRange',

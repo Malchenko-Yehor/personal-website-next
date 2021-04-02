@@ -1,6 +1,6 @@
 import React from 'react';
 import { fireEvent, render } from '@testing-library/react';
-import CTA from './CTA';
+import CTA from './index';
 
 
 describe('<CTA>', () => {

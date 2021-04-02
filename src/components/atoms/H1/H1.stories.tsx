@@ -1,5 +1,5 @@
 import React from 'react';
-import H1, { H1Props } from "./H1";
+import H1, { H1Props } from "./index";
 
 export default {
   title: 'Atoms/H1',

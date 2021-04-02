@@ -1,6 +1,6 @@
 import { bp } from "@styles/mixins";
 import styled, { css } from "styled-components";
-import { SectionProps } from "./Section";
+import { SectionProps } from ".";
 
 export const Section = styled.section<SectionProps>`
   padding: 40px 0;
