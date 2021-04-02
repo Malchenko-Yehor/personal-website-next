@@ -10,11 +10,13 @@ module.exports = {
     }
   },
   moduleNameMapper: {
+    '\\.svg$': '<rootDir>/src/__mocks__/svgr-mock.tsx',
     "@atoms/(.*)": "<rootDir>/src/components/atoms/$1",
     "@molecules/(.*)": "<rootDir>/src/components/molecules/$1",
     "@organisms/(.*)": "<rootDir>/src/components/organisms/$1",
     "@helpers/(.*)": "<rootDir>/src/helpers/$1",
     "@styles/(.*)": "<rootDir>/src/styles/$1",
+    "@icons/(.*)": "<rootDir>/src/assets/icons/$1"
   },
   "setupFilesAfterEnv": [
     "<rootDir>/setupTests.ts"
