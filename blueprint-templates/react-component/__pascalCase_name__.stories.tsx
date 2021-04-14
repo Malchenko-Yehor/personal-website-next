@@ -1,5 +1,5 @@
 import React from 'react';
-import {{ pascalCase name }}, { {{ pascalCase name }}Props } from "./{{ pascalCase name }}";
+import {{ pascalCase name }}, { {{ pascalCase name }}Props } from "./index";
 
 export default {
   title: 'Atoms/{{ pascalCase name }}',
