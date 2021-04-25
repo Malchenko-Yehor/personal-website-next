@@ -19,7 +19,10 @@
       ],
       "@icons/*": [
         "assets/icons/*"
-      ]
+      ],
+      "@hooks/*": [
+        "hooks/*"
+      ],
     },
     "target": "es5",
     "lib": [
