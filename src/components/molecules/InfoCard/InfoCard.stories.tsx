@@ -1,5 +1,4 @@
 import React from 'react';
-import { Col, Row } from 'styled-bootstrap-grid';
 import InfoCard, { InfoCardProps } from "./index";
 import Container from '@styles/Container';
 
@@ -21,6 +20,18 @@ Default.args = {
   },
   title: 'Emakina',
   description: 'Frontend developer'
+} as InfoCardProps;
+
+export const WithLink = Template.bind({});
+
+WithLink.args = {
+  dateRange: {
+    startDate: new Date('11/11/2011'),
+    endDate: 'now'
+  },
+  title: 'Emakina',
+  description: 'Frontend developer',
+  url: 'https://emakina.com'
 } as InfoCardProps;
 
 export const WithoutDescription = Template.bind({});

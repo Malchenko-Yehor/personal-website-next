@@ -4,7 +4,8 @@ import { pseudoMixin } from "@styles/mixins";
 import { cBlack, cOrange, cWhite } from "@styles/variables";
 import styled, { css } from "styled-components";
 
-export const InfoCard = styled.article`
+const cardStyle = css`
+  color: ${cBlack};
   background-color: ${cWhite};
   border-radius: 10px;
 
@@ -23,6 +24,16 @@ export const InfoCard = styled.article`
   & ${Paragraph} {
     font-size: 16px;
   }
+`;
+
+export const Article = styled.article`
+  ${cardStyle};
+`;
+
+export const Anchor = styled.a`
+  ${cardStyle};
+  text-decoration: none;
+  display: block;
 `;
 
 interface HeaderProps {

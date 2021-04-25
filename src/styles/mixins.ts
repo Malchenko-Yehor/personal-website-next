@@ -1,6 +1,13 @@
 import { css } from "styled-components";
 import { devices } from "./variables";
 
+export const centerMixin = () => {
+  return css`
+    margin-left: auto;
+    margin-right: auto;
+  `;
+};
+
 export const pseudoMixin = () => {
   return css`
     content: '';
