@@ -4,13 +4,16 @@ import type { AppProps } from 'next/app'
 import gridTheme from '../styles/grid';
 import GlobalStyle from '@styles/global';
 import { Fragment } from 'react';
+import ViewportProvider from 'stores/viewport';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Fragment>
       <GlobalStyle />
       <GridThemeProvider gridTheme={gridTheme}>
-        <Component {...pageProps} />
+        <ViewportProvider>
+          <Component {...pageProps} />
+        </ViewportProvider>
       </GridThemeProvider>
     </Fragment>
   );

@@ -1,16 +1,19 @@
 import { Fragment } from "react";
 import GlobalStyle from '@styles/global';
-import { GridThemeProvider } from 'styled-bootstrap-grid';
-import gridTheme from '@styles/grid';
-import { devices } from '@styles/variables';
-import * as NextImage from "next/image"
+import { GridThemeProvider } from "styled-bootstrap-grid";
+import gridTheme from "@styles/grid";
+import { devices } from "@styles/variables";
+import ViewportProvider from "../src/stores/viewport";
+import * as NextImage from "next/image";
 
 export const decorators = [
   (Story) => (
     <Fragment>
       <GlobalStyle />
       <GridThemeProvider gridTheme={gridTheme}>
-        <Story />
+        <ViewportProvider>
+          <Story />
+        </ViewportProvider>
       </GridThemeProvider>
     </Fragment>
   ),
