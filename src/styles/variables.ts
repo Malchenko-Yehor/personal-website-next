@@ -1,5 +1,5 @@
 // Fonts
-export const fontFredoka = `'Fredoka One', cursive`;
+export const fontRubik = `'Rubik', sans-serif`;
 export const fontSans = `'Open Sans', sans-serif`;
 
 // Devices
