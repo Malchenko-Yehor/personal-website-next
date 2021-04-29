@@ -19,6 +19,7 @@ const cardStyle = css`
     font-size: 25px;
     text-align: left;
     text-shadow: none;
+    line-height: 1.1;
   }
 
   & ${Paragraph} {
