@@ -13,18 +13,18 @@ import { motion } from 'framer-motion';
 
 const entryAnimationDuration = 0.4;
 
-interface Entry {
+export interface Entry {
   id: string,
   infoCard: InfoCardProps
   iconUrl?: string,
 };
 
 export interface TimelineProps {
-  entries: Array<EntryProps>
+  entries: Array<Entry>
 };
 
 const Timeline: FC<TimelineProps> = ({ entries }) => {
-  const { ref: fadingLineRef, inView } = useInView({ triggerOnce: true });
+  const { ref: fadingLineRef, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
   const fadingLineVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
@@ -33,12 +33,12 @@ const Timeline: FC<TimelineProps> = ({ entries }) => {
 
 
   return (
-    <Container style={{ marginTop: '100vh' }}>
+    <Container>
       <S.Timeline ref={fadingLineRef}>
         <FadingLine
           animate={animate}
           variants={fadingLineVariants}
-          transition={{ duration: 0.2 }}
+          transition={{ duration: 0.5 }}
         />
         <S.EntriesList>
           {entries.map((entry, index) => (

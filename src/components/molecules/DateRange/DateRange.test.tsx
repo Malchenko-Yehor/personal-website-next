@@ -9,7 +9,7 @@ describe('<DateRange>', () => {
 
     const { getByText } = render(<DateRange startDate={startDate} endDate={endDate} />);
 
-    expect(getByText('11/2011 - 12/2012')).toBeInTheDocument();
+    expect(getByText('Nov 2011 - Dec 2012')).toBeInTheDocument();
   });
 });
 

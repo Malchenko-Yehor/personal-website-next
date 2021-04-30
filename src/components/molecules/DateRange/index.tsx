@@ -1,11 +1,7 @@
 import React, { FC } from 'react';
 import * as S from './DateRange.styled';
 import CalendarIcon from '@icons/calendar.svg';
-
-export interface DateRangeProps {
-  startDate: Date,
-  endDate: Date | 'now'
-};
+import { DateRange as DateRangeProps } from 'types';
 
 const DateRange: FC<DateRangeProps> = ({ startDate, endDate }) => {
   const timeFormat = new Intl.DateTimeFormat('en-GB', { year: 'numeric', month: 'short' });
