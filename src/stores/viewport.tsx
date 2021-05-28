@@ -9,8 +9,9 @@ type ContextType = {
 export const viewportContext = createContext<ContextType>({ width: 0, height: 0 });
 
 const ViewportProvider = ({ children }) => {
-  const [width, setWidth] = useState(window.innerWidth);
-  const [height, setHeight] = useState(window.innerHeight);
+  const [width, setWidth] = useState(getViewportWidth());
+  const [height, setHeight] = useState(getViewportHeight());
+
 
   const handleWindowResize = throttle(() => {
     setWidth(window.innerWidth);
@@ -28,6 +29,18 @@ const ViewportProvider = ({ children }) => {
       {children}
     </viewportContext.Provider>
   );
+};
+
+const getViewportWidth = () => {
+  if (process.browser) return window.innerWidth;
+
+  return 0;
+};
+
+const getViewportHeight = () => {
+  if (process.browser) return window.innerHeight;
+
+  return 0;
 };
 
 export default ViewportProvider;

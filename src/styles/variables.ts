@@ -39,7 +39,7 @@ export const cOrange = '#FEC107';
 export const cOrange50 = '#806104';
 export const cPink = '#FF1234';
 export const cPink50 = '#80091A';
-export const cDarkBlue = '#120B37'
+export const cDarkBlue = '#141037'
 
 // Z indexes
 export const ziUnder = -1;
@@ -47,3 +47,10 @@ export const ziBottom = 1;
 export const ziMedium = 5;
 export const ziTop = 9;
 export const ziOverlay = 10;
+
+// Side indents
+export const sideIndent = '20px';
+export const sideIndentSm = '25px';
+export const sideIndentMd = '30px';
+export const sideIndentLg = '35px';
+export const sideIndentXl = '50px';

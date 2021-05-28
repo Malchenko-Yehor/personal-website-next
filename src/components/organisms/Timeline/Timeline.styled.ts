@@ -1,9 +1,10 @@
 import FadingLine from "@atoms/FadingLine/FadingLine.styled";
 import styled from "styled-components";
 import { CirleIcon } from "@atoms/CircleIcon/CircleIcon.styled";
-import { bp, centerMixin } from "@styles/mixins";
+import { centerMixin } from "@styles/mixins";
 import { DateRange } from "@molecules/DateRange/DateRange.styled";
 import { cBlack } from "@styles/variables";
+import { media } from "styled-bootstrap-grid";
 
 export const Timeline = styled.div`
   position: relative;
@@ -14,17 +15,17 @@ export const Timeline = styled.div`
     left: 24px;
     height: calc(100% + 50px);
 
-    ${bp.sm} {
+    ${media.sm`
       left: 50%;
       transform: translateX(-50%);
-    }
+    `}
   }
 
   & ${CirleIcon} {
-    ${bp.sm} {
+    ${media.sm`
       ${centerMixin}
       display: flex;
-    }
+    `}
   }
 
   & ${DateRange} {

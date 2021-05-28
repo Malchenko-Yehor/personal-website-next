@@ -22,7 +22,7 @@ const Career: FC<CareerProps> = ({ entries, title }) => {
   };
 
   return (
-    <S.Career style={{ marginTop: '100vh' }}>
+    <S.Career>
       <motion.div
         ref={ref}
         variants={variants}

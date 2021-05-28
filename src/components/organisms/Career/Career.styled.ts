@@ -1,16 +1,16 @@
 import { H2 } from "@atoms/H2/H2.styled";
 import { Section } from "@atoms/Section/Section.styled";
-import { bp } from "@styles/mixins";
 import { fontRubik } from "@styles/variables";
+import { media } from "styled-bootstrap-grid";
 import styled from "styled-components";
 
 export const Career = styled(Section)`
   ${H2} {
     margin-bottom: 5px;
 
-    ${bp.lg} {
+    ${media.lg`
       margin-bottom: 10px;
-    }
+    `}
   }
 `;
 

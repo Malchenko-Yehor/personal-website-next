@@ -1,18 +1,14 @@
 import React, { FC } from 'react';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
-import { Col, Row } from 'styled-bootstrap-grid';
-import CTA from '@atoms/CTA';
 import queryApi from '@helpers/apollo';
-import Container from '@styles/Container';
+import Header, { HeaderProps } from '@organisms/Header';
 
 interface HomepageProps {
-  title: string,
-  intro?: string
+  homepage: HeaderProps
 };
 
-export const Homepage: FC<HomepageProps> = ({ title, intro }) => {
-
+export const Homepage: FC<HomepageProps> = ({ homepage }) => {
   return (
     <div>
       <Head>
@@ -20,40 +16,33 @@ export const Homepage: FC<HomepageProps> = ({ title, intro }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Container>
-        <Row>
-          <Col col={6}>
-            <CTA label="This is link" href="#test" />
-          </Col>
-          <Col col={6}>
-            <CTA label="This is Button" />
-          </Col>
-        </Row>
-      </Container>
+      <Header {...homepage} />
 
     </div>
   )
 };
 
-const homepageQuery = `
+
+const getHomepageQuery = (locale: string) => `
   query {
-    homepage {
+    homepage(locale: "${locale}") {
       title
       intro
-      headerImage {
-        url
-        alternativeText
+      image {
+        src: url
+        alt: alternativeText
+        width
+        height
       }
     }
   }
 `;
 
-export const getStaticProps: GetStaticProps = async () => {
-  const { homepage } = await queryApi(homepageQuery);
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  const query = getHomepageQuery(locale);
+  const props = await queryApi(query);
 
-  return {
-    props: homepage
-  };
+  return { props };
 };
 
 export default Homepage;

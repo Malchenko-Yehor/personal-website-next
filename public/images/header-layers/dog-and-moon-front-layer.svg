@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1366 650" style="enable-background:new 0 0 1366 650;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#141037;}
+	.st1{fill:none;stroke:#4F4DA0;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:#100F1A;}
+	.st3{fill:#C48435;}
+	.st4{fill:#A36534;stroke:#A36535;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#A36534;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st6{fill:#A36533;stroke:#A36534;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#DAA048;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st8{fill:none;stroke:#DAA048;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st9{fill:#3D2E24;}
+	.st10{fill:none;stroke:#755745;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st11{fill:#441116;stroke:#441116;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st12{fill:none;stroke:#621014;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g id="front">
+	<g id="ground">
+		<path id="base_3_" class="st0" d="M0,581.6c19-8.9,48.5-21.4,86-31c131.4-33.7,193.9,10.3,379,31c125.2,14,246.6,26.3,377-26
+			c53.9-21.6,51.7-31.1,101-46c127.4-38.5,249.5-7.3,318,11c45,12,81,25.8,105,36V650L0,649.6V581.6z"/>
+		<path id="light_14_" class="st1" d="M920.7,522.6c6.2-2.4,13.4-4.9,22.3-7.6c127.4-38.5,249.5-7.3,318,11c45,12,81,25.8,105,36"/>
+		<path id="light_15_" class="st1" d="M80.9,557.3c1.7-0.5,3.4-0.9,5.1-1.3c131.4-33.7,193.9,10.3,379,31c17.6,2,35,3.9,52.5,5.6"/>
+	</g>
+	<ellipse id="dog_shadow" class="st2" cx="1153.5" cy="621" rx="96.5" ry="17"/>
+	<g id="dog">
+		<path id="base" class="st3" d="M1170,599c19-7,46,1,46,1c5.1,1.9,44.5,25.7,27,22c-47-10-68-4-68-4c-48,7-62-1-62-1
+			c-4-1-21,0-21,0c-11,0-15-5-15-5c-1-1,0-2,0-2c6-21-1-40-1-40c-9-23,9-49,9-49c3-28,0-42,0-42c-8-34,12-65,12-65c8-11,7-34,7-34
+			c-39,0,14-29,14-29c4-8,19-8,19-8c27-39,21,23,21,23c33,43-3,19-3,19c-6,7-2,37-2,37c10,46-0.4,61.1-0.4,61.1
+			c-2.4,22.1,1.4,35.9,1.4,35.9s16.9,20.7,10.9,53.3c0,0-2.9,11.7-0.9,27.7L1170,599z"/>
+		<g id="shadows">
+			<path id="shadow_2_" class="st4" d="M1113,615c-22-12-31-35-31-35l2.4,8.6c2.9,10.3,10.4,18.8,20.3,22.9L1113,615"/>
+			<path id="shadow_5_" class="st4" d="M1162,579c0,0-3,20-32,24c0,0,25.4,0.3,32.7-4.3C1162.7,598.7,1161.2,584,1162,579z"/>
+			<path id="shadow_6_" class="st5" d="M1169.4,389.7c-4.5,0.2-14.8-6.7-14.8-6.7s-5.6,7-4.6,18"/>
+			<path id="shadow_4_" class="st5" d="M1103.6,378c-6.8,0-10.8-0.9-12.8-2.3"/>
+			<path id="shadow_1_" class="st5" d="M1239,619.3c-44.5-8.9-64.4-3.3-64.4-3.3c-48,7-62-1-62-1"/>
+			<path id="shadow_3_" class="st5" d="M1153.1,352.9c0,0,3.5-1.9,3.5,4.1"/>
+			<path id="shadow" class="st6" d="M1144.9,467.3c0,0,3.1-1.3,5.4-3.8c2.6-2.8,4.3-6.8,4.3-6.8s5.3,8-3.9,29.6
+				C1150.7,486.4,1150.5,476,1144.9,467.3z"/>
+		</g>
+		<g id="lights">
+			<path id="light_8_" class="st7" d="M1170.8,391.3"/>
+			<path id="light_7_" class="st8" d="M1170.6,389.6c-0.6-3.5-4.4-10.3-13.8-22.6c0,0,2.3-9-3.7-14.1"/>
+			<path id="light_6_" class="st8" d="M1091,374.6c4-8.6,27.7-21.6,27.7-21.6c4-8,19-8,19-8c5.3-7.6,9.3-11.4,12.3-12.5"/>
+			<path id="light_5_" class="st8" d="M1085,456.8c1.4-19.8,9.7-35.9,12.6-41"/>
+			<path id="light_4_" class="st8" d="M1075.5,560.8c-1.8-15.7,5.9-31,9.5-37.1"/>
+			<path id="light_3_" class="st7" d="M1245.2,621.9"/>
+			<path id="light_2_" class="st8" d="M1244.3,621c-6.2-5.9-26.1-17.7-29.6-19c0,0-27-8-46-1c0,0-19.7,5-39.7,4"/>
+			<path id="light_1_" class="st8" d="M1151.7,519c0,0,13.8,16.9,12,44.4"/>
+			<path id="light" class="st8" d="M1155.1,456.8c-0.1-8.5-1.1-19.4-4-33.1"/>
+			<path id="light_11_" class="st8" d="M1149.9,493.9c0,0,2.1-11.9-5.6-26.6"/>
+			<path id="light_12_" class="st8" d="M1087.9,494.3c0,0-2.1-11.9,5.6-26.6"/>
+			<path id="light_13_" class="st8" d="M1078.5,610.6c0,0,2.5,6.4,22.5,4"/>
+		</g>
+		<g id="nose_1_">
+			<path id="base_1_" class="st9" d="M1157.3,338.3c-1.7-7.5-5-11.7-12.7-4.3c0,0,2.4,3,5.2,3.8
+				C1153.1,338.8,1157.3,338.3,1157.3,338.3z"/>
+			<path id="light_10_" class="st10" d="M1153.4,332.7c-1.7-1.1-3.9-0.9-6.8,1.3"/>
+		</g>
+		<g id="collar">
+			<path id="base_2_" class="st11" d="M1151.7,405.1c0,0-10.7-0.1-24-0.9c-12.7-0.8-25.1-5.1-25.1-5.1l-1.4,6c0,0,13.8,4.3,25.4,5
+				c14.4,0.9,25.4,1,25.4,1L1151.7,405.1z"/>
+			<path id="light_9_" class="st12" d="M1152.1,404.8c0,0-10.7-0.1-24-0.9c-7.8-0.5-15.4-2.3-20.2-3.6"/>
+		</g>
+	</g>
+</g>
+</svg>

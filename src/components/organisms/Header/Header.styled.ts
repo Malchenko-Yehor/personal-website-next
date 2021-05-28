@@ -1,36 +1,49 @@
-import { Paragraph } from "@atoms/Paragraph/Paragraph.styled";
-import { bp } from "@styles/mixins";
+import { H1 } from "@atoms/H1/H1.styled";
+import { sideIndentsMixin } from "@styles/mixins";
+import { motion } from "framer-motion";
+import { media } from "styled-bootstrap-grid";
 import styled from "styled-components";
 
 export const Header = styled.header`
-  padding-bottom: 40px;
+  position: relative;
+  overflow: hidden;
 
-  ${bp.sm} {
-    padding-bottom: 50px;
+  & img {
+    position: relative;
+    width: 100vw;
+    height: auto;
   }
 
-  ${bp.md} {
-    padding-bottom: 60px;
-  }
+  & ${H1} {
+    ${sideIndentsMixin}
+    position: absolute;
+    top: 33%;
+    width: 100%;
 
-  ${bp.lg} {
-    padding-bottom: 70px;
-  }
-
-  ${bp.xl} {
-    padding-bottom: 75px;
-  }
-
-  & ${Paragraph} {
-    text-align: center;
-    margin-bottom: 0;
+    ${media.lg`
+      top: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 60%;
+    `}
   }
 `;
 
-export const HeaderImage = styled.div`
-  margin-bottom: 30px;
+export const SkyLayer = styled(motion.div)`
+  position: absolute;
+`;
 
-  ${bp.lg} {
-    margin-bottom: 0;
-  }
-`
+export const MediumLayer = styled(motion.div)`
+  position: absolute;
+  display: none;
+
+  ${media.lg`
+    display: block;
+  `}
+`;
+
+export const FrontLayer = styled.div`
+  pointer-events: none;
+  position: relative;
+  transform: translateY(5px);
+`;

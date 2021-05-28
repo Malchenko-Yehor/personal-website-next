@@ -1,4 +1,11 @@
 module.exports = {
+  i18n: {
+    locales: ['en', 'pl', 'ru'],
+    defaultLocale: 'en',
+  },
+  images: {
+    domains: ['res.cloudinary.com']
+  },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,

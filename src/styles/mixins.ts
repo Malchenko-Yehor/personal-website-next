@@ -1,5 +1,6 @@
+import { media } from "styled-bootstrap-grid";
 import { css } from "styled-components";
-import { devices } from "./variables";
+import { sideIndent, sideIndentLg, sideIndentMd, sideIndentSm, sideIndentXl } from "./variables";
 
 export const centerMixin = () => {
   return css`
@@ -16,10 +17,29 @@ export const pseudoMixin = () => {
   `;
 };
 
-export const bp = {
-  xxl: `@media only screen and (min-width: ${devices.pc.width}px)`,
-  xl: `@media only screen and (min-width: ${devices.laptop.width}px)`,
-  lg: `@media only screen and (min-width: ${devices.tablet.width}px)`,
-  md: `@media only screen and (min-width: ${devices.tablet.height}px)`,
-  sm: `@media only screen and (min-width: ${devices.bigPhone.width}px)`,
+export const sideIndentsMixin = () => {
+  return css`
+    padding-right: ${sideIndent};
+    padding-left: ${sideIndent};
+
+    ${media.sm`
+      padding-right: ${sideIndentSm};
+      padding-left: ${sideIndentSm};
+    `}
+
+    ${media.md`
+      padding-right: ${sideIndentMd};
+      padding-left: ${sideIndentMd};
+    `}
+
+    ${media.lg`
+      padding-right: ${sideIndentLg};
+      padding-left: ${sideIndentLg};
+    `}
+
+    ${media.xl`
+      padding-right: ${sideIndentXl};
+      padding-left: ${sideIndentXl};
+    `}
+  `;
 };
