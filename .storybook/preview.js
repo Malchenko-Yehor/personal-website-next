@@ -4,7 +4,9 @@ import { GridThemeProvider } from "styled-bootstrap-grid";
 import gridTheme from "@styles/grid";
 import { devices } from "@styles/variables";
 import ViewportProvider from "../src/stores/viewport";
+import mainStore from '../src/stores/main-store';
 import * as NextImage from "next/image";
+import { Provider } from "react-redux";
 
 export const decorators = [
   (Story) => (
@@ -12,7 +14,9 @@ export const decorators = [
       <GlobalStyle />
       <GridThemeProvider gridTheme={gridTheme}>
         <ViewportProvider>
-          <Story />
+          <Provider store={mainStore}>
+            <Story />
+          </Provider>
         </ViewportProvider>
       </GridThemeProvider>
     </Fragment>
