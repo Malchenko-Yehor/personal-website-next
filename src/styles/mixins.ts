@@ -17,6 +17,16 @@ export const pseudoMixin = () => {
   `;
 };
 
+export const absoluteFillMixin = () => {
+  return css`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100;
+  `;
+};
+
 export const sideIndentsMixin = () => {
   return css`
     padding-right: ${sideIndent};

@@ -12,6 +12,11 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${cDarkBlue};
     color: ${cWhite};
   }
+
+  button {
+    background-color: transparent;
+    border: none;
+  }
 `;
 
 export default GlobalStyle;
