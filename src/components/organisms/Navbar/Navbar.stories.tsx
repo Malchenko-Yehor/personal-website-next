@@ -1,4 +1,5 @@
-import React from 'react';
+import MobileMenu from '@organisms/MobileMenu';
+import React, { Fragment } from 'react';
 import Navbar, { NavbarProps } from "./index";
 
 export default {
@@ -6,7 +7,12 @@ export default {
   component: Navbar
 };
 
-const Template = (args: NavbarProps) => <Navbar {...args} />;
+const Template = (args: NavbarProps) => (
+  <Fragment>
+    <MobileMenu />
+    <Navbar {...args} />
+  </Fragment>
+);
 
 export const Default = Template.bind({});
 

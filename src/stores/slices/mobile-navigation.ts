@@ -3,7 +3,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 export const posSlice = createSlice({
   name: 'mobileNavigation',
   initialState: {
-    opened: true
+    opened: false
   },
   reducers: {
     setMobileNavigationOpened: (state, action: PayloadAction<boolean>) => {

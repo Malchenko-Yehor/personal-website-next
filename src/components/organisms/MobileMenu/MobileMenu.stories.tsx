@@ -10,4 +10,6 @@ const Template = (args: MobileMenuProps) => <MobileMenu {...args} />;
 
 export const Default = Template.bind({});
 
-Default.args = {} as MobileMenuProps;
+Default.args = {
+  alwaysOpened: true
+} as MobileMenuProps;
