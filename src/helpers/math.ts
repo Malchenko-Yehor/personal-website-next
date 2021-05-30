@@ -13,3 +13,7 @@ export const isOdd = (value: number) => {
   else
     return false;
 };
+
+export const getRandomInRange = (min: number, max: number) => {
+  return Math.random() * (max - min) + min;
+}

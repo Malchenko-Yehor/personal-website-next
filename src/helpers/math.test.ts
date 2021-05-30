@@ -1,4 +1,4 @@
-import { isEven, isOdd } from "./math";
+import { isEven, isOdd, getRandomInRange } from "./math";
 
 describe('isEven()', () => {
   test('expect even numbers to return true', () => {
@@ -40,5 +40,25 @@ describe('isOdd()', () => {
     expect(isOdd(7)).toBe(true);
     expect(isOdd(9)).toBe(true);
     expect(isOdd(11)).toBe(true);
+  });
+});
+
+describe('getRandomInRange()', () => {
+  test('should generate random number in given range', () => {
+    const min = 10;
+    const max = 50;
+
+    const random1 = getRandomInRange(min, max);
+    const random2 = getRandomInRange(min, max);
+    const random3 = getRandomInRange(min, max);
+
+    expect(random1).toBeLessThanOrEqual(max);
+    expect(random1).toBeGreaterThanOrEqual(min);
+
+    expect(random2).toBeLessThanOrEqual(max);
+    expect(random2).toBeGreaterThanOrEqual(min);
+
+    expect(random3).toBeLessThanOrEqual(max);
+    expect(random3).toBeGreaterThanOrEqual(min);
   });
 });
