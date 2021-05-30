@@ -18,7 +18,8 @@ module.exports = {
     "@styles/(.*)": "<rootDir>/src/styles/$1",
     "@assets/(.*)": "<rootDir>/src/assets/$1",
     "@icons/(.*)": "<rootDir>/src/assets/icons/$1",
-    "@hooks/(.*)": "<rootDir>/src/hooks/$1"
+    "@hooks/(.*)": "<rootDir>/src/hooks/$1",
+    "@slices/(.*)": "<rootDir>/src/stores/slices/$1"
   },
   "setupFilesAfterEnv": [
     "<rootDir>/setupTests.ts"
