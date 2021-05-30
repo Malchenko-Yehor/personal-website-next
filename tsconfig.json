@@ -11,6 +11,9 @@
       "@organisms/*": [
         "components/organisms/*"
       ],
+      "@layouts/*": [
+        "components/layouts/*"
+      ],
       "@helpers/*": [
         "helpers/*"
       ],
