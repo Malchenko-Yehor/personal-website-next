@@ -7,5 +7,5 @@ export const CrossButton = styled.button`
 
 export const CrossIllustration = styled(motion.svg)`
   overflow: visible;
-  width: 40px;
+  width: 35px;
 `;

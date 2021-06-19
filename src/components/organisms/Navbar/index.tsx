@@ -3,6 +3,9 @@ import BurgerButton from '@atoms/BurgerButton';
 import { useMainSelector, useMainDispatch } from '@hooks/index';
 import { setMobileNavigationOpened } from '@slices/mobile-navigation';
 import * as S from './Navbar.styled';
+import Container from '@styles/Container';
+import HomeLink from '@atoms/HomeLink';
+import { Row, Col } from 'styled-bootstrap-grid';
 
 export interface NavbarProps { };
 
@@ -15,7 +18,16 @@ const Navbar: FC<NavbarProps> = props => {
 
   return (
     <S.Navbar>
-      <BurgerButton onClick={onBurgerButtonClick} animated={opened} />
+      <Container>
+        <Row justifyContent="between" alignItems="center">
+          <Col auto>
+            <HomeLink />
+          </Col>
+          <Col auto>
+            <BurgerButton onClick={onBurgerButtonClick} animated={opened} />
+          </Col>
+        </Row>
+      </Container>
     </S.Navbar>
   );
 };
