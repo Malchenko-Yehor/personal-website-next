@@ -10,4 +10,6 @@ const Template = (args: DefaultProps) => <DefaultLayout {...args} />;
 
 export const Default = Template.bind({});
 
-Default.args = {} as DefaultProps;
+Default.args = {
+  title: 'Some title'
+} as DefaultProps;
