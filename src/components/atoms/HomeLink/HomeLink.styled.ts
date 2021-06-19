@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const HomeLink = styled.a`
   display: block;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
 
   & svg {
     width: 100%;
