@@ -1,4 +1,11 @@
-import { isEven, isOdd, getRandomInRange } from "./math";
+import {
+  isEven,
+  isOdd,
+  getRandomInRange,
+  degresToRad,
+  getSplittedDegreesRange,
+  getDegreesOfPointsInRange
+} from "./math";
 
 describe('isEven()', () => {
   test('expect even numbers to return true', () => {
@@ -60,5 +67,41 @@ describe('getRandomInRange()', () => {
 
     expect(random3).toBeLessThanOrEqual(max);
     expect(random3).toBeGreaterThanOrEqual(min);
+  });
+});
+
+describe('degreesToRad()', () => {
+  test('should convert degress to radians', () => {
+    const rads = degresToRad(70);
+    const parsedRads = Number.parseFloat(rads.toFixed(5));
+
+    expect(parsedRads).toBe(1.22173);
+  });
+
+  test('should convert negative degress to negative radians', () => {
+    const rads = degresToRad(-70);
+    const parsedRads = Number.parseFloat(rads.toFixed(5));
+
+    expect(parsedRads).toBe(-1.22173);
+  });
+});
+
+describe('getSplittedDegreesRange()', () => {
+  test('should split degrees range x times', () => {
+    const splitValue = getSplittedDegreesRange(180, 360, 3);
+
+    expect(splitValue).toBe(60);
+  });
+
+});
+
+describe('getDegreesOfPointsInRange()', () => {
+  test('should return array of degrees for points in given degrees range', () => {
+    const pointsDegrees = getDegreesOfPointsInRange(180, 360, 2);
+    const pointsDegreesStringified = JSON.stringify(pointsDegrees);
+    const expectedResult = [240, 300]
+    const expectedResultStringified = JSON.stringify(expectedResult);
+
+    expect(pointsDegreesStringified).toBe(expectedResultStringified);
   });
 });
