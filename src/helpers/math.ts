@@ -1,3 +1,5 @@
+import { Coordinates } from "types";
+
 export const isEven = (value: number) => {
   if (value % 2 === 0)
     return true;
@@ -18,7 +20,7 @@ export const getRandomInRange = (min: number, max: number) => {
   return Math.random() * (max - min) + min;
 }
 
-export const degresToRad = (degrees: number) => {
+export const degreesToRad = (degrees: number) => {
   return degrees * (Math.PI / 180);
 };
 
@@ -28,9 +30,9 @@ export const getSplittedDegreesRange = (start: number, end: number, times: numbe
   return degreesDiff / times;
 };
 
-export const getDegreesOfPointsInRange = (start: number, end: number, pointsAmount: number) => {
+export const getPointsAnglesInRange = (start: number, end: number, pointsAmount: number) => {
   const degreesBetweenPoints = getSplittedDegreesRange(start, end, pointsAmount + 1);
-  const pointsDegrees = [];
+  const pointsDegrees: Array<number> = [];
 
   for (let index = 1; index <= pointsAmount; index++) {
     const pointDegree = start + index * degreesBetweenPoints;
@@ -40,3 +42,16 @@ export const getDegreesOfPointsInRange = (start: number, end: number, pointsAmou
 
   return pointsDegrees;
 };
+
+export const getPointsCoordinates = (angles: Array<number>): Array<Coordinates> => {
+  const coordinates = angles.map(angle => {
+    const radians = degreesToRad(angle);
+
+    var x = +Math.cos(degreesToRad(radians)).toFixed(5);
+    var y = +Math.sin(radians).toFixed(5);
+
+    return { x, y }
+  });
+
+  return coordinates;
+}

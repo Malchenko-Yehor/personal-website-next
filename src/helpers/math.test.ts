@@ -2,9 +2,9 @@ import {
   isEven,
   isOdd,
   getRandomInRange,
-  degresToRad,
+  degreesToRad,
   getSplittedDegreesRange,
-  getDegreesOfPointsInRange
+  getPointsAnglesInRange
 } from "./math";
 
 describe('isEven()', () => {
@@ -72,14 +72,14 @@ describe('getRandomInRange()', () => {
 
 describe('degreesToRad()', () => {
   test('should convert degress to radians', () => {
-    const rads = degresToRad(70);
+    const rads = degreesToRad(70);
     const parsedRads = Number.parseFloat(rads.toFixed(5));
 
     expect(parsedRads).toBe(1.22173);
   });
 
   test('should convert negative degress to negative radians', () => {
-    const rads = degresToRad(-70);
+    const rads = degreesToRad(-70);
     const parsedRads = Number.parseFloat(rads.toFixed(5));
 
     expect(parsedRads).toBe(-1.22173);
@@ -97,7 +97,7 @@ describe('getSplittedDegreesRange()', () => {
 
 describe('getDegreesOfPointsInRange()', () => {
   test('should return array of degrees for points in given degrees range', () => {
-    const pointsDegrees = getDegreesOfPointsInRange(180, 360, 2);
+    const pointsDegrees = getPointsAnglesInRange(180, 360, 2);
     const pointsDegreesStringified = JSON.stringify(pointsDegrees);
     const expectedResult = [240, 300]
     const expectedResultStringified = JSON.stringify(expectedResult);
