@@ -4,7 +4,10 @@ import { DateRange as DateRangeInterface } from 'types';
 
 export default {
   title: 'Molecules/DateRange',
-  component: DateRange
+  component: DateRange,
+  parameters: {
+    layout: 'centered',
+  }
 };
 
 const Template = (args: DateRangeInterface) => <DateRange {...args} />;

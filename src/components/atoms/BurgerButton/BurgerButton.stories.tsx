@@ -3,7 +3,10 @@ import BurgerButton, { BurgerButtonProps } from "./index";
 
 export default {
   title: 'Atoms/BurgerButton',
-  component: BurgerButton
+  component: BurgerButton,
+  parameters: {
+    layout: 'centered',
+  }
 };
 
 const Template = (args: BurgerButtonProps) => <BurgerButton {...args} />;

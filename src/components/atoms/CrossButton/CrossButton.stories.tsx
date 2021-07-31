@@ -3,11 +3,16 @@ import CrossButton, { CrossButtonProps } from "./index";
 
 export default {
   title: 'Atoms/CrossButton',
-  component: CrossButton
+  component: CrossButton,
+  parameters: {
+    layout: 'centered',
+  }
 };
 
 const Template = (args: CrossButtonProps) => <CrossButton {...args} />;
 
 export const Default = Template.bind({});
 
-Default.args = {} as CrossButtonProps;
+Default.args = {
+  animated: true
+} as CrossButtonProps;

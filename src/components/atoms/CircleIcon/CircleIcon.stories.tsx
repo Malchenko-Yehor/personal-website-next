@@ -3,7 +3,10 @@ import CircleIcon, { CircleIconProps } from "./index";
 
 export default {
   title: 'Atoms/CircleIcon',
-  component: CircleIcon
+  component: CircleIcon,
+  parameters: {
+    layout: 'centered',
+  }
 };
 
 const Template = (args: CircleIconProps) => <CircleIcon {...args} />;

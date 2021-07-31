@@ -1,13 +1,14 @@
 import React from 'react';
-import HomeLink, { HomeLinkProps } from "./index";
+import HomeLink from "./index";
 
 export default {
   title: 'Atoms/HomeLink',
-  component: HomeLink
+  component: HomeLink,
+  parameters: {
+    layout: 'centered',
+  }
 };
 
-const Template = (args: HomeLinkProps) => <HomeLink {...args} />;
+const Template = (args) => <HomeLink {...args} />;
 
 export const Default = Template.bind({});
-
-Default.args = {} as HomeLinkProps;

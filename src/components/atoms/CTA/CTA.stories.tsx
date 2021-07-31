@@ -3,7 +3,10 @@ import CTA, { CTAProps } from "./index";
 
 export default {
   title: 'Atoms/CTA',
-  component: CTA
+  component: CTA,
+  parameters: {
+    layout: 'centered',
+  }
 };
 
 const Template = (args: CTAProps) => <CTA {...args} />;

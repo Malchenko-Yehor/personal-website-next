@@ -3,7 +3,10 @@ import FadingLine from "./FadingLine.styled";
 
 export default {
   title: 'Atoms/FadingLine',
-  component: FadingLine
+  component: FadingLine,
+  parameters: {
+    layout: 'centered',
+  }
 };
 
 const Template = args => <FadingLine {...args} />;
