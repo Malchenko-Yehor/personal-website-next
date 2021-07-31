@@ -4,7 +4,8 @@ module.exports = {
   stories: ['../src/**/*.stories.tsx'],
   addons: [
     "@storybook/addon-links",
-    "@storybook/addon-essentials"
+    "@storybook/addon-essentials",
+    "storybook-addon-next-router",
   ],
   webpackFinal: async (config) => {
     config.resolve.plugins = [new TsconfigPathsPlugin()];

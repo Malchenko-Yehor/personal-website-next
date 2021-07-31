@@ -7,6 +7,7 @@ import ViewportProvider from "../src/stores/viewport";
 import mainStore from '../src/stores/main-store';
 import * as NextImage from "next/image";
 import { Provider } from "react-redux";
+import { RouterContext } from "next/dist/next-server/lib/router-context"; // next < 11.2
 
 export const decorators = [
   (Story) => (
@@ -44,6 +45,9 @@ export const parameters = {
   viewport: {
     viewports: getCustomViewports()
   },
+  nextRouter: {
+    Provider: RouterContext.Provider,
+  }
 }
 
 // Override Next.js image component
