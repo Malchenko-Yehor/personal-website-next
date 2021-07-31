@@ -47,8 +47,8 @@ export const getPointsCoordinates = (angles: Array<number>): Array<Coordinates> 
   const coordinates = angles.map(angle => {
     const radians = degreesToRad(angle);
 
-    var x = +Math.cos(degreesToRad(radians)).toFixed(5);
-    var y = +Math.sin(radians).toFixed(5);
+    const x = +Math.cos(radians).toFixed(5);
+    const y = +Math.sin(radians).toFixed(5);
 
     return { x, y }
   });

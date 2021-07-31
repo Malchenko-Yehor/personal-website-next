@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const LanguageSwitcher = styled.div`
@@ -8,6 +9,7 @@ export const LanguageSwitcher = styled.div`
 export const OpenButton = styled.button`
   padding: 0;
   height: 40px;
+  cursor: pointer;
 
   & svg {
     height: 100%;
@@ -15,11 +17,11 @@ export const OpenButton = styled.button`
   }
 `;
 
-export const WhiteCircle = styled.div`
+export const Switch = styled(motion.div)`
+  position: absolute;
   width: 14.9px;
   height: 14.9px;
   border-radius: 50%;
-  background-color: #fff;
 `;
 
 export const FlagsAnchor = styled.ul`

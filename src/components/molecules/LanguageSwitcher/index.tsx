@@ -1,47 +1,76 @@
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
 import * as S from './LanguageSwitcher.styled';
 import SatelliteIcon from '@icons/satellite.svg';
-import { degreesToRad, getPointsAnglesInRange, getPointsCoordinates } from '@helpers/math';
+import { getPointsAnglesInRange, getPointsCoordinates } from '@helpers/math';
 import { Coordinates } from 'types';
+import { Variants } from 'framer-motion';
+import LanguageFlag, { LanguageFlagProps } from '@atoms/LanguageFlag';
 
-export interface LanguageSwitcherProps { };
+export interface LanguageSwitcherProps {
+  languages: Array<LanguageFlagProps>
+};
 
-const LanguageSwitcher: FC<LanguageSwitcherProps> = props => {
-  const angles = getPointsAnglesInRange(180, 360, 2)
+const LanguageSwitcher: FC<LanguageSwitcherProps> = ({ languages }) => {
+  const angles = getPointsAnglesInRange(180, 360, languages.length)
   const coordinates = getPointsCoordinates(angles);
-
-  console.log(angles);
-  console.log(coordinates);
-
-  // const xPx = `calc(-50% + ${x}px)`;
-  // const yPx = `calc(-50% + ${y}px)`;
-
-  // console.log(x, y);
-
-  // const style = { transform: `translate(${xPx}, ${yPx})` }
+  const [opened, setOpened] = useState(false);
+  const languageSwitches = languages.map((language, index) => ({
+    language,
+    coordinates: coordinates[index]
+  }));
 
   return (
     <S.LanguageSwitcher>
-      <S.OpenButton>
+      <S.OpenButton onClick={() => setOpened(!opened)}>
         <SatelliteIcon />
       </S.OpenButton>
       <S.FlagsAnchor>
-        {coordinates.map((coordinates, index) => {
-          const translate = getFlagTranslate(coordinates, 20);
-          const style = { transform: translate };
-
-          return <S.WhiteCircle style={style} />;
-        })}
+        {languageSwitches.map((languageSwitch, index) => (
+          <Switch key={index} {...languageSwitch} opened={opened} />
+        ))}
       </S.FlagsAnchor>
     </S.LanguageSwitcher>
   );
 };
 
-const getFlagTranslate = (coordinates: Coordinates, distance: number) => {
-  const xTranslate = `calc(-50% + ${coordinates.x * distance}px)`;
-  const yTranslate = `calc(-50% + ${-coordinates.y * distance}px)`;
+interface SwitchProps {
+  coordinates: Coordinates,
+  opened: boolean,
+  language: LanguageFlagProps
+};
 
-  return `translate(${xTranslate}, ${yTranslate})`;
+const Switch: FC<SwitchProps> = ({ coordinates, opened, language }) => {
+  const buttonSize = 14.9;
+  const { x, y } = getFlagTranslate(coordinates, 33);
+  const flagVariants: Variants = {
+    closed: {
+      opacity: 0,
+      x: -buttonSize / 2,
+      y: -buttonSize / 2
+    },
+    opened: {
+      opacity: 1,
+      x: -buttonSize / 2 + x,
+      y: -buttonSize / 2 + y
+    }
+  };
+
+  return (
+    <S.Switch
+      variants={flagVariants}
+      initial="closed"
+      animate={opened ? 'opened' : 'closed'}
+    >
+      <LanguageFlag {...language} />
+    </S.Switch>
+  );
+};
+
+export const getFlagTranslate = (coordinates: Coordinates, distance: number) => {
+  return {
+    x: coordinates.x * distance,
+    y: -coordinates.y * distance
+  };
 };
 
 
