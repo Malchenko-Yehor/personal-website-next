@@ -1,6 +1,7 @@
 import MobileMenu from '@organisms/MobileMenu';
 import React, { Fragment } from 'react';
 import Navbar, { NavbarProps } from "./index";
+import { Default as LanguageSwithcerDefaultStory } from '@molecules/LanguageSwitcher/LanguageSwitcher.stories';
 
 export default {
   title: 'Organisms/Navbar',
@@ -16,4 +17,14 @@ const Template = (args: NavbarProps) => (
 
 export const Default = Template.bind({});
 
-Default.args = {} as NavbarProps;
+Default.story = {
+  parameters: {
+    nextRouter: {
+      locale: 'en'
+    },
+  },
+};
+
+Default.args = {
+  languages: LanguageSwithcerDefaultStory.args.languages
+} as NavbarProps;

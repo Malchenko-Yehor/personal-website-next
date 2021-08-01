@@ -13,6 +13,14 @@ const Template = (args: LanguageSwitcherProps) => <LanguageSwitcher {...args} />
 
 export const Default = Template.bind({});
 
+Default.story = {
+  parameters: {
+    nextRouter: {
+      locale: 'en'
+    },
+  },
+};
+
 Default.args = {
   languages: [
     {
@@ -41,7 +49,7 @@ Default.args = {
         src: '/images/russia-flag.svg',
         alt: 'poland flag'
       },
-      languagePrefix: 'pl'
+      languagePrefix: 'ru'
     },
   ]
 } as LanguageSwitcherProps;

@@ -6,10 +6,14 @@ import * as S from './Navbar.styled';
 import Container from '@styles/Container';
 import HomeLink from '@atoms/HomeLink';
 import { Row, Col } from 'styled-bootstrap-grid';
+import LanguageSwitcher from '@molecules/LanguageSwitcher';
+import { LanguageFlagProps } from '@atoms/LanguageFlag';
 
-export interface NavbarProps { };
+export interface NavbarProps {
+  languages: Array<LanguageFlagProps>
+};
 
-const Navbar: FC<NavbarProps> = props => {
+const Navbar: FC<NavbarProps> = ({ languages }) => {
   const { opened } = useMainSelector(state => state.mobileNavigation);
   const dispatch = useMainDispatch();
   const onBurgerButtonClick = () => {
@@ -24,6 +28,7 @@ const Navbar: FC<NavbarProps> = props => {
             <HomeLink />
           </Col>
           <Col auto>
+            <LanguageSwitcher languages={languages} />
             <BurgerButton onClick={onBurgerButtonClick} animated={opened} />
           </Col>
         </Row>
