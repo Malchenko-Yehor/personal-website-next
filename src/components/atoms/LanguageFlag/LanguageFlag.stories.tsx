@@ -16,5 +16,5 @@ Default.args = {
     src: '/images/poland-flag.svg',
     alt: 'poland flag'
   },
-  languagePrefix: 'pl'
+  locale: 'pl'
 } as LanguageFlagProps;

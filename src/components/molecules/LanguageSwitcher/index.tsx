@@ -1,4 +1,4 @@
-import React, { FC, useRef, useState } from 'react';
+import React, { FC, useEffect, useRef, useState } from 'react';
 import * as S from './LanguageSwitcher.styled';
 import SatelliteIcon from '@icons/satellite.svg';
 import { getPointsAnglesInRange, getPointsCoordinates } from '@helpers/math';
@@ -8,17 +8,14 @@ import LanguageFlag, { LanguageFlagProps } from '@atoms/LanguageFlag';
 import { useRouter } from 'next/dist/client/router';
 import { useOutsideClick } from '@hooks/index';
 
-export interface LanguageSwitcherProps {
-  languages: Array<LanguageFlagProps>
-};
-
-const LanguageSwitcher: FC<LanguageSwitcherProps> = ({ languages }) => {
+const LanguageSwitcher: FC = () => {
   const ref = useRef();
-  const router = useRouter();
-  const angles = getPointsAnglesInRange(180, 360, languages.length)
+  const { locale, locales } = useRouter();
+  const angles = getPointsAnglesInRange(180, 360, locales?.length)
   const coordinates = getPointsCoordinates(angles);
   const [opened, setOpened] = useState(false);
-  const selectedLanguageFlagIcon = getSelectedLanguageIcon(languages, router.locale);
+  const languages = getLanguages(locales);
+  const selectedLanguageFlagIcon = getSelectedLanguageIcon(languages, locale);
   const languageSwitches = languages.map((language, index) => ({
     language,
     coordinates: coordinates[index]
@@ -79,9 +76,24 @@ const Switch: FC<SwitchProps> = ({ coordinates, opened, language }) => {
   );
 };
 
-const getSelectedLanguageIcon = (languages: Array<LanguageFlagProps>, selectedLanguage: string) => {
+
+const getLanguages = (locales: string[]) => {
+  const languages: LanguageFlagProps[] = locales?.map(locale => {
+    return {
+      locale,
+      icon: {
+        alt: `${locale} flag`,
+        src: `/images/flags/${locale}.svg`
+      }
+    }
+  });
+
+  return languages || [];
+};
+
+const getSelectedLanguageIcon = (languages: LanguageFlagProps[], selectedLanguage: string) => {
   const language = languages.find(language => {
-    return language.languagePrefix === selectedLanguage;
+    return language.locale === selectedLanguage;
   });
 
   return language?.icon;

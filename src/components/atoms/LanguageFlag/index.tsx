@@ -6,14 +6,14 @@ import * as S from './LanguageFlag.styled';
 
 export interface LanguageFlagProps {
   icon: Icon,
-  languagePrefix: string
+  locale: string
 };
 
-const LanguageFlag: FC<LanguageFlagProps> = ({ icon, languagePrefix }) => {
+const LanguageFlag: FC<LanguageFlagProps> = ({ icon, locale }) => {
   const router = useRouter();
 
   return (
-    <Link href={router.asPath} locale={languagePrefix} >
+    <Link href={router.asPath} locale={locale} >
       <S.LanguageFlag src={icon.src} alt={icon.alt} />
     </Link>
   );

@@ -1,55 +1,14 @@
 import React from 'react';
-import LanguageSwitcher, { LanguageSwitcherProps } from "./index";
+import LanguageSwitcher from "./index";
 
 export default {
   title: 'Molecules/LanguageSwitcher',
   component: LanguageSwitcher,
   parameters: {
-    layout: 'centered',
+    layout: 'centered'
   },
 };
 
-const Template = (args: LanguageSwitcherProps) => <LanguageSwitcher {...args} />;
+const Template = (args) => <LanguageSwitcher {...args} />;
 
 export const Default = Template.bind({});
-
-Default.story = {
-  parameters: {
-    nextRouter: {
-      locale: 'en'
-    },
-  },
-};
-
-Default.args = {
-  languages: [
-    {
-      icon: {
-        src: '/images/poland-flag.svg',
-        alt: 'poland flag'
-      },
-      languagePrefix: 'pl'
-    },
-    {
-      icon: {
-        src: '/images/uk-flag.svg',
-        alt: 'poland flag'
-      },
-      languagePrefix: 'en'
-    },
-    {
-      icon: {
-        src: '/images/ukraine-flag.svg',
-        alt: 'poland flag'
-      },
-      languagePrefix: 'ua'
-    },
-    {
-      icon: {
-        src: '/images/russia-flag.svg',
-        alt: 'poland flag'
-      },
-      languagePrefix: 'ru'
-    },
-  ]
-} as LanguageSwitcherProps;

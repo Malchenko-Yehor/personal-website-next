@@ -47,6 +47,8 @@ export const parameters = {
   },
   nextRouter: {
     Provider: RouterContext.Provider,
+    locale: 'en',
+    locales: ['en', 'pl', 'uk', 'ru'],
   }
 }
 
