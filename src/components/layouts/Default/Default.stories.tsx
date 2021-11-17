@@ -1,15 +1,15 @@
 import React from 'react';
-import DefaultLayout, { DefaultProps } from "./index";
+import DefaultLayout, { DefaultLayoutProps } from "./index";
 
 export default {
   title: 'Layouts/Default',
   component: DefaultLayout
 };
 
-const Template = (args: DefaultProps) => <DefaultLayout {...args} />;
+const Template = (args: DefaultLayoutProps) => <DefaultLayout {...args} />;
 
 export const Default = Template.bind({});
 
 Default.args = {
   title: 'Some title'
-} as DefaultProps;
+} as DefaultLayoutProps;

@@ -8,12 +8,13 @@ import HomeLink from '@atoms/HomeLink';
 import { Row, Col } from 'styled-bootstrap-grid';
 import LanguageSwitcher from '@molecules/LanguageSwitcher';
 import { LanguageFlagProps } from '@atoms/LanguageFlag';
+import { StrapiFile } from 'types';
 
 export interface NavbarProps {
-  languages: Array<LanguageFlagProps>
+  mediaFiles: StrapiFile[]
 };
 
-const Navbar: FC<NavbarProps> = ({ languages }) => {
+const Navbar: FC<NavbarProps> = ({ mediaFiles }) => {
   const { opened } = useMainSelector(state => state.mobileNavigation);
   const dispatch = useMainDispatch();
   const onBurgerButtonClick = () => {
@@ -28,7 +29,7 @@ const Navbar: FC<NavbarProps> = ({ languages }) => {
             <HomeLink />
           </Col>
           <Col auto>
-            <LanguageSwitcher languages={languages} />
+            <LanguageSwitcher mediaFiles={mediaFiles} />
             <BurgerButton onClick={onBurgerButtonClick} animated={opened} />
           </Col>
         </Row>

@@ -1,42 +1,34 @@
 import React, { FC } from 'react';
 import { GetStaticProps } from 'next';
-import Head from 'next/head';
 import queryApi from '@helpers/apollo';
-import Header, { HeaderProps } from '@organisms/Header';
-import LanguageFlag from '@atoms/LanguageFlag';
+import { HeaderProps } from '@organisms/Header';
+import { getPageQuery } from '@helpers/query';
+import { PageProps } from 'types';
+import DefaultLayout from '@layouts/Default';
 
-interface HomepageProps {
+interface HomepageProps extends PageProps {
   homepage: HeaderProps
 };
 
-const icon = {
-  src: '/images/poland-flag.svg',
-  alt: 'poland flag'
-}
+export const Homepage: FC<HomepageProps> = (props) => {
+  const { homepage } = props;
 
-export const Homepage: FC<HomepageProps> = ({ homepage }) => {
   return (
-    <div>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <Header {...homepage} />
-
-      <LanguageFlag languagePrefix="en" icon={icon} />
-    </div>
+    <DefaultLayout {...props} title={homepage.title}>
+    </DefaultLayout>
   )
 };
 
 
-const getHomepageQuery = (locale: string) => `
-  query {
+const getHomepageQuery = (locale: string) => {
+  const homepageQuery = `
     homepage(locale: "${locale}") {
       title
     }
-  }
-`;
+  `;
+
+  return getPageQuery(homepageQuery);
+}
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const query = getHomepageQuery(locale);

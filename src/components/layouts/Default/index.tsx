@@ -1,17 +1,24 @@
 import MobileMenu from '@organisms/MobileMenu';
 import Navbar from '@organisms/Navbar';
 import React, { FC, Fragment } from 'react';
+import Head from 'next/head';
 import Header from '@organisms/Header';
+import { PageProps } from 'types';
 
-export interface DefaultProps {
+export interface DefaultLayoutProps extends PageProps {
   title: string
 };
 
-const Default: FC<DefaultProps> = ({ children, title }) => {
+const DefaultLayout: FC<DefaultLayoutProps> = ({ children, title, mediaFiles }) => {
   return (
     <Fragment>
+      <Head>
+        <title>Create Next App</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <MobileMenu />
-      <Navbar />
+      <Navbar mediaFiles={mediaFiles} />
       <main>
         <Header title={title} />
         {children}
@@ -21,4 +28,4 @@ const Default: FC<DefaultProps> = ({ children, title }) => {
 };
 
 
-export default Default;
+export default DefaultLayout;
