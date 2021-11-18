@@ -1,6 +1,4 @@
-import React from 'react';
-import LanguageFlag, { LanguageFlagProps } from "./index";
-import { RouterContext } from "next/dist/next-server/lib/router-context";
+import LanguageFlag, { LanguageFlagProps } from "./LanguageFlag";
 
 export default {
   title: 'Atoms/LanguageFlag',

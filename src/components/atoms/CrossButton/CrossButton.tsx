@@ -1,5 +1,5 @@
-import { motion, Transition, Variants } from 'framer-motion';
-import React, { FC, MouseEventHandler } from 'react';
+import { motion, Variants } from 'framer-motion';
+import { FC, MouseEventHandler } from 'react';
 import * as S from './CrossButton.styled';
 
 export interface CrossButtonProps {

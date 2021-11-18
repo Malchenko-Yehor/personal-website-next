@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import * as S from './H1.styled';
 
 export interface H1Props {

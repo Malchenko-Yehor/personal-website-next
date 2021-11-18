@@ -1,4 +1,3 @@
-import React from 'react';
 import FadingLine from "./FadingLine.styled";
 
 export default {

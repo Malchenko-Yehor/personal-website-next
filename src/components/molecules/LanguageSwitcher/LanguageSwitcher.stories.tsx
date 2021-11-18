@@ -1,5 +1,4 @@
-import React from 'react';
-import LanguageSwitcher from "./index";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default {
   title: 'Molecules/LanguageSwitcher',

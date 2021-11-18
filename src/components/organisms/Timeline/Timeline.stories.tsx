@@ -1,5 +1,4 @@
-import React from 'react';
-import Timeline, { TimelineProps } from "./index";
+import Timeline, { TimelineProps } from "./Timeline";
 import { v4 as uuid } from 'uuid';
 
 export default {

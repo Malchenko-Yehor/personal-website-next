@@ -1,8 +1,8 @@
+import Header from '@organisms/Header';
 import MobileMenu from '@organisms/MobileMenu';
 import Navbar from '@organisms/Navbar';
-import React, { FC, Fragment } from 'react';
 import Head from 'next/head';
-import Header from '@organisms/Header';
+import { FC, Fragment } from 'react';
 import { PageProps } from 'types';
 
 export interface DefaultLayoutProps extends PageProps {

@@ -1,5 +1,4 @@
-import React from 'react';
-import SpaceShuttle, { SpaceShuttleProps } from "./index";
+import SpaceShuttle, { SpaceShuttleProps } from "./SpaceShuttle";
 
 export default {
   title: 'Atoms/SpaceShuttle',

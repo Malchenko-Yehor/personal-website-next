@@ -1,8 +1,8 @@
-import React, { FC } from 'react';
-import * as S from './Header.styled';
-import { useTransform, useViewportScroll } from 'framer-motion';
 import H1 from '@atoms/H1';
 import { devices } from '@styles/variables';
+import { useTransform, useViewportScroll } from 'framer-motion';
+import { FC } from 'react';
+import * as S from './Header.styled';
 
 export interface HeaderProps {
   title: string

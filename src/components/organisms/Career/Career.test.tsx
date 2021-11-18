@@ -1,4 +1,4 @@
-import { getExperience } from './index';
+import { getExperience } from './Career';
 import { DateRange } from 'types';
 
 

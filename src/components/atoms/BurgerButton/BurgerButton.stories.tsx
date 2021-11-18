@@ -1,5 +1,4 @@
-import React from 'react';
-import BurgerButton, { BurgerButtonProps } from "./index";
+import BurgerButton, { BurgerButtonProps } from "./BurgerButton";
 
 export default {
   title: 'Atoms/BurgerButton',

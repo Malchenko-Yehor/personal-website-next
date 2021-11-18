@@ -1,5 +1,4 @@
-import React from 'react';
-import Paragraph, { ParagraphProps } from "./index";
+import Paragraph, { ParagraphProps } from "./Paragraph";
 
 export default {
   title: 'Atoms/Paragraph',

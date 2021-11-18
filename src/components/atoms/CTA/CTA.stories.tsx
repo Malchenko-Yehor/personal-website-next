@@ -1,5 +1,4 @@
-import React from 'react';
-import CTA, { CTAProps } from "./index";
+import CTA, { CTAProps } from "./CTA";
 
 export default {
   title: 'Atoms/CTA',

@@ -1,5 +1,4 @@
-import React from 'react';
-import Clouds, { CloudsProps } from "./index";
+import Clouds, { CloudsProps } from "./Clouds";
 
 export default {
   title: 'Molecules/Clouds',

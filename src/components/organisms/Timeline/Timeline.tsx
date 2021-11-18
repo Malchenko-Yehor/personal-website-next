@@ -1,15 +1,15 @@
-import React, { FC } from 'react';
-import InfoCard, { InfoCardProps } from '@molecules/InfoCard/InfoCard';
-import * as S from './Timeline.styled';
 import CircleIcon from '@atoms/CircleIcon';
-import { Col, Row } from 'styled-bootstrap-grid';
-import Container from '@styles/Container';
 import FadingLine from '@atoms/FadingLine/FadingLine.styled';
-import { useViewport } from '@hooks/index';
-import { devices } from '@styles/variables';
 import { isEven } from '@helpers/math';
-import { useInView } from 'react-intersection-observer';
+import { useViewport } from '@hooks/index';
+import InfoCard, { InfoCardProps } from '@molecules/InfoCard/InfoCard';
+import Container from '@styles/Container';
+import { devices } from '@styles/variables';
 import { motion } from 'framer-motion';
+import { FC } from 'react';
+import { useInView } from 'react-intersection-observer';
+import { Col, Row } from 'styled-bootstrap-grid';
+import * as S from './Timeline.styled';
 
 const entryAnimationDuration = 0.4;
 

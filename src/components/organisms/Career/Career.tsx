@@ -1,12 +1,12 @@
 import H2 from '@atoms/H2';
-import Timeline, { TimelineProps, Entry } from '@organisms/Timeline';
-import React, { FC } from 'react';
-import * as S from './Career.styled';
-import ClockIcon from '@icons/clock.svg';
 import { getMonthsDifferenceFromRangesList } from '@helpers/date';
+import ClockIcon from '@icons/clock.svg';
+import Timeline, { Entry, TimelineProps } from '@organisms/Timeline/Timeline';
 import { motion } from 'framer-motion';
+import { FC } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { DateRange } from 'types';
+import * as S from './Career.styled';
 
 export interface CareerProps extends TimelineProps {
   title: string,

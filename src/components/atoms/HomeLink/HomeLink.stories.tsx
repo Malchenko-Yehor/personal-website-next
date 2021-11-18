@@ -1,5 +1,4 @@
-import React from 'react';
-import HomeLink from "./index";
+import HomeLink from "./HomeLink";
 
 export default {
   title: 'Atoms/HomeLink',

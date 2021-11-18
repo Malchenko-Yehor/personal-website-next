@@ -1,6 +1,6 @@
 import { media } from "styled-bootstrap-grid";
 import styled, { css } from "styled-components";
-import { SectionProps } from ".";
+import { SectionProps } from "./Section";
 
 export const Section = styled.section<SectionProps>`
   padding: 40px 0;

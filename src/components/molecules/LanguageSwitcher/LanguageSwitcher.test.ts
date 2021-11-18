@@ -1,4 +1,4 @@
-import { getFlagTranslate } from '.'
+import { getFlagTranslate } from './LanguageSwitcher'
 
 describe('getFlagTranslate()', () => {
   test('returns coordinates multiplied by distance and "y" has inverted value', () => {

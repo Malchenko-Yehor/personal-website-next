@@ -1,13 +1,13 @@
-import React, { FC, useRef, useState } from 'react';
-import * as S from './LanguageSwitcher.styled';
-import SatelliteIcon from '@icons/satellite.svg';
-import { getPointsAnglesInRange, getPointsCoordinates } from '@helpers/math';
-import { Coordinates, StrapiFile } from 'types';
-import { Variants } from 'framer-motion';
 import LanguageFlag, { LanguageFlagProps } from '@atoms/LanguageFlag/LanguageFlag';
-import { useRouter } from 'next/dist/client/router';
-import { useOutsideClick } from '@hooks/index';
 import { isDevEnv } from '@helpers/env';
+import { getPointsAnglesInRange, getPointsCoordinates } from '@helpers/math';
+import { useOutsideClick } from '@hooks/index';
+import SatelliteIcon from '@icons/satellite.svg';
+import { Variants } from 'framer-motion';
+import { useRouter } from 'next/dist/client/router';
+import { FC, useRef, useState } from 'react';
+import { Coordinates, StrapiFile } from 'types';
+import * as S from './LanguageSwitcher.styled';
 
 interface LanguageSwitcherProps {
   mediaFiles?: StrapiFile[]
@@ -82,7 +82,7 @@ const Switch: FC<SwitchProps> = ({ coordinates, opened, language }) => {
 };
 
 
-const getLanguages = (locales: string[], mediaFiles?: StrapiFile[]) => {
+export const getLanguages = (locales: string[], mediaFiles?: StrapiFile[]) => {
   const languages: LanguageFlagProps[] = locales?.map(locale => {
     const flagIconUrl = mediaFiles?.find(file => file.url.match(`${locale}.svg`))?.url;
     const devFlagUrl = `/images/flags/${locale}.svg`
@@ -99,7 +99,7 @@ const getLanguages = (locales: string[], mediaFiles?: StrapiFile[]) => {
   return languages || [];
 };
 
-const getSelectedLanguageIcon = (languages: LanguageFlagProps[], selectedLanguage: string) => {
+export const getSelectedLanguageIcon = (languages: LanguageFlagProps[], selectedLanguage: string) => {
   const language = languages.find(language => {
     return language.locale === selectedLanguage;
   });

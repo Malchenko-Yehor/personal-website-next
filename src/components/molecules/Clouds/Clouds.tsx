@@ -1,7 +1,7 @@
 import { getRandomInRange } from '@helpers/math';
 import { cWhite } from '@styles/variables';
 import { motion, Variants } from 'framer-motion';
-import React, { FC } from 'react';
+import { FC } from 'react';
 import * as S from './Clouds.styled';
 
 export interface CloudsProps {

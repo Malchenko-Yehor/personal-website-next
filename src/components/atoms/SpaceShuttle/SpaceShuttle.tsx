@@ -1,7 +1,7 @@
-import { motion, transform, Variants } from 'framer-motion';
-import React, { FC } from 'react';
-import * as S from './SpaceShuttle.styled';
 import SpaceShuttleIllustration from '@icons/space-shuttle.svg';
+import { Variants } from 'framer-motion';
+import { FC } from 'react';
+import * as S from './SpaceShuttle.styled';
 
 
 export interface SpaceShuttleProps {

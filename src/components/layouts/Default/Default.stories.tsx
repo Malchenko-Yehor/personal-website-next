@@ -1,5 +1,4 @@
-import React from 'react';
-import DefaultLayout, { DefaultLayoutProps } from "./index";
+import DefaultLayout, { DefaultLayoutProps } from "./Default";
 
 export default {
   title: 'Layouts/Default',

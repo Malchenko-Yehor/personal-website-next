@@ -1,5 +1,4 @@
-import React from 'react';
-import MobileMenu, { MobileMenuProps } from "./index";
+import MobileMenu, { MobileMenuProps } from "./MobileMenu";
 
 export default {
   title: 'Organisms/MobileMenu',

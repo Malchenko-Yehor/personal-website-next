@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import * as S from './H2.styled';
 
 export interface H2Props {

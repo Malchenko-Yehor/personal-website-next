@@ -1,7 +1,7 @@
-import MobileMenu from '@organisms/MobileMenu';
-import React, { Fragment } from 'react';
-import Navbar, { NavbarProps } from "./index";
 import { Default as LanguageSwithcerDefaultStory } from '@molecules/LanguageSwitcher/LanguageSwitcher.stories';
+import MobileMenu from '@organisms/MobileMenu';
+import { Fragment } from 'react';
+import Navbar, { NavbarProps } from "./Navbar";
 
 export default {
   title: 'Organisms/Navbar',

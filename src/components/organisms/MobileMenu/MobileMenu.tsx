@@ -1,11 +1,11 @@
-import React, { FC } from 'react';
+import CrossButton from '@atoms/CrossButton';
+import SpaceShuttle from '@atoms/SpaceShuttle';
+import { useMainDispatch, useMainSelector } from '@hooks/index';
+import Clouds from '@molecules/Clouds';
+import { setMobileNavigationOpened } from '@slices/mobile-navigation';
+import { FC } from 'react';
 import * as S from './MobileMenu.styled';
 
-import SpaceShuttle from '@atoms/SpaceShuttle';
-import Clouds from '@molecules/Clouds';
-import { useMainDispatch, useMainSelector } from '@hooks/index';
-import { setMobileNavigationOpened } from '@slices/mobile-navigation'
-import CrossButton from '@atoms/CrossButton';
 
 export interface MobileMenuProps {
   alwaysOpened?: boolean

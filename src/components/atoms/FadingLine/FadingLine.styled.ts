@@ -1,4 +1,3 @@
-import { pseudoMixin } from "@styles/mixins";
 import { cOrange } from "@styles/variables";
 import { motion } from "framer-motion";
 import { rgba } from "polished";

@@ -1,6 +1,5 @@
-import React from 'react';
-import InfoCard, { InfoCardProps } from "./index";
 import Container from '@styles/Container';
+import InfoCard, { InfoCardProps } from "./InfoCard";
 
 export default {
   title: 'Molecules/InfoCard',

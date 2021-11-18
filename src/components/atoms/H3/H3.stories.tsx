@@ -1,5 +1,4 @@
-import React from 'react';
-import H3, { H3Props } from "./index";
+import H3, { H3Props } from "./H3";
 
 export default {
   title: 'Atoms/H3',

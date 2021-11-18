@@ -1,7 +1,7 @@
 import H3 from '@atoms/H3';
 import Paragraph from '@atoms/Paragraph';
 import DateRange from '@molecules/DateRange';
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { DateRange as DateRangeInterface } from 'types';
 import * as S from './InfoCard.styled';
 

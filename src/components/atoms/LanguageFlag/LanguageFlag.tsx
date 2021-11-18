@@ -1,6 +1,6 @@
 import { useRouter } from 'next/dist/client/router';
 import Link from 'next/link';
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { Icon } from 'types';
 import * as S from './LanguageFlag.styled';
 

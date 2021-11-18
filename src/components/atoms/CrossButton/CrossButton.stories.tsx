@@ -1,5 +1,4 @@
-import React from 'react';
-import CrossButton, { CrossButtonProps } from "./index";
+import CrossButton, { CrossButtonProps } from "./CrossButton";
 
 export default {
   title: 'Atoms/CrossButton',

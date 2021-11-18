@@ -1,10 +1,10 @@
-import FadingLine from "@atoms/FadingLine/FadingLine.styled";
-import styled from "styled-components";
 import { CirleIcon } from "@atoms/CircleIcon/CircleIcon.styled";
-import { centerMixin } from "@styles/mixins";
+import FadingLine from "@atoms/FadingLine/FadingLine.styled";
 import { DateRange } from "@molecules/DateRange/DateRange.styled";
+import { centerMixin } from "@styles/mixins";
 import { cBlack } from "@styles/variables";
 import { media } from "styled-bootstrap-grid";
+import styled from "styled-components";
 
 export const Timeline = styled.div`
   position: relative;

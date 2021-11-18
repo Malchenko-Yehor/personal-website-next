@@ -1,5 +1,5 @@
 import { motion, Transition, Variants } from 'framer-motion';
-import React, { FC, MouseEventHandler } from 'react';
+import { FC, MouseEventHandler } from 'react';
 import * as S from './BurgerButton.styled';
 
 export interface BurgerButtonProps {

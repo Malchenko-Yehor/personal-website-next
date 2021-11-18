@@ -1,5 +1,4 @@
-import React from 'react';
-import H2, { H2Props } from "./index";
+import H2, { H2Props } from "./H2";
 
 export default {
   title: 'Atoms/H2',

@@ -1,16 +1,16 @@
-import React, { FC } from 'react';
 import BurgerButton from '@atoms/BurgerButton';
-import { useMainSelector, useMainDispatch } from '@hooks/index';
-import { setMobileNavigationOpened } from '@slices/mobile-navigation';
-import * as S from './Navbar.styled';
-import Container from '@styles/Container';
 import HomeLink from '@atoms/HomeLink';
-import { Row, Col } from 'styled-bootstrap-grid';
+import { useMainDispatch, useMainSelector } from '@hooks/index';
 import LanguageSwitcher from '@molecules/LanguageSwitcher';
+import { setMobileNavigationOpened } from '@slices/mobile-navigation';
+import Container from '@styles/Container';
+import { FC } from 'react';
+import { Col, Row } from 'styled-bootstrap-grid';
 import { StrapiFile } from 'types';
+import * as S from './Navbar.styled';
 
 export interface NavbarProps {
-  mediaFiles: StrapiFile[]
+  mediaFiles?: StrapiFile[]
 };
 
 const Navbar: FC<NavbarProps> = ({ mediaFiles }) => {

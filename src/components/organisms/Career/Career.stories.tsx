@@ -1,6 +1,5 @@
 import { timelineEntriesData } from '@organisms/Timeline/Timeline.stories';
-import React from 'react';
-import Career, { CareerProps } from "./index";
+import Career, { CareerProps } from "./Career";
 
 export default {
   title: 'Organisms/Career',

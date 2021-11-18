@@ -1,6 +1,5 @@
-import React from 'react';
-import DateRange from './index';
 import { render } from '@testing-library/react';
+import DateRange from './index';
 
 describe('<DateRange>', () => {
   test('renders date range correctly', () => {

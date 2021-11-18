@@ -1,5 +1,4 @@
-import React from 'react';
-import CircleIcon, { CircleIconProps } from "./index";
+import CircleIcon, { CircleIconProps } from "./CircleIcon";
 
 export default {
   title: 'Atoms/CircleIcon',

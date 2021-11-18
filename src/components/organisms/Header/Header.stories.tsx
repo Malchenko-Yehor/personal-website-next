@@ -1,5 +1,4 @@
-import React from 'react';
-import Header, { HeaderProps } from "./index";
+import Header, { HeaderProps } from "./Header";
 
 export default {
   title: 'Organisms/Header',
