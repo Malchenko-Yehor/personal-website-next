@@ -1,13 +1,3 @@
-import React, { FC } from 'react';
-import * as S from './{{pascalCase name}}.styled';
-
-export interface {{pascalCase name}}Props {};
-
-const {{pascalCase name}}: FC<{{ pascalCase name }}Props> = props => {
-  return (
-    <div></div>
-  );
-};
-
+import {{pascalCase name}} from "./{{pascalCase name}}";
 
 export default {{pascalCase name}};
