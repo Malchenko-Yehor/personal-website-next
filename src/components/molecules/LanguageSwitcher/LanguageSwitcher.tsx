@@ -6,7 +6,9 @@ import SatelliteIcon from '@icons/satellite.svg';
 import { Variants } from 'framer-motion';
 import { useRouter } from 'next/dist/client/router';
 import { FC, useRef, useState } from 'react';
-import { Coordinates, StrapiFile } from 'types';
+import { Coordinates} from 'types';
+import { StrapiFile } from 'api/types';
+
 import * as S from './LanguageSwitcher.styled';
 
 interface LanguageSwitcherProps {
@@ -83,8 +85,8 @@ const Switch: FC<SwitchProps> = ({ coordinates, opened, language }) => {
 
 
 export const getLanguages = (locales: string[], mediaFiles?: StrapiFile[]) => {
-  const languages: LanguageFlagProps[] = locales?.map(locale => {
-    const flagIconUrl = mediaFiles?.find(file => file.url.match(`${locale}.svg`))?.url;
+  const languages: LanguageFlagProps[] = locales.map(locale => {
+    const flagIconUrl = mediaFiles?.find(file => file.name.match(`${locale}.svg`))?.url;
     const devFlagUrl = `/images/flags/${locale}.svg`
 
     return {
