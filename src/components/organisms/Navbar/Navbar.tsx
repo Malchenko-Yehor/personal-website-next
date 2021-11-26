@@ -6,7 +6,7 @@ import { setMobileNavigationOpened } from '@slices/mobile-navigation';
 import Container from '@styles/Container';
 import { FC } from 'react';
 import { Col, Row } from 'styled-bootstrap-grid';
-import { StrapiFile } from 'types';
+import { StrapiFile } from 'api/types';
 import * as S from './Navbar.styled';
 
 export interface NavbarProps {
