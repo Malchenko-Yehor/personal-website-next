@@ -1,6 +1,6 @@
-import { media } from "styled-bootstrap-grid";
-import { css } from "styled-components";
-import { sideIndent, sideIndentLg, sideIndentMd, sideIndentSm, sideIndentXl } from "./variables";
+import { media } from 'styled-bootstrap-grid';
+import { css } from 'styled-components';
+import { sideIndent, sideIndentLg, sideIndentMd, sideIndentSm, sideIndentXl } from './variables';
 
 export const centerMixin = () => {
   return css`
@@ -24,6 +24,15 @@ export const absoluteFillMixin = () => {
     left: 0;
     width: 100%;
     height: 100;
+  `;
+};
+
+export const absoluteCenterMixin = () => {
+  return css`
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   `;
 };
 
