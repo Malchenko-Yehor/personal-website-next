@@ -1,13 +1,13 @@
-import { Fragment } from "react";
+import { Fragment } from 'react';
 import GlobalStyle from '@styles/global';
-import { GridThemeProvider } from "styled-bootstrap-grid";
-import gridTheme from "@styles/grid";
-import { devices } from "@styles/variables";
-import ViewportProvider from "../src/stores/viewport";
+import { GridThemeProvider } from 'styled-bootstrap-grid';
+import gridTheme from '@styles/grid';
+import { devices } from '@styles/variables';
+import ViewportProvider from '../src/stores/viewport';
 import mainStore from '../src/stores/main-store';
-import * as NextImage from "next/image";
-import { Provider } from "react-redux";
-import { RouterContext } from "next/dist/next-server/lib/router-context"; // next < 11.2
+import * as NextImage from 'next/image';
+import { Provider } from 'react-redux';
+import { RouterContext } from 'next/dist/shared/lib/router-context'; // next 12
 
 export const decorators = [
   (Story) => (
@@ -32,8 +32,8 @@ const getCustomViewports = () => {
       name: key,
       styles: {
         width: devices[key].width + 'px',
-        height: devices[key].height + 'px'
-      }
+        height: devices[key].height + 'px',
+      },
     };
   }
 
@@ -43,14 +43,14 @@ const getCustomViewports = () => {
 export const parameters = {
   layout: 'fullscreen',
   viewport: {
-    viewports: getCustomViewports()
+    viewports: getCustomViewports(),
   },
   nextRouter: {
     Provider: RouterContext.Provider,
     locale: 'en',
     locales: ['en', 'pl', 'uk', 'ru'],
-  }
-}
+  },
+};
 
 // Override Next.js image component
 const OriginalNextImage = NextImage.default;
