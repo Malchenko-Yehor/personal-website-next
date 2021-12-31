@@ -7,7 +7,8 @@ import ViewportProvider from '../src/stores/viewport';
 import mainStore from '../src/stores/main-store';
 import * as NextImage from 'next/image';
 import { Provider } from 'react-redux';
-import { RouterContext } from 'next/dist/shared/lib/router-context'; // next 12
+import { themes } from '@storybook/theming';
+import { RouterContext } from 'next/dist/shared/lib/router-context';
 
 export const decorators = [
   (Story) => (
@@ -49,6 +50,9 @@ export const parameters = {
     Provider: RouterContext.Provider,
     locale: 'en',
     locales: ['en', 'pl', 'uk', 'ru'],
+  },
+  docs: {
+    theme: themes.dark,
   },
 };
 

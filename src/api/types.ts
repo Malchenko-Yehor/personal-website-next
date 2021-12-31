@@ -1,5 +1,3 @@
-import { CareerProps } from "@organisms/Career/Career";
-
 export interface StrapiFile {
   id: string;
   created_at: string;
@@ -23,7 +21,7 @@ export interface StrapiFile {
 export type Widget = CareerWidget;
 
 export enum WidgetType {
-  Career = "ComponentWidgetsCareer",
+  Career = 'ComponentWidgetsCareer',
 }
 
 export interface CareerWidget {
