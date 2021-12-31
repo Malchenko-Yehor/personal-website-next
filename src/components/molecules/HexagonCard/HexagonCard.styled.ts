@@ -1,4 +1,4 @@
-import { absoluteCenterMixin, absoluteFillMixin } from '@styles/mixins';
+import { absoluteCenterMixin, absoluteFillMixin, media } from '@styles/mixins';
 import { cBlack, cOrange, cOrange50, fontRubik, ziBottom, ziMedium } from '@styles/variables';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
@@ -25,11 +25,22 @@ export const Icon = styled(motion.img)`
 `;
 
 export const Title = styled(motion.span)`
+  max-width: 100%;
   position: absolute;
   pointer-events: none;
   font-family: ${fontRubik};
   font-weight: 700;
-  padding: 0 5%;
-  font-size: 35px;
+  font-size: 13.5px;
+  word-break: break-word;
+  padding: 0 11%;
+  text-align: center;
   color: ${cBlack};
+
+  ${media.sm} {
+    font-size: 18px;
+  }
+
+  ${media.md} {
+    font-size: 22px;
+  }
 `;

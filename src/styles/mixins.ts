@@ -1,6 +1,5 @@
-import { media } from 'styled-bootstrap-grid';
 import { css } from 'styled-components';
-import { sideIndent, sideIndentLg, sideIndentMd, sideIndentSm, sideIndentXl } from './variables';
+import { devices, sideIndent, sideIndentLg, sideIndentMd, sideIndentSm, sideIndentXl } from './variables';
 
 export const centerMixin = () => {
   return css`
@@ -23,7 +22,7 @@ export const absoluteFillMixin = () => {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100;
+    height: 100%;
   `;
 };
 
@@ -41,24 +40,32 @@ export const sideIndentsMixin = () => {
     padding-right: ${sideIndent};
     padding-left: ${sideIndent};
 
-    ${media.sm`
+    ${media.sm} {
       padding-right: ${sideIndentSm};
       padding-left: ${sideIndentSm};
-    `}
+    }
 
-    ${media.md`
+    ${media.md} {
       padding-right: ${sideIndentMd};
       padding-left: ${sideIndentMd};
-    `}
+    }
 
-    ${media.lg`
+    ${media.lg} {
       padding-right: ${sideIndentLg};
       padding-left: ${sideIndentLg};
-    `}
+    }
 
-    ${media.xl`
+    ${media.xl} {
       padding-right: ${sideIndentXl};
       padding-left: ${sideIndentXl};
-    `}
+    }
   `;
+};
+
+export const media = {
+  sm: `@media (min-width: ${devices.bigPhone.width}px)`,
+  md: `@media (min-width: ${devices.tabletPortrait.width}px)`,
+  lg: `@media (min-width: ${devices.tablet.width}px)`,
+  xl: `@media (min-width: ${devices.laptop.width}px)`,
+  xxl: `@media (min-width: ${devices.pc.width}px)`,
 };
