@@ -2,7 +2,7 @@ import React, { FC, useMemo } from 'react';
 import { v4 as uuid } from 'uuid';
 
 const AnimatedHexagon: FC = () => {
-  const hoverAreaId: string = useMemo(() => uuid().replaceAll('-', ''), []);
+  const hoverAreaId: string = useMemo(() => 'a' + uuid().replaceAll('-', ''), []);
 
   return (
     <svg viewBox="0 0 183 210.7">
