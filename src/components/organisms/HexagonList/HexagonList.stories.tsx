@@ -1,4 +1,3 @@
-import React from 'react';
 import HexagonList, { HexagonListProps } from './HexagonList';
 import { v4 as uuid } from 'uuid';
 import { Container } from 'styled-bootstrap-grid';

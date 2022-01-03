@@ -1,5 +1,5 @@
-import { absoluteCenterMixin, absoluteFillMixin, media } from '@styles/mixins';
-import { cBlack, cOrange, cOrange50, fontRubik, ziBottom, ziMedium } from '@styles/variables';
+import { absoluteFillMixin, media } from '@styles/mixins';
+import { cBlack, fontRubik } from '@styles/variables';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
@@ -10,6 +10,10 @@ export const HexagonCard = styled(motion.div)`
   align-items: center;
   clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
   aspect-ratio: 183 / 210;
+`;
+
+export const HexagonWrapper = styled(motion.div)`
+  ${absoluteFillMixin};
 
   & svg {
     ${absoluteFillMixin};

@@ -1,8 +1,11 @@
 import { HexagonCard } from '@molecules/HexagonCard/HexagonCard.styled';
 import { media } from '@styles/mixins';
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 const gap = 10;
+const gapMd = 20;
+const gapXl = 30;
 export const itemsMobile = 3;
 export const itemsTabletPortrait = 4;
 
@@ -14,19 +17,27 @@ const calculateSideIndent = (itemsAmount: number) => {
   return `calc(100% / ${itemsAmount * 2})`;
 };
 
-export const HexagonList = styled.ul`
+export const HexagonList = styled(motion.ul)`
   display: flex;
   flex-wrap: wrap;
   gap: ${gap}px;
   padding: 0;
   margin: 0;
+
+  ${media.md} {
+    gap: ${gapMd}px;
+  }
+
+  ${media.xl} {
+    gap: ${gapXl}px;
+  }
 `;
 
 interface ItemProps {
   isShifted: boolean;
 }
 
-export const Item = styled.li<ItemProps>`
+export const Item = styled(motion.li)<ItemProps>`
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -38,7 +49,7 @@ export const Item = styled.li<ItemProps>`
   }
 
   ${media.md} {
-    flex-basis: ${calculateFlexBasis(itemsTabletPortrait, gap)};
+    flex-basis: ${calculateFlexBasis(itemsTabletPortrait, gapMd)};
     margin-left: ${(props) => (props.isShifted ? calculateSideIndent(itemsTabletPortrait) : '0px')};
 
     &:nth-child(n + ${itemsMobile + 1}) ${HexagonCard} {
@@ -48,5 +59,9 @@ export const Item = styled.li<ItemProps>`
     &:nth-child(n + ${itemsTabletPortrait + 1}) ${HexagonCard} {
       margin-top: -28%;
     }
+  }
+
+  ${media.xl} {
+    flex-basis: ${calculateFlexBasis(itemsTabletPortrait, gapXl)};
   }
 `;

@@ -1,4 +1,4 @@
-import React, { FC, useMemo } from 'react';
+import { FC, useMemo } from 'react';
 import { v4 as uuid } from 'uuid';
 
 const AnimatedHexagon: FC = () => {

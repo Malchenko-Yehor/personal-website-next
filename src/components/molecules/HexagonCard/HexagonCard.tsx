@@ -48,15 +48,25 @@ const HexagonCard: FC<HexagonCardProps> = ({ image, title }) => {
     },
   };
 
+  const hexagonVariants: Variants = {
+    initial: {
+      rotate: 0,
+    },
+    animated: {
+      rotate: 45,
+    },
+  };
+
   return (
     <S.HexagonCard
       animate={isAnimated ? 'animated' : 'initial'}
       initial="initial"
       onMouseEnter={() => setIsAnimated(true)}
       onMouseLeave={() => setIsAnimated(false)}
-      onClick={() => setIsAnimated(!isAnimated)}
     >
-      <AnimatedHexagon />
+      <S.HexagonWrapper variants={hexagonVariants}>
+        <AnimatedHexagon />
+      </S.HexagonWrapper>
       <S.Icon src={image.url} alt={image.alternativeText} variants={iconVariants} />
       <S.Title variants={titleVariants}>{title}</S.Title>
     </S.HexagonCard>
