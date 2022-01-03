@@ -1,4 +1,3 @@
-import React, { FC } from 'react';
 import * as S from './{{pascalCase name}}.styled';
 
 export interface {{pascalCase name}}Props {};
