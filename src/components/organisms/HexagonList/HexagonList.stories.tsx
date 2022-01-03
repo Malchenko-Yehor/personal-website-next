@@ -92,186 +92,58 @@ LongList.args = {
     },
     {
       id: uuid(),
-      title: 'Adobe Xd',
+      title: 'React',
       image: {
-        url: '/images/adobe-xd.svg',
-        alternativeText: 'adobe xd',
+        url: '/images/react.svg',
+        alternativeText: 'react',
       },
     },
     {
       id: uuid(),
-      title: 'Adobe Xd',
+      title: 'HTML',
       image: {
-        url: '/images/adobe-xd.svg',
-        alternativeText: 'adobe xd',
+        url: '/images/html.svg',
+        alternativeText: 'html',
       },
     },
     {
       id: uuid(),
-      title: 'Adobe Xd',
+      title: 'CSS',
       image: {
-        url: '/images/adobe-xd.svg',
-        alternativeText: 'adobe xd',
+        url: '/images/css.svg',
+        alternativeText: 'css',
       },
     },
     {
       id: uuid(),
-      title: 'Adobe Xd',
+      title: 'JavaScript',
       image: {
-        url: '/images/adobe-xd.svg',
-        alternativeText: 'adobe xd',
+        url: '/images/javascript.svg',
+        alternativeText: 'javascript',
       },
     },
     {
       id: uuid(),
-      title: 'Adobe Xd',
+      title: 'TypeScript',
       image: {
-        url: '/images/adobe-xd.svg',
-        alternativeText: 'adobe xd',
+        url: '/images/typescript.svg',
+        alternativeText: 'typescript',
       },
     },
     {
       id: uuid(),
-      title: 'Adobe Xd',
+      title: 'Vue',
       image: {
-        url: '/images/adobe-xd.svg',
-        alternativeText: 'adobe xd',
+        url: '/images/vue.svg',
+        alternativeText: 'vue',
       },
     },
     {
       id: uuid(),
-      title: 'Adobe Xd',
+      title: 'Git',
       image: {
-        url: '/images/adobe-xd.svg',
-        alternativeText: 'adobe xd',
-      },
-    },
-    {
-      id: uuid(),
-      title: 'Adobe Xd',
-      image: {
-        url: '/images/adobe-xd.svg',
-        alternativeText: 'adobe xd',
-      },
-    },
-    {
-      id: uuid(),
-      title: 'Adobe Xd',
-      image: {
-        url: '/images/adobe-xd.svg',
-        alternativeText: 'adobe xd',
-      },
-    },
-    {
-      id: uuid(),
-      title: 'Adobe Xd',
-      image: {
-        url: '/images/adobe-xd.svg',
-        alternativeText: 'adobe xd',
-      },
-    },
-    {
-      id: uuid(),
-      title: 'Adobe Xd',
-      image: {
-        url: '/images/adobe-xd.svg',
-        alternativeText: 'adobe xd',
-      },
-    },
-    {
-      id: uuid(),
-      title: 'Adobe Xd',
-      image: {
-        url: '/images/adobe-xd.svg',
-        alternativeText: 'adobe xd',
-      },
-    },
-    {
-      id: uuid(),
-      title: 'Adobe Xd',
-      image: {
-        url: '/images/adobe-xd.svg',
-        alternativeText: 'adobe xd',
-      },
-    },
-    {
-      id: uuid(),
-      title: 'Adobe Xd',
-      image: {
-        url: '/images/adobe-xd.svg',
-        alternativeText: 'adobe xd',
-      },
-    },
-    {
-      id: uuid(),
-      title: 'Adobe Xd',
-      image: {
-        url: '/images/adobe-xd.svg',
-        alternativeText: 'adobe xd',
-      },
-    },
-    {
-      id: uuid(),
-      title: 'Adobe Xd',
-      image: {
-        url: '/images/adobe-xd.svg',
-        alternativeText: 'adobe xd',
-      },
-    },
-    {
-      id: uuid(),
-      title: 'Adobe Xd',
-      image: {
-        url: '/images/adobe-xd.svg',
-        alternativeText: 'adobe xd',
-      },
-    },
-    {
-      id: uuid(),
-      title: 'Adobe Xd',
-      image: {
-        url: '/images/adobe-xd.svg',
-        alternativeText: 'adobe xd',
-      },
-    },
-    {
-      id: uuid(),
-      title: 'Adobe Xd',
-      image: {
-        url: '/images/adobe-xd.svg',
-        alternativeText: 'adobe xd',
-      },
-    },
-    {
-      id: uuid(),
-      title: 'Adobe Xd',
-      image: {
-        url: '/images/adobe-xd.svg',
-        alternativeText: 'adobe xd',
-      },
-    },
-    {
-      id: uuid(),
-      title: 'Adobe Xd',
-      image: {
-        url: '/images/adobe-xd.svg',
-        alternativeText: 'adobe xd',
-      },
-    },
-    {
-      id: uuid(),
-      title: 'Adobe Xd',
-      image: {
-        url: '/images/adobe-xd.svg',
-        alternativeText: 'adobe xd',
-      },
-    },
-    {
-      id: uuid(),
-      title: 'Adobe Xd',
-      image: {
-        url: '/images/adobe-xd.svg',
-        alternativeText: 'adobe xd',
+        url: '/images/git.svg',
+        alternativeText: 'git',
       },
     },
     {

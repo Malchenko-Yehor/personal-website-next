@@ -1,17 +1,17 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit'
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-export const posSlice = createSlice({
+export const mobileNavigationSlice = createSlice({
   name: 'mobileNavigation',
   initialState: {
-    opened: false
+    opened: false,
   },
   reducers: {
     setMobileNavigationOpened: (state, action: PayloadAction<boolean>) => {
       state.opened = action.payload;
-    }
-  }
-})
+    },
+  },
+});
 
-export const { setMobileNavigationOpened } = posSlice.actions
+export const { setMobileNavigationOpened } = mobileNavigationSlice.actions;
 
-export default posSlice.reducer
+export default mobileNavigationSlice.reducer;

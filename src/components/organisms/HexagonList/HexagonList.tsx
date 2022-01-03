@@ -1,7 +1,7 @@
 import HexagonCard, { HexagonCardProps } from '@molecules/HexagonCard/HexagonCard';
 import { devices } from '@styles/variables';
-import React, { FC, useContext, useEffect, useMemo } from 'react';
-import { viewportContext } from 'stores/viewport';
+import { FC, useContext, useMemo } from 'react';
+import { viewportContext } from '@stores/viewport';
 import * as S from './HexagonList.styled';
 
 export interface HexagonListItem extends HexagonCardProps {
@@ -16,10 +16,6 @@ const HexagonList: FC<HexagonListProps> = ({ items }) => {
   const { width } = useContext(viewportContext);
   const itemsPerRow = width >= devices.tabletPortrait.width ? S.itemsTabletPortrait : S.itemsMobile;
   const list = useMemo(() => getShiftedItemList(items, itemsPerRow), [itemsPerRow]);
-
-  useEffect(() => {
-    console.log(list);
-  }, [list]);
 
   return (
     <S.HexagonList>
