@@ -1,4 +1,4 @@
-import HexagonCard, { HexagonCardProps } from '@molecules/HexagonCard/HexagonCard';
+import HexagonCard, { HexagonCardProps } from '@organisms/HexagonCard/HexagonCard';
 import { devices } from '@styles/variables';
 import { FC, useContext, useMemo } from 'react';
 import { viewportContext } from '@stores/viewport';

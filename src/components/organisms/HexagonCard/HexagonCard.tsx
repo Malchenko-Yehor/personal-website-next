@@ -1,7 +1,8 @@
 import { StrapiFile } from '@api/types';
 import AnimatedHexagon from '@atoms/AnimatedHexagon';
+import StarsRating from '@molecules/StarsRating';
 import { Variants } from 'framer-motion';
-import React, { FC, useState } from 'react';
+import { FC, useState } from 'react';
 import * as S from './HexagonCard.styled';
 
 export interface HexagonCardProps {
@@ -18,7 +19,7 @@ const HexagonCard: FC<HexagonCardProps> = ({ image, title }) => {
       opacity: 1,
       transition: {
         duration: 0.3,
-        delay: 0.2,
+        delay: 0.3,
       },
     },
     animated: {
@@ -43,7 +44,7 @@ const HexagonCard: FC<HexagonCardProps> = ({ image, title }) => {
       opacity: 1,
       transition: {
         duration: 0.3,
-        delay: 0.2,
+        delay: 0.3,
       },
     },
   };
@@ -69,6 +70,13 @@ const HexagonCard: FC<HexagonCardProps> = ({ image, title }) => {
       </S.HexagonWrapper>
       <S.Icon src={image.url} alt={image.alternativeText} variants={iconVariants} />
       <S.Title variants={titleVariants}>{title}</S.Title>
+
+      <StarsRating
+        starsAmount={5}
+        rating={3}
+        initialVariant="hidden"
+        animate={isAnimated ? 'visible' : 'hidden'}
+      />
     </S.HexagonCard>
   );
 };

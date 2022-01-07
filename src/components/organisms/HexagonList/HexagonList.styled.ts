@@ -1,4 +1,5 @@
-import { HexagonCard } from '@molecules/HexagonCard/HexagonCard.styled';
+import { StarItem, StarsRating } from '@molecules/StarsRating/StarsRating.styled';
+import { HexagonCard } from '@organisms/HexagonCard/HexagonCard.styled';
 import { media } from '@styles/mixins';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
@@ -23,6 +24,16 @@ export const HexagonList = styled(motion.ul)`
   gap: ${gap}px;
   padding: 0;
   margin: 0;
+
+  & ${StarsRating} {
+    gap: 4px;
+    margin-top: 5px;
+  }
+
+  & ${StarItem} svg {
+    width: 12px;
+    height: 12px;
+  }
 
   ${media.md} {
     gap: ${gapMd}px;

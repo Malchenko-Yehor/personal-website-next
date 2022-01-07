@@ -1,8 +1,7 @@
-import React from 'react';
 import HexagonCard, { HexagonCardProps } from './HexagonCard';
 
 export default {
-  title: 'Molecules/HexagonCard',
+  title: 'Organisms/HexagonCard',
   component: HexagonCard,
   parameters: {
     layout: 'centered',
@@ -26,4 +25,14 @@ Default.args = {
     alternativeText: 'react',
   },
   title: 'React',
+} as HexagonCardProps;
+
+export const LongTitle = Template.bind({});
+
+LongTitle.args = {
+  image: {
+    url: '/images/javascript.svg',
+    alternativeText: 'react',
+  },
+  title: 'JavaScript',
 } as HexagonCardProps;

@@ -10,7 +10,7 @@ export default {
   component: HexagonList,
   parameters: {
     docs: {
-      page: () => <StorybookDocs usedComponents={['Molecules/HexagonCard']} />,
+      page: () => <StorybookDocs usedComponents={['Organisms/HexagonCard']} />,
     },
   },
 };

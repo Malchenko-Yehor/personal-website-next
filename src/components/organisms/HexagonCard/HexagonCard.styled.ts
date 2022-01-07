@@ -1,3 +1,4 @@
+import { StarsRating } from '@molecules/StarsRating/StarsRating.styled';
 import { absoluteFillMixin, media } from '@styles/mixins';
 import { cBlack, fontRubik } from '@styles/variables';
 import { motion } from 'framer-motion';
@@ -6,10 +7,16 @@ import styled from 'styled-components';
 export const HexagonCard = styled(motion.div)`
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
   aspect-ratio: 183 / 210;
+
+  & ${StarsRating} {
+    pointer-events: none;
+    margin-top: 10px;
+  }
 `;
 
 export const HexagonWrapper = styled(motion.div)`
@@ -30,7 +37,7 @@ export const Icon = styled(motion.img)`
 
 export const Title = styled(motion.span)`
   max-width: 100%;
-  position: absolute;
+  position: relative;
   pointer-events: none;
   font-family: ${fontRubik};
   font-weight: 700;
