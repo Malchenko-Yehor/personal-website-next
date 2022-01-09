@@ -1,8 +1,8 @@
-import { RefObject, useContext, useEffect } from "react";
-import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
-import { MainDispatch, MainState } from "stores/main-store";
-import { viewportContext } from "../stores/viewport";
-
+import { devices } from '@styles/variables';
+import { RefObject, useContext, useEffect } from 'react';
+import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
+import { MainDispatch, MainState } from 'stores/main-store';
+import { viewportContext } from '../stores/viewport';
 
 export const useViewport = () => {
   const { width, height } = useContext(viewportContext);
@@ -16,14 +16,32 @@ export const useMainSelector: TypedUseSelectorHook<MainState> = useSelector;
 
 export const useOutsideClick = (ref: RefObject<HTMLElement>, callback: Function) => {
   useEffect(() => {
-    const handleClickOutside = event => {
+    const handleClickOutside = (event) => {
       if (ref.current && !ref.current.contains(event.target)) {
         callback();
       }
-    }
+    };
 
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
 
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [ref, callback]);
+};
+
+export const useOnMediaQueryChange = (minDeviceWidths: number[], callback: VoidFunction) => {
+  useEffect(() => {
+    const mediaQueryLists = minDeviceWidths.map((width) => {
+      return matchMedia(`(min-width: ${width}px)`);
+    });
+
+    mediaQueryLists.forEach((mediaQuery) => {
+      mediaQuery.addEventListener('change', callback);
+    });
+
+    return () => {
+      mediaQueryLists.forEach((mediaQuery) => {
+        mediaQuery.removeEventListener('change', callback);
+      });
+    };
+  }, []);
 };
