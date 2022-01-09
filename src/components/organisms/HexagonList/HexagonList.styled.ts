@@ -26,13 +26,15 @@ export const HexagonList = styled(motion.ul)`
   margin: 0;
 
   & ${StarsRating} {
-    gap: 4px;
+    width: 100%;
+    padding: 0 8%;
+    justify-content: center;
+    gap: 5%;
     margin-top: 5px;
   }
 
-  & ${StarItem} svg {
-    width: 12px;
-    height: 12px;
+  & ${StarItem} {
+    width: 12%;
   }
 
   ${media.md} {

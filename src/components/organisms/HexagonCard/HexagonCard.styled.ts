@@ -1,3 +1,4 @@
+import { ScaledText } from '@atoms/ScaledText/ScaledText.styled';
 import { StarsRating } from '@molecules/StarsRating/StarsRating.styled';
 import { absoluteFillMixin, media } from '@styles/mixins';
 import { cBlack, fontRubik } from '@styles/variables';
@@ -36,15 +37,18 @@ export const Icon = styled(motion.img)`
 `;
 
 export const Title = styled(motion.span)`
-  max-width: 100%;
-  position: relative;
   pointer-events: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15%;
+  width: 100%;
+  padding: 0 14%;
   font-family: ${fontRubik};
   font-weight: 700;
   font-size: 13.5px;
   word-break: break-word;
-  padding: 0 11%;
-  text-align: center;
   color: ${cBlack};
 
   ${media.sm} {
@@ -53,5 +57,14 @@ export const Title = styled(motion.span)`
 
   ${media.md} {
     font-size: 22px;
+  }
+
+  & ${ScaledText} {
+    max-height: 100%;
+    height: 100%;
+
+    & text {
+      fill: ${cBlack};
+    }
   }
 `;

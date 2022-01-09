@@ -1,4 +1,4 @@
-import {{ pascalCase name }}, { {{ pascalCase name }}Props } from "{{ pascalCase name }}";
+import {{ pascalCase name }}, { {{ pascalCase name }}Props } from "./{{ pascalCase name }}";
 
 export default {
   title: 'Atoms/{{ pascalCase name }}',

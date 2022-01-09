@@ -28,6 +28,7 @@ LongList.args = {
     {
       id: uuid(),
       title: 'React',
+      rating: 3,
       image: {
         url: '/images/react.svg',
         alternativeText: 'react',
@@ -36,6 +37,7 @@ LongList.args = {
     {
       id: uuid(),
       title: 'HTML',
+      rating: 4,
       image: {
         url: '/images/html.svg',
         alternativeText: 'html',
@@ -44,6 +46,7 @@ LongList.args = {
     {
       id: uuid(),
       title: 'CSS',
+      rating: 4,
       image: {
         url: '/images/css.svg',
         alternativeText: 'css',
@@ -52,6 +55,7 @@ LongList.args = {
     {
       id: uuid(),
       title: 'JavaScript',
+      rating: 4,
       image: {
         url: '/images/javascript.svg',
         alternativeText: 'javascript',
@@ -60,6 +64,7 @@ LongList.args = {
     {
       id: uuid(),
       title: 'TypeScript',
+      rating: 2,
       image: {
         url: '/images/typescript.svg',
         alternativeText: 'typescript',
@@ -68,6 +73,7 @@ LongList.args = {
     {
       id: uuid(),
       title: 'Vue',
+      rating: 1,
       image: {
         url: '/images/vue.svg',
         alternativeText: 'vue',
@@ -76,6 +82,7 @@ LongList.args = {
     {
       id: uuid(),
       title: 'Git',
+      rating: 3,
       image: {
         url: '/images/git.svg',
         alternativeText: 'git',
@@ -84,6 +91,7 @@ LongList.args = {
     {
       id: uuid(),
       title: 'Adobe Xd',
+      rating: 2,
       image: {
         url: '/images/adobe-xd.svg',
         alternativeText: 'adobe xd',
@@ -92,6 +100,7 @@ LongList.args = {
     {
       id: uuid(),
       title: 'React',
+      rating: 3,
       image: {
         url: '/images/react.svg',
         alternativeText: 'react',
@@ -100,6 +109,7 @@ LongList.args = {
     {
       id: uuid(),
       title: 'HTML',
+      rating: 4,
       image: {
         url: '/images/html.svg',
         alternativeText: 'html',
@@ -108,6 +118,7 @@ LongList.args = {
     {
       id: uuid(),
       title: 'CSS',
+      rating: 4,
       image: {
         url: '/images/css.svg',
         alternativeText: 'css',
@@ -116,6 +127,7 @@ LongList.args = {
     {
       id: uuid(),
       title: 'JavaScript',
+      rating: 4,
       image: {
         url: '/images/javascript.svg',
         alternativeText: 'javascript',
@@ -124,6 +136,7 @@ LongList.args = {
     {
       id: uuid(),
       title: 'TypeScript',
+      rating: 2,
       image: {
         url: '/images/typescript.svg',
         alternativeText: 'typescript',
@@ -132,6 +145,7 @@ LongList.args = {
     {
       id: uuid(),
       title: 'Vue',
+      rating: 1,
       image: {
         url: '/images/vue.svg',
         alternativeText: 'vue',
@@ -140,6 +154,7 @@ LongList.args = {
     {
       id: uuid(),
       title: 'Git',
+      rating: 3,
       image: {
         url: '/images/git.svg',
         alternativeText: 'git',
@@ -148,6 +163,7 @@ LongList.args = {
     {
       id: uuid(),
       title: 'Adobe Xd',
+      rating: 2,
       image: {
         url: '/images/adobe-xd.svg',
         alternativeText: 'adobe xd',

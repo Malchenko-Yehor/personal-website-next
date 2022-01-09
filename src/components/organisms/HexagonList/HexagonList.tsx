@@ -1,10 +1,10 @@
 import HexagonCard, { HexagonCardProps } from '@organisms/HexagonCard/HexagonCard';
 import { devices } from '@styles/variables';
-import { FC, useContext, useMemo } from 'react';
-import { viewportContext } from '@stores/viewport';
+import { FC, useEffect, useMemo, useState } from 'react';
 import * as S from './HexagonList.styled';
 import { useInView } from 'react-intersection-observer';
 import { Transition, Variants } from 'framer-motion';
+import { useOnMediaQueryChange } from '@hooks/index';
 
 export interface HexagonListItem extends HexagonCardProps {
   id: string;
@@ -15,10 +15,25 @@ export interface HexagonListProps {
 }
 
 const HexagonList: FC<HexagonListProps> = ({ items }) => {
-  const { width } = useContext(viewportContext);
-  const itemsPerRow = width >= devices.tabletPortrait.width ? S.itemsTabletPortrait : S.itemsMobile;
+  const [itemsPerRow, setItemsPerRow] = useState(3);
   const list = useMemo(() => getShiftedItemList(items, itemsPerRow), [itemsPerRow]);
   const { ref, inView } = useInView({ triggerOnce: true });
+
+  useEffect(() => {
+    setItemsPerRow(getItemsPerRow());
+  }, []);
+
+  const getItemsPerRow = (): number => {
+    if (window.innerWidth >= devices.tabletPortrait.width) {
+      return S.itemsTabletPortrait;
+    } else {
+      return S.itemsMobile;
+    }
+  };
+
+  useOnMediaQueryChange([devices.phone.width, devices.tabletPortrait.width], () => {
+    setItemsPerRow(getItemsPerRow());
+  });
 
   const transition: Transition = {
     type: 'spring',
@@ -48,7 +63,7 @@ const HexagonList: FC<HexagonListProps> = ({ items }) => {
       {list.map((item) => {
         return (
           <S.Item key={item.id} isShifted={item.isShifted} variants={itemVariants} transition={transition}>
-            <HexagonCard image={item.image} title={item.title} key={item.id} />
+            <HexagonCard image={item.image} title={item.title} key={item.id} rating={item.rating} />
           </S.Item>
         );
       })}
