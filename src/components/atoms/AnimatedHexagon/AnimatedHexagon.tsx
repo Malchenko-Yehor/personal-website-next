@@ -19,7 +19,8 @@ const AnimatedHexagon: FC = () => {
         d="M2,58.2v94.3c0,2.8,1.5,5.4,3.9,6.8l81.7,47.1c2.4,1.4,5.4,1.4,7.8,0l81.7-47.1c2.4-1.4,3.9-4,3.9-6.8V58.2
         c0-2.8-1.5-5.4-3.9-6.8L95.4,4.3c-2.4-1.4-5.4-1.4-7.8,0L5.9,51.4C3.5,52.8,2,55.4,2,58.2z"
         stroke="#707070"
-        strokeWidth="4"
+        strokeWidth="5"
+        strokeLinejoin="round"
         fill="#F9EEF2"
         style={{ transformOrigin: 'center', pointerEvents: 'none' }}
       >

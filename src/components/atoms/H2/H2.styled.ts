@@ -1,5 +1,6 @@
-import { cPink, cPink50, fontRubik } from "@styles/variables";
-import styled from "styled-components";
+import { media } from '@styles/mixins';
+import { cPink, cPink50, cWhite, cWhite50, fontRubik } from '@styles/variables';
+import styled from 'styled-components';
 
 export const H2 = styled.h2`
   margin-top: 0;
@@ -7,7 +8,11 @@ export const H2 = styled.h2`
   font-family: ${fontRubik};
   font-weight: 700;
   font-size: 40px;
-  color: ${cPink};
+  color: ${cWhite};
   text-align: center;
-  text-shadow: 1.25px 1.25px 0 ${cPink50};
+  text-shadow: 1.25px 1.25px 0 ${cWhite50};
+
+  ${media.md} {
+    font-size: 55px;
+  }
 `;

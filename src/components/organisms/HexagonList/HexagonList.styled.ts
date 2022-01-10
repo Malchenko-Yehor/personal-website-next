@@ -40,10 +40,6 @@ export const HexagonList = styled(motion.ul)`
   ${media.md} {
     gap: ${gapMd}px;
   }
-
-  ${media.xl} {
-    gap: ${gapXl}px;
-  }
 `;
 
 interface ItemProps {

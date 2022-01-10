@@ -1,13 +1,16 @@
-import React from 'react';
-import Skills, { SkillsProps } from "./index";
+import { ShortList } from '@organisms/HexagonList/HexagonList.stories';
+import Skills, { SkillsProps } from './Skills';
 
 export default {
-  title: 'Atoms/Skills',
-  component: Skills
+  title: 'Organisms/Skills',
+  component: Skills,
 };
 
 const Template = (args: SkillsProps) => <Skills {...args} />;
 
 export const Default = Template.bind({});
 
-Default.args = {} as SkillsProps;
+Default.args = {
+  title: 'Skills',
+  items: ShortList.args.items,
+} as SkillsProps;

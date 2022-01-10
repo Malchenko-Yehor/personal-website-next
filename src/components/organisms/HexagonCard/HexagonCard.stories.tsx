@@ -1,3 +1,4 @@
+import StorybookDocs from '../../../../.storybook/components/StorybookDocs';
 import HexagonCard, { HexagonCardProps } from './HexagonCard';
 
 export default {
@@ -5,6 +6,13 @@ export default {
   component: HexagonCard,
   parameters: {
     layout: 'centered',
+    docs: {
+      page: () => (
+        <StorybookDocs
+          usedComponents={['Molecules/StarsRating', 'Atoms/AnimatedHexagon', 'Atoms/ScaledText']}
+        />
+      ),
+    },
   },
   decorators: [
     (Story) => (
