@@ -64,10 +64,28 @@ LongList.args = {
     {
       id: uuid(),
       title: 'TypeScript',
-      rating: 2,
+      rating: 3,
       image: {
         url: '/images/typescript.svg',
         alternativeText: 'typescript',
+      },
+    },
+    {
+      id: uuid(),
+      title: 'Webpack',
+      rating: 2,
+      image: {
+        url: '/images/webpack.svg',
+        alternativeText: 'webpack',
+      },
+    },
+    {
+      id: uuid(),
+      title: 'Jest',
+      rating: 2,
+      image: {
+        url: '/images/jest.svg',
+        alternativeText: 'jest',
       },
     },
     {
@@ -86,6 +104,15 @@ LongList.args = {
       image: {
         url: '/images/git.svg',
         alternativeText: 'git',
+      },
+    },
+    {
+      id: uuid(),
+      title: 'MJML',
+      rating: 2,
+      image: {
+        url: '/images/mjml.svg',
+        alternativeText: 'mjml',
       },
     },
     {
@@ -175,7 +202,7 @@ LongList.args = {
 export const ShortList = Template.bind({});
 
 ShortList.args = {
-  items: LongList.args.items.slice(0, 8),
+  items: LongList.args.items.slice(0, 11),
 } as HexagonListProps;
 
 export const VeryShortList = Template.bind({});

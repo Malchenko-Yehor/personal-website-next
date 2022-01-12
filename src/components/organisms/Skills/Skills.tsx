@@ -1,8 +1,8 @@
 import H2 from '@atoms/H2';
-import { Section } from '@atoms/Section/Section.styled';
 import HexagonList, { HexagonListProps } from '@organisms/HexagonList/HexagonList';
 import { FC } from 'react';
 import { Col, Container, Row } from 'styled-bootstrap-grid';
+import * as S from './Skills.styled';
 
 export interface SkillsProps extends HexagonListProps {
   title: string;
@@ -10,7 +10,7 @@ export interface SkillsProps extends HexagonListProps {
 
 const Skills: FC<SkillsProps> = ({ title, items }) => {
   return (
-    <Section>
+    <S.Skills>
       <Container>
         <Row justifyContent="center">
           <Col lg={10} xl={8}>
@@ -19,7 +19,7 @@ const Skills: FC<SkillsProps> = ({ title, items }) => {
           </Col>
         </Row>
       </Container>
-    </Section>
+    </S.Skills>
   );
 };
 
