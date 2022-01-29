@@ -1,8 +1,18 @@
-import LanguageFlag, { LanguageFlagProps } from "./LanguageFlag";
+import LanguageFlag, { LanguageFlagProps } from './LanguageFlag';
 
 export default {
   title: 'Atoms/LanguageFlag',
-  component: LanguageFlag
+  component: LanguageFlag,
+  parameters: {
+    layout: 'centered',
+  },
+  decorators: [
+    (Story) => (
+      <div style={{ width: '300px' }}>
+        <Story />
+      </div>
+    ),
+  ],
 };
 
 const Template = (args: LanguageFlagProps) => <LanguageFlag {...args} />;
@@ -11,8 +21,8 @@ export const Default = Template.bind({});
 
 Default.args = {
   icon: {
-    src: '/images/poland-flag.svg',
-    alt: 'poland flag'
+    src: '/images/flags/pl.svg',
+    alt: 'poland flag',
   },
-  locale: 'pl'
+  locale: 'pl',
 } as LanguageFlagProps;

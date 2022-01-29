@@ -1,5 +1,5 @@
-import { devices } from '@styles/variables';
-import { RefObject, useContext, useEffect } from 'react';
+import { isTouchDevice } from '@helpers/touch-device';
+import { RefObject, useContext, useEffect, useState } from 'react';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 import { MainDispatch, MainState } from 'stores/main-store';
 import { viewportContext } from '../stores/viewport';
@@ -44,4 +44,14 @@ export const useOnMediaQueryChange = (minDeviceWidths: number[], callback: VoidF
       });
     };
   }, []);
+};
+
+export const useIsTouchDevice = () => {
+  const [isTouch, setIsTouch] = useState<boolean>();
+
+  useEffect(() => {
+    setIsTouch(isTouchDevice());
+  }, []);
+
+  return isTouch;
 };

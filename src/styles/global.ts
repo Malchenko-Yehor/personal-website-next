@@ -1,7 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
+import fonts from './fonts';
 import { cDarkBlue, cWhite } from './variables';
 
 const GlobalStyle = createGlobalStyle`
+  ${fonts};
+
   * {
     box-sizing: border-box;
   }

@@ -6,7 +6,7 @@ export const fontSans = `'Open Sans', sans-serif`;
 export const devices = {
   phone: {
     width: 375,
-    height: 812
+    height: 812,
   },
   bigPhone: {
     width: 576,
@@ -18,16 +18,16 @@ export const devices = {
   },
   tablet: {
     width: 1024,
-    height: 768
+    height: 768,
   },
   laptop: {
     width: 1280,
-    height: 800
+    height: 800,
   },
   pc: {
     width: 1920,
-    height: 1080
-  }
+    height: 1080,
+  },
 };
 
 // Colors
@@ -39,7 +39,9 @@ export const cOrange = '#FEC107';
 export const cOrange50 = '#806104';
 export const cPink = '#FF1234';
 export const cPink50 = '#80091A';
-export const cDarkBlue = '#141037'
+export const cDarkBlue = '#141037';
+export const cPureBlack = '#000';
+export const cPureWhite = '#fff';
 
 // Z indexes
 export const ziUnder = -1;
