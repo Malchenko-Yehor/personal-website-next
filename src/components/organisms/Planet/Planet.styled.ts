@@ -2,20 +2,34 @@ import { AsteroidBelt } from '@atoms/AsteroidBelt/AsteroidBelt.styled';
 import { absoluteCenterMixin, absoluteFillMixin } from '@styles/mixins';
 import { cPureWhite, cWhite } from '@styles/variables';
 import { motion } from 'framer-motion';
-import { darken, rgba } from 'polished';
+import { darken } from 'polished';
 import styled from 'styled-components';
 
-interface PlanetProps {
+export const Planet = styled.div`
+  position: relative;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & ${AsteroidBelt} {
+    ${absoluteFillMixin};
+    pointer-events: none;
+    z-index: 5;
+  }
+`;
+
+interface SurfaceProps {
   backgroundColor: string;
 }
 
-export const Planet = styled(motion.a)<PlanetProps>`
+export const Surface = styled(motion.a)<SurfaceProps>`
   cursor: pointer;
   position: relative;
   display: block;
-  width: 100%;
+  width: 62.5%;
+  height: 62.5%;
   border-radius: 100%;
-  aspect-ratio: 1 / 1;
   background-color: ${(props) => props.backgroundColor};
   display: flex;
   justify-content: center;

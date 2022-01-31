@@ -19,54 +19,56 @@ const Planet: FC<PlanetProps> = ({ icon, color, title, url }) => {
   const craters = useMemo(() => generateCraters(7, 10), []);
   const asteroidBeltTilt = useMemo(() => getRandomInRange(-30, 30), []);
   const asteroidBeltRotatesCounterClockwise = useMemo(() => Math.random() < 0.5, []);
-  const asteroidBeltRotationDuration = useMemo(() => getRandomInRange(10, 30), []);
+  const asteroidBeltRotationDuration = useMemo(() => getRandomInRange(20, 40), []);
 
   return (
-    <S.Planet backgroundColor={color} initial="initial" whileHover="hover" href={url} target="_blank">
-      <S.Shadow viewBox="0 0 100 100">
-        <path
-          d="M14.67 14.62a50 50 0 0 0 70.71 70.71s-31.11 14.14-58.69-12C-.16 47.84 14.67 14.62 14.67 14.62Z"
-          fill={color}
-        />
-        <path
-          d="M14.67 14.62a50 50 0 0 0 70.71 70.71s-31.11 14.14-58.69-12C-.16 47.84 14.67 14.62 14.67 14.62Z"
-          style={{ opacity: '.2' }}
-        />
-      </S.Shadow>
-
-      <S.CratersContainer>
-        <Crater fill={color} size="50%" leftPosition="55%" topPosition="45%" zIndex={3} />
-
-        <S.Icon>
-          <Image
-            width={icon.width}
-            height={icon.height}
-            src={icon.url}
-            alt={icon?.alternativeText}
-            layout="fill"
-            objectFit="contain"
-            objectPosition="center"
-          />
-        </S.Icon>
-
-        {craters.map((crater) => (
-          <Crater
-            key={crater.id}
-            size={crater.size}
-            leftPosition={crater.leftPosition}
-            topPosition={crater.topPosition}
+    <S.Planet>
+      <S.Surface backgroundColor={color} initial="initial" whileHover="hover" href={url} target="_blank">
+        <S.Shadow viewBox="0 0 100 100">
+          <path
+            d="M14.67 14.62a50 50 0 0 0 70.71 70.71s-31.11 14.14-58.69-12C-.16 47.84 14.67 14.62 14.67 14.62Z"
             fill={color}
           />
-        ))}
-      </S.CratersContainer>
+          <path
+            d="M14.67 14.62a50 50 0 0 0 70.71 70.71s-31.11 14.14-58.69-12C-.16 47.84 14.67 14.62 14.67 14.62Z"
+            style={{ opacity: '.2' }}
+          />
+        </S.Shadow>
+
+        <S.CratersContainer>
+          <Crater fill={color} size="50%" leftPosition="55%" topPosition="45%" zIndex={3} />
+
+          <S.Icon>
+            <Image
+              width={icon.width}
+              height={icon.height}
+              src={icon.url}
+              alt={icon?.alternativeText}
+              layout="fill"
+              objectFit="contain"
+              objectPosition="center"
+            />
+          </S.Icon>
+
+          {craters.map((crater) => (
+            <Crater
+              key={crater.id}
+              size={crater.size}
+              leftPosition={crater.leftPosition}
+              topPosition={crater.topPosition}
+              fill={color}
+            />
+          ))}
+        </S.CratersContainer>
+
+        <RotatingTitle color={color} text={title} />
+      </S.Surface>
 
       <AsteroidBelt
         tilt={asteroidBeltTilt}
         rotateCounterClock={asteroidBeltRotatesCounterClockwise}
         rotationDuration={asteroidBeltRotationDuration}
       />
-
-      <RotatingTitle color={color} text={title} />
     </S.Planet>
   );
 };

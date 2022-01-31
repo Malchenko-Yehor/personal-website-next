@@ -1,6 +1,11 @@
 import styled, { keyframes } from 'styled-components';
+interface AsteroidBeltProps {
+  tilt?: number;
+}
 
-export const AsteroidBelt = styled.svg``;
+export const AsteroidBelt = styled.svg<AsteroidBeltProps>`
+  transform: rotate(${(props) => 0 + props.tilt}deg);
+`;
 
 const rotate = keyframes`
   from {
@@ -10,16 +15,6 @@ const rotate = keyframes`
   to {
     transform: rotate(360deg);
   }
-`;
-
-interface MaskContainerProps {
-  tilt?: number;
-}
-
-export const MaskContainer = styled.g<MaskContainerProps>`
-  transform-box: fill-box;
-  transform-origin: center;
-  transform: rotate(${(props) => 0 + props.tilt}deg);
 `;
 
 export const AsteroidsContainer = styled.g`
@@ -38,18 +33,9 @@ const getRotationDuration = (props: AnimationContainerProps) => {
 };
 
 export const AnimationContainer = styled.g<AnimationContainerProps>`
+  will-change: transform;
   transform-box: fill-box;
   transform-origin: center;
   animation: ${rotate} ${getRotationDuration} linear infinite;
   animation-direction: ${(props) => (props.rotateCounterclock ? 'reverse' : 'normal')};
-`;
-
-interface AsteroidProps {
-  rotation: number;
-}
-
-export const Asteroid = styled.g<AsteroidProps>`
-  transform-box: fill-box;
-  transform-origin: left;
-  transform: rotate(${(props) => props.rotation}deg);
 `;

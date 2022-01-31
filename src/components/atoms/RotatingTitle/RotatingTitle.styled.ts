@@ -17,7 +17,7 @@ export const RotatingTitle = styled(motion.svg)`
 
 export const TitleText = styled(motion.text)`
   fill: ${cWhite};
-  font-size: 9px;
+  font-size: 10px;
   font-family: 'Rock';
-  text-shadow: -0.31em 0.31em 0 ${darken(0.65, cWhite)};
+  text-shadow: -0.25em 0.25em 0 ${darken(0.65, cWhite)};
 `;
