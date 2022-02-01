@@ -31,20 +31,6 @@ const RotatingTitle: FC<RotatingTitleProps> = ({ text, color, alwaysVisible }) =
     stiffness: 100,
   };
 
-  const titleTextVariants: Variants = {
-    initial: {
-      dy: 0,
-    },
-    animate: {
-      dy: -1.5,
-      transition: {
-        repeat: Infinity,
-        repeatType: 'reverse',
-        duration: 1.25,
-      },
-    },
-  };
-
   return (
     <S.RotatingTitle
       viewBox="0 0 100 100"
@@ -53,14 +39,7 @@ const RotatingTitle: FC<RotatingTitleProps> = ({ text, color, alwaysVisible }) =
       style={{ originX: '50%', originY: '50%' }}
     >
       <path id="curve" fill="transparent" d="M 0 50 A 50 50 0 0 1 100 50 A 50 50 0 0 1 0 50" />
-      <S.TitleText
-        fill={color}
-        fontFamily="Rock"
-        fontSize={10}
-        variants={titleTextVariants}
-        initial="initial"
-        animate="animate"
-      >
+      <S.TitleText fill={color} fontFamily="Rock" fontSize={10}>
         <textPath href="#curve" textAnchor="middle" startOffset="50%">
           {text}
         </textPath>

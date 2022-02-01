@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const PlanetsList = styled.ul`
@@ -5,12 +6,9 @@ export const PlanetsList = styled.ul`
   grid-template-columns: 1fr 1fr;
   padding: 0 0 25% 0;
   margin: 0;
+  overflow: hidden;
 `;
 
-export const Item = styled.li`
+export const Item = styled(motion.li)`
   list-style-type: none;
-
-  &:nth-child(even) {
-    transform: translateY(50%);
-  }
 `;

@@ -7,6 +7,7 @@ import Crater from '@atoms/Crater';
 import { StrapiFile } from '@api/types';
 import AsteroidBelt from '@atoms/AsteroidBelt';
 import RotatingTitle from '@atoms/RotatingTitle/RotatingTitle';
+import { isTouchDevice } from '@helpers/touch-device';
 
 export interface PlanetProps {
   icon: StrapiFile;
@@ -17,6 +18,7 @@ export interface PlanetProps {
 
 const Planet: FC<PlanetProps> = ({ icon, color, title, url }) => {
   const craters = useMemo(() => generateCraters(7, 10), []);
+  const showAsteroidBelt = !isTouchDevice();
   const asteroidBeltTilt = useMemo(() => getRandomInRange(-30, 30), []);
   const asteroidBeltRotatesCounterClockwise = useMemo(() => Math.random() < 0.5, []);
   const asteroidBeltRotationDuration = useMemo(() => getRandomInRange(20, 40), []);
@@ -64,11 +66,13 @@ const Planet: FC<PlanetProps> = ({ icon, color, title, url }) => {
         <RotatingTitle color={color} text={title} />
       </S.Surface>
 
-      <AsteroidBelt
-        tilt={asteroidBeltTilt}
-        rotateCounterClock={asteroidBeltRotatesCounterClockwise}
-        rotationDuration={asteroidBeltRotationDuration}
-      />
+      {showAsteroidBelt && (
+        <AsteroidBelt
+          tilt={asteroidBeltTilt}
+          rotateCounterClock={asteroidBeltRotatesCounterClockwise}
+          rotationDuration={asteroidBeltRotationDuration}
+        />
+      )}
     </S.Planet>
   );
 };
