@@ -33,6 +33,7 @@ Default.args = {
       color: '#ff5f40',
       title: 'Visit Qatar Mobile',
       url: 'https://www.deutschebank.be/',
+      feature: 'asteroids',
     },
     {
       id: uuid(),
@@ -85,9 +86,10 @@ Default.args = {
         width: 141,
         height: 141.6,
       },
-      color: '#4FD0E7 ',
+      color: '#4b70dd ',
       title: 'Tink',
       url: 'https://www.deutschebank.be/',
+      feature: 'asteroids',
     },
     {
       id: uuid(),
@@ -107,7 +109,7 @@ Default.args = {
         width: 141,
         height: 141.6,
       },
-      color: '#4b70dd ',
+      color: '#4FD0E7',
       title: 'Matlandia 7',
       url: 'https://matlandia7.apps.gwo.pl/0/sections',
     },

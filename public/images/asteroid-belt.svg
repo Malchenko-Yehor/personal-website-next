@@ -1,0 +1,280 @@
+<svg id="Layer_1" data-name="Layer 1"
+  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <!-- <path d="M130,80A50,50,0,0,0,30,80Z" style="stroke:#000;stroke-miterlimit:10"/> -->
+
+  <clipPath id="myClip">
+    <path d="M0,0V160H160V0ZM30,80a50,50,0,0,1,100,0Z" />
+  </clipPath>
+
+
+  <defs>
+    <g id="asteroid-1" transform="translate(-10 -10) scale(0.7)">
+      <path id="surface" d="M-15.24-20.08716c2.08475-1.66073,6.161-3.35137,9.77762-1.54861,3.736,1.86224,5.65965,6.79326,4.34222,9.33516-.69134,1.33388-1.73336.96445-3.16016,2.64828C-6.46179-7.078-5.16666-4.86848-6.77684-2.81364-8.77294-.26633-13.45326-.22906-16.55446-1.265c-3.48048-1.16268-7.18088-4.41507-6.91459-7.4959.12838-1.48532,1.06634-1.62987,4.1145-5.66311C-16.41035-18.31972-16.76711-18.87068-15.24-20.08716Z" transform="translate(23.48262 22.41034)" fill="#aaa"/>
+      <!-- <path id="shadow" d="M-6.77684-2.81364C-8.77294-.26633-13.45326-.22906-16.55446-1.265c-3.48048-1.16268-7.18088-4.41507-6.91459-7.4959.08612-.99643.53659-1.38945,1.74407-2.7579C-21.725-11.51883-20-7-16-5A24.98833,24.98833,0,0,0-6.77684-2.81364Z" transform="translate(23.48262 22.41034)" fill="#878787"/> -->
+      <g id="crater">
+        <circle cx="6.98262" cy="11.91034" r="1.5" opacity="0.2"/>
+        <path d="M-15.433-9.44571A1.49522,1.49522,0,0,0-15-10.5,1.5,1.5,0,0,0-16.5-12a1.496,1.496,0,0,0-1.10013.48033S-17-12-16-11-15.433-9.44571-15.433-9.44571Z" transform="translate(23.48262 22.41034)" opacity="0.2"/>
+      </g>
+      <g id="crater-2" data-name="crater">
+        <circle cx="20.48262" cy="6.41034" r="1" opacity="0.2"/>
+        <path d="M-2.28867-15.29714A.99681.99681,0,0,0-2-16a1,1,0,0,0-1-1,.99727.99727,0,0,0-.73342.32022s.40009-.32022,1.06675.34645S-2.28867-15.29714-2.28867-15.29714Z" transform="translate(23.48262 22.41034)" opacity="0.2"/>
+      </g>
+      <g id="crater-3" data-name="crater">
+        <circle cx="12.98262" cy="3.91034" r="2.5" opacity="0.2"/>
+        <path d="M-8.72167-16.74286A2.492,2.492,0,0,0-8-18.5,2.5,2.5,0,0,0-10.5-21a2.49326,2.49326,0,0,0-1.83356.80055s1.00023-.80055,2.66689.86612S-8.72167-16.74286-8.72167-16.74286Z" transform="translate(23.48262 22.41034)" opacity="0.2"/>
+      </g>
+      <g id="crater-4" data-name="crater">
+        <circle cx="13.98262" cy="9.91034" r="0.5" opacity="0.2"/>
+        <path d="M-9.14433-12.14857A.49841.49841,0,0,0-9-12.5a.5.5,0,0,0-.5-.5.49865.49865,0,0,0-.36671.16011s.2-.16011.53338.17322S-9.14433-12.14857-9.14433-12.14857Z" transform="translate(23.48262 22.41034)" opacity="0.2"/>
+      </g>
+      <g id="crater-5" data-name="crater">
+        <circle cx="15.48262" cy="17.41034" r="1" opacity="0.2"/>
+        <path d="M-7.28867-4.29714A.99681.99681,0,0,0-7-5,1,1,0,0,0-8-6a.99727.99727,0,0,0-.73342.32022S-8.33333-6-7.66667-5.33333-7.28867-4.29714-7.28867-4.29714Z" transform="translate(23.48262 22.41034)" opacity="0.2"/>
+      </g>
+    </g>
+
+    <g id="asteroid-2" transform="translate(-7 -7)">
+      <path d="M-3.27564-6.15581c2.89645.01007,6.012,1.57607,6,3-.01007,1.1991-2.23428,1.85385-2,3,.11166.54629.70981.85179,1,1,1.34186.68533,2.29184-.2376,4,0,1.23324.17154,2.84154.94519,3,2,.18142,1.20768-1.57954,2.50544-3,3a6.84239,6.84239,0,0,1-6-1c-2.19367-1.56433-2.07235-3.51985-4-4-1.39138-.34658-2.01213.53334-3,0-1.33557-.72107-1.9543-3.276-1-5C-7.16112-6.16933-4.39354-6.1597-3.27564-6.15581Z" transform="translate(8.73731 6.15619)" fill="#aaa"/>
+      <g id="crater">
+        <circle cx="2.46166" cy="3.00038" r="1" opacity="0.2"/>
+        <path d="M-5.56431-2.453a.9968.9968,0,0,0,.28867-.70285,1,1,0,0,0-1-1,.99731.99731,0,0,0-.73343.32022s.40009-.32022,1.06676.34644S-5.56431-2.453-5.56431-2.453Z" transform="translate(8.73731 6.15619)" opacity="0.2"/>
+      </g>
+      <g id="crater-2" data-name="crater">
+        <circle cx="15.62977" cy="8.86676" r="0.8319" opacity="0.2"/>
+        <path d="M7.48421,3.29527A.8319.8319,0,1,0,6.28233,2.14506s.33283-.26639.88743.28821S7.48421,3.29527,7.48421,3.29527Z" transform="translate(8.73731 6.15619)" opacity="0.2"/>
+      </g>
+      <g id="crater-3" data-name="crater">
+        <circle cx="7.46166" cy="3.00038" r="2" opacity="0.2"/>
+        <path d="M.147-1.7501A1.99361,1.99361,0,0,0,.72436-3.15581a2,2,0,0,0-2-2,1.99458,1.99458,0,0,0-1.46685.64044s.80018-.64044,2.13351.69289S.147-1.7501.147-1.7501Z" transform="translate(8.73731 6.15619)" opacity="0.2"/>
+      </g>
+    </g>
+
+    <g id="asteroid-3" transform="translate(-7 -7)">
+      <path d="M.00093,3.336c-2.50927,1.81342-3.29829,3.09609-5,3-2.46623-.13925-5.12765-3.07718-5-6,.17076-3.91,5.24265-5.72847,6-6,6.42041-2.30192,14.164,1.82888,14,4C9.88239-.09475,5.72735-.80244.00093,3.336Z" transform="translate(10.00349 6.34104)" fill="#aaa"/>
+      <g id="crater">
+        <circle cx="14.50442" cy="4.17703" r="1.5" opacity="0.2"/>
+        <path d="M5.56793-1.10973a1.49522,1.49522,0,0,0,.433-1.05429,1.5,1.5,0,0,0-1.5-1.5,1.496,1.496,0,0,0-1.10014.48034S4.00093-3.664,5.00093-2.664,5.56793-1.10973,5.56793-1.10973Z" transform="translate(10.00349 6.34104)" opacity="0.2"/>
+      </g>
+      <g id="crater-2" data-name="crater">
+        <circle cx="5.00442" cy="6.67703" r="3" opacity="0.2"/>
+        <path d="M-2.86508,2.44455A2.99039,2.99039,0,0,0-1.99907.336a3,3,0,0,0-3-3,2.99191,2.99191,0,0,0-2.20027.96067S-5.99907-2.664-3.99908-.664-2.86508,2.44455-2.86508,2.44455Z" transform="translate(10.00349 6.34104)" opacity="0.2"/>
+      </g>
+      <g id="crater-3" data-name="crater">
+        <circle cx="10.00442" cy="1.67703" r="1" opacity="0.2"/>
+        <path d="M.71226-3.96116A.99681.99681,0,0,0,1.00093-4.664a1,1,0,0,0-1-1,.99732.99732,0,0,0-.73343.32023S-.33241-5.664.33426-4.99735.71226-3.96116.71226-3.96116Z" transform="translate(10.00349 6.34104)" opacity="0.2"/>
+      </g>
+    </g>
+
+    <g id="asteroid-4" transform="translate(-10 -7)">
+      <path d="M10.653,1.99983c-.24812,2.81462-4.24131,5.53882-7,5-.371-.07245-.982-.25515-4-3-3.26737-2.97161-4.24711-4.29984-5-4-1.0957.43637-.16,3.70328-1,4-1.13152.39968-5.52651-4.57487-4-8,1.11022-2.49105,4.77778-2.87279,6-3C2.77685-7.74165,11.03152-2.29412,10.653,1.99983Z" transform="translate(10.93784 8.44574)" fill="#aaa"/>
+      <g id="crater">
+        <circle cx="16.59083" cy="11.44557" r="3" opacity="0.2"/>
+        <path d="M7.787,5.1084A3,3,0,1,0,3.45272.96049S4.653-.00017,6.653,1.99983,7.787,5.1084,7.787,5.1084Z" transform="translate(10.93784 8.44574)" opacity="0.2"/>
+      </g>
+      <g id="crater-2" data-name="crater">
+        <circle cx="3.09083" cy="6.94557" r="1.5" opacity="0.2"/>
+        <path d="M-6.78-.44588a1.49522,1.49522,0,0,0,.433-1.05429,1.5,1.5,0,0,0-1.5-1.5,1.496,1.496,0,0,0-1.10013.48033s.60013-.48033,1.60013.51967S-6.78-.44588-6.78-.44588Z" transform="translate(10.93784 8.44574)" opacity="0.2"/>
+      </g>
+      <g id="crater-3" data-name="crater">
+        <circle cx="10.09083" cy="3.94557" r="1.5" opacity="0.2"/>
+        <path d="M.22-3.44588A1.49522,1.49522,0,0,0,.653-4.50017a1.5,1.5,0,0,0-1.5-1.5,1.496,1.496,0,0,0-1.10013.48033S-1.347-6.00017-.347-5.00017.22-3.44588.22-3.44588Z" transform="translate(10.93784 8.44574)" opacity="0.2"/>
+      </g>
+    </g>
+
+    <g id="asteroid-5" transform="translate(-7 -7) scale(0.7)">
+      <path d="M4.07471,7.62873c-2.28679.62893-5.349,1.47112-7,0-.67676-.603-.831-1.34032-2-2-.94128-.53115-1.42482-.38241-2-1-.70451-.75644-.31449-1.33973-1-2-.76813-.73983-1.59717-.33434-2-1-.35682-.5896.2391-.99778,0-2-.2583-1.08265-1.12666-1.33128-1-2,.08683-.45848.51-.42084,1-1,.87158-1.03024.29478-2.05047,1-3a3.21618,3.21618,0,0,1,2-1c2.058-.53011,2.9225.25773,5,0,1.64445-.204,1.67742-.76892,3-1,3.55357-.62087,6.8511,2.83965,7,3,2.33517,2.51488,3.93325,7.05628,2,10C8.9928,6.27612,7.242,6.75764,4.07471,7.62873Z" transform="translate(10.93784 8.44574)" fill="#aaa"/>
+      <g id="crater-4" data-name="crater">
+        <circle cx="14.01254" cy="4.07448" r="3" opacity="0.2"/>
+        <path d="M5.2087-2.2627a2.99039,2.99039,0,0,0,.866-2.10857,3,3,0,0,0-3-3A2.99191,2.99191,0,0,0,.87444-6.4106S2.07471-7.37127,4.0747-5.37127,5.2087-2.2627,5.2087-2.2627Z" transform="translate(10.93784 8.44574)" opacity="0.2"/>
+      </g>
+      <g id="crater-5" data-name="crater">
+        <circle cx="4.51254" cy="4.57448" r="1.5" opacity="0.2"/>
+        <path d="M-5.3583-2.817a1.49523,1.49523,0,0,0,.433-1.05429,1.5,1.5,0,0,0-1.5-1.5,1.496,1.496,0,0,0-1.10014.48034s.60014-.48034,1.60013.51966S-5.3583-2.817-5.3583-2.817Z" transform="translate(10.93784 8.44574)" opacity="0.2"/>
+      </g>
+      <g id="crater-6" data-name="crater">
+        <circle cx="12.01254" cy="14.07448" r="2" opacity="0.2"/>
+        <path d="M2.49737,7.03445A2,2,0,1,0-.39214,4.26918s.80018-.64045,2.13351.69289S2.49737,7.03445,2.49737,7.03445Z" transform="translate(10.93784 8.44574)" opacity="0.2"/>
+      </g>
+      <g id="crater-7" data-name="crater">
+        <circle cx="19.01254" cy="6.07448" r="1" opacity="0.2"/>
+        <path d="M8.786-1.66841a.99681.99681,0,0,0,.28867-.70286,1,1,0,0,0-1-1,.99735.99735,0,0,0-.73343.32022s.40009-.32022,1.06676.34645S8.786-1.66841,8.786-1.66841Z" transform="translate(10.93784 8.44574)" opacity="0.2"/>
+      </g>
+    </g>
+
+    <g id="asteroid-6" transform="translate(-10 -9)">
+      <path d="M-1.00574-3.57092c1.3058-.88752,1.24846-1.62216,2-2,2.16075-1.08632,7.48741,2.54649,7,5-.34587,1.741-3.6172,2.87765-6,3-2.525.12966-4.3311-.86536-5,0-.64773.838.65933,2.27119,0,3-.65765.727-2.8051.23731-4-1a3.56968,3.56968,0,0,1-1-2c-.16348-1.20181.72782-1.47612,1-3,.30013-1.68029-.46544-2.6753,0-3,.50812-.35446,1.3197.90175,3,1A4.94156,4.94156,0,0,0-1.00574-3.57092Z" transform="translate(10.93784 8.44574)" fill="#aaa"/>
+      <g id="crater-8" data-name="crater">
+        <circle cx="5.4321" cy="11.37483" r="1.5" opacity="0.2"/>
+        <path d="M-4.43874,3.98337a1.49522,1.49522,0,0,0,.433-1.05429,1.5,1.5,0,0,0-1.5-1.5,1.49593,1.49593,0,0,0-1.10013.48034s.60013-.48034,1.60013.51966S-4.43874,3.98337-4.43874,3.98337Z" transform="translate(10.93784 8.44574)" opacity="0.2"/>
+      </g>
+      <g id="crater-9" data-name="crater">
+        <circle cx="15.9321" cy="6.87483" r="1" opacity="0.2"/>
+        <path d="M5.70559-.86806a.99681.99681,0,0,0,.28867-.70286,1,1,0,0,0-1-1,.99729.99729,0,0,0-.73342.32023s.40009-.32023,1.06675.34644S5.70559-.86806,5.70559-.86806Z" transform="translate(10.93784 8.44574)" opacity="0.2"/>
+      </g>
+      <g id="crater-10" data-name="crater">
+        <circle cx="12.9321" cy="4.87483" r="1" opacity="0.2"/>
+        <path d="M2.70559-2.86806a.99681.99681,0,0,0,.28867-.70286,1,1,0,0,0-1-1,.99729.99729,0,0,0-.73342.32023s.40009-.32023,1.06675.34644S2.70559-2.86806,2.70559-2.86806Z" transform="translate(10.93784 8.44574)" opacity="0.2"/>
+      </g>
+      <g id="crater-11" data-name="crater">
+        <circle cx="13.4321" cy="8.37483" r="0.5" opacity="0.2"/>
+        <path d="M2.84993.28051a.49839.49839,0,0,0,.14433-.35143.5.5,0,0,0-.5-.5.49869.49869,0,0,0-.36671.16011s.20005-.16011.53338.17323S2.84993.28051,2.84993.28051Z" transform="translate(10.93784 8.44574)" opacity="0.2"/>
+      </g>
+      <g id="crater-12" data-name="crater">
+        <circle cx="10.4321" cy="8.37483" r="1.5" opacity="0.2"/>
+        <path d="M.56126.98337a1.49522,1.49522,0,0,0,.433-1.05429,1.5,1.5,0,0,0-1.5-1.5,1.49593,1.49593,0,0,0-1.10013.48034s.60013-.48034,1.60013.51966S.56126.98337.56126.98337Z" transform="translate(10.93784 8.44574)" opacity="0.2"/>
+      </g>
+    </g>
+
+    <g id="asteroid-7" transform="translate(-10 -7)">
+      <path d="M-.06541,3.24124c.7735-2.20551.53884-2.51273,1-3,1.16149-1.22724,3.34165-.00918,4-1,.50409-.75865-.28173-2.21361-1-3-1.59646-1.74793-4.7061-2.21508-6-1-.88121.82752-.15428,1.716-1,4-.90168,2.43512-2.24353,2.8174-2,4,.30944,1.50257,2.8445,2.67647,4,2C-.69721,5.02568-.4816,4.42793-.06541,3.24124Z" transform="translate(10.93784 8.44574)" fill="#aaa"/>
+      <g id="crater-13" data-name="crater">
+        <circle cx="11.37243" cy="6.18698" r="1.5" opacity="0.2"/>
+        <path d="M1.50159-1.20448a1.4952,1.4952,0,0,0,.433-1.05428,1.5,1.5,0,0,0-1.5-1.5,1.49592,1.49592,0,0,0-1.10013.48033s.60013-.48033,1.60013.51967S1.50159-1.20448,1.50159-1.20448Z" transform="translate(10.93784 8.44574)" opacity="0.2"/>
+      </g>
+    </g>
+
+    <g id="asteroid-8" transform="translate(-10 -7)">
+      <path d="M-.10076-2.06742c-.85221.57673-1.89278-.56209-3,0-1.13633.57687-1.53095,2.533-1,3,.47079.414,1.5442-.45279,2,0,.3356.33339-.12664.92224,0,2a2.9387,2.9387,0,0,0,1,2c1.2687.7771,3.87553-.62957,4-2,.12483-1.37449-2.26279-2.54382-2-3,.23963-.416,2.11863.7409,3,0,.69572-.58483.45-2.08335,0-3-.66816-1.36091-2.25921-2.40155-3-2C.08025-4.62348.87851-2.73013-.10076-2.06742Z" transform="translate(10.93784 8.44574)" fill="#aaa"/>
+      <g id="crater-14" data-name="crater">
+        <circle cx="11.33707" cy="10.87833" r="1.5" opacity="0.2"/>
+        <path d="M1.46623,3.48687a1.49523,1.49523,0,0,0,.433-1.05429A1.5,1.5,0,0,0-.7009,1.41292S-.10076.93258.89923,1.93258,1.46623,3.48687,1.46623,3.48687Z" transform="translate(10.93784 8.44574)" opacity="0.2"/>
+      </g>
+      <g id="crater-15" data-name="crater">
+        <circle cx="12.85431" cy="5.30936" r="0.5" opacity="0.2"/>
+        <path d="M2.27214-2.78495a.49842.49842,0,0,0,.14434-.35143.5.5,0,0,0-.5-.5.49862.49862,0,0,0-.36671.16011s.2-.16011.53337.17322S2.27214-2.78495,2.27214-2.78495Z" transform="translate(10.93784 8.44574)" opacity="0.2"/>
+      </g>
+    </g>
+
+    <g id="asteroid-small-1" transform="translate(-9 -7)">
+      <path d="M3.047-1.08654c-.04546-.613-1.18486-1.28467-2-1A1.77816,1.77816,0,0,0,.1576-1.3207c-.05723.10009-.06341.13618-.11065.23416a2.3534,2.3534,0,0,1-1,1c-.881.4393-1.69826-.3351-2,0-.29807.331.1219,1.50588,1,2a2.26819,2.26819,0,0,0,2,0c.41687-.21185.50119-.43808,1-1C2.29449-.49192,3.08583-.56242,3.047-1.08654Z" transform="translate(10.93784 8.44574)" fill="#aaa"/>
+    </g>
+    <g id="asteroid-small-2" transform="translate(-9 -7)">
+      <path d="M.50569-1.46679c-1.24249.06043-1.42638-.21191-2,0-.66472.24557-1.08739.85864-1,1,.09332.151.75807-.25284,1,0,.181.1892-.10054.51009,0,1,.13194.64289.82579,1.10834,1,1,.17155-.10669-.24895-.715,0-1,.29518-.33795,1.0728.304,2,0,.42871-.14055.99579-.51819,1-1,.00429-.49133-.57866-.87068-1-1A2.67046,2.67046,0,0,0,.50569-1.46679Z" transform="translate(10.93784 8.44574)" fill="#aaa"/>
+    </g>
+    <g id="asteroid-small-3" transform="translate(-9 -7)">
+      <path d="M-.60542-1.08451c-1.041-.16458-1.31906-1.16257-2-1-.65636.1567-1.00728,1.22941-1,2a2.61809,2.61809,0,0,0,1,2c.178.11884.66389.40013,3,0,1.79452-.30737,2.698-.47183,3-1a2.34929,2.34929,0,0,0-1-3C1.428-2.37906.74947-.87031-.60542-1.08451Z" transform="translate(10.93784 8.44574)" fill="#aaa"/>
+    </g>
+  </defs>
+
+  <g clip-path="url(#myClip)">
+    <rect width="160" height="160" fill="transparent"/>
+    <path id="orbit" d="M 15 80 A 65 25 0 0 0 145 80 A 65 25 0 0 0 15 80" fill="transparent"/>
+
+    <use href="#asteroid-1">
+      <animateMotion dur="10s" begin="0" fill="freeze" repeatCount="indefinite">
+        <mpath href="#orbit" />
+      </animateMotion>
+    </use>
+
+    <use href="#asteroid-8">
+      <animateMotion dur="10s" begin="-0.5s" fill="freeze" repeatCount="indefinite">
+        <mpath href="#orbit" />
+      </animateMotion>
+    </use>
+
+    <use href="#asteroid-small-1">
+      <animateMotion dur="10s" begin="-0.8s" fill="freeze" repeatCount="indefinite">
+        <mpath href="#orbit" />
+      </animateMotion>
+    </use>
+
+    <use href="#asteroid-3">
+      <animateMotion dur="10s" begin="-1.4s" fill="freeze" repeatCount="indefinite">
+        <mpath href="#orbit" />
+      </animateMotion>
+    </use>
+
+    <use href="#asteroid-small-2" transform="translate(0 -5)">
+      <animateMotion dur="10s" begin="-2s" fill="freeze" repeatCount="indefinite">
+        <mpath href="#orbit" />
+      </animateMotion>
+    </use>
+
+    <use href="#asteroid-small-3" transform="translate(0 2)">
+      <animateMotion dur="10s" begin="-2.2s" fill="freeze" repeatCount="indefinite">
+        <mpath href="#orbit" />
+      </animateMotion>
+    </use>
+
+    <use href="#asteroid-2">
+      <animateMotion dur="10s" begin="-2.8s" fill="freeze" repeatCount="indefinite">
+        <mpath href="#orbit" />
+      </animateMotion>
+    </use>
+
+    <use href="#asteroid-7">
+      <animateMotion dur="10s" begin="-3.6s" fill="freeze" repeatCount="indefinite">
+        <mpath href="#orbit" />
+      </animateMotion>
+    </use>
+
+    <use href="#asteroid-small-1" transform="translate(0 -5)">
+      <animateMotion dur="10s" begin="-4s" fill="freeze" repeatCount="indefinite">
+        <mpath href="#orbit" />
+      </animateMotion>
+    </use>
+
+
+    <use href="#asteroid-1" transform="rotate(45)">
+      <animateMotion dur="10s" begin="-4.6s" fill="freeze" repeatCount="indefinite">
+        <mpath href="#orbit" />
+      </animateMotion>
+    </use>
+
+    <use href="#asteroid-small-3" transform="rotate(45)">
+      <animateMotion dur="10s" begin="-5.2s" fill="freeze" repeatCount="indefinite">
+        <mpath href="#orbit" />
+      </animateMotion>
+    </use>
+
+    <use href="#asteroid-small-2" transform="rotate(-45)">
+      <animateMotion dur="10s" begin="-5.5s" fill="freeze" repeatCount="indefinite">
+        <mpath href="#orbit" />
+      </animateMotion>
+    </use>
+
+    <use href="#asteroid-4" transform="rotate(-45)">
+      <animateMotion dur="10s" begin="-6s" fill="freeze" repeatCount="indefinite">
+        <mpath href="#orbit" />
+      </animateMotion>
+    </use>
+
+    <use href="#asteroid-8">
+      <animateMotion dur="10s" begin="-6.6s" fill="freeze" repeatCount="indefinite">
+        <mpath href="#orbit" />
+      </animateMotion>
+    </use>
+
+    <use href="#asteroid-5">
+      <animateMotion dur="10s" begin="-7.2s" fill="freeze" repeatCount="indefinite">
+        <mpath href="#orbit" />
+      </animateMotion>
+    </use>
+
+    <use href="#asteroid-small-1">
+      <animateMotion dur="10s" begin="-7.8s" fill="freeze" repeatCount="indefinite">
+        <mpath href="#orbit" />
+      </animateMotion>
+    </use>
+
+    <use href="#asteroid-small-2">
+      <animateMotion dur="10s" begin="-8.2s" fill="freeze" repeatCount="indefinite">
+        <mpath href="#orbit" />
+      </animateMotion>
+    </use>
+
+    <use href="#asteroid-6">
+      <animateMotion dur="10s" begin="-8.7s" fill="freeze" repeatCount="indefinite">
+        <mpath href="#orbit" />
+      </animateMotion>
+    </use>
+
+
+    <use href="#asteroid-7" transform="rotate(90)">
+      <animateMotion dur="10s" begin="-9.3s" fill="freeze" repeatCount="indefinite">
+        <mpath href="#orbit" />
+      </animateMotion>
+    </use>
+
+  </g>
+</svg>
