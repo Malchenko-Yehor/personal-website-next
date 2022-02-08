@@ -45,6 +45,7 @@ Default.args = {
       color: '#bcafb2',
       title: 'Visit Qatar',
       url: 'https://www.deutschebank.be/',
+      feature: 'rings',
     },
     {
       id: uuid(),
@@ -112,6 +113,7 @@ Default.args = {
       color: '#4FD0E7',
       title: 'Matlandia 7',
       url: 'https://matlandia7.apps.gwo.pl/0/sections',
+      feature: 'rings',
     },
   ],
 } as PlanetsListProps;

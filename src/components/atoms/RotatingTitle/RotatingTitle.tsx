@@ -1,6 +1,5 @@
 import { isTouchDevice } from '@helpers/touch-device';
 import { Variants, Transition } from 'framer-motion';
-import { title } from 'process';
 import { FC } from 'react';
 import * as S from './RotatingTitle.styled';
 

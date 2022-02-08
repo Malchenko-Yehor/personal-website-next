@@ -1,8 +1,10 @@
 import styled from 'styled-components';
-interface AsteroidBeltProps {
+
+interface PlanetRingsProps {
   tilt?: number;
 }
 
-export const AsteroidBelt = styled.div<AsteroidBeltProps>`
+export const PlanetRings = styled.svg<PlanetRingsProps>`
+  aspect-ratio: 1/1;
   transform: rotate(${(props) => 0 + props.tilt}deg);
 `;

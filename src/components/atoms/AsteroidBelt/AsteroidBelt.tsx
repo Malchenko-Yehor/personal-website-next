@@ -9,8 +9,7 @@ export interface AsteroidBeltProps {
 const AsteroidBelt: FC<AsteroidBeltProps> = ({ tilt }) => {
   return (
     <S.AsteroidBelt tilt={tilt}>
-      <img src="/images/asteroid-belt.svg" />
-      {/* <AsteroidBeltAnimation /> */}
+      <AsteroidBeltAnimation />
     </S.AsteroidBelt>
   );
 };

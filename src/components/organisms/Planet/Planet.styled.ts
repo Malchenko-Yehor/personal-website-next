@@ -1,4 +1,5 @@
 import { AsteroidBelt } from '@atoms/AsteroidBelt/AsteroidBelt.styled';
+import { PlanetRings } from '@atoms/PlanetRings/PlanetRings.styled';
 import { absoluteCenterMixin, absoluteFillMixin } from '@styles/mixins';
 import { cPureWhite, cWhite } from '@styles/variables';
 import { motion } from 'framer-motion';
@@ -12,7 +13,7 @@ export const Planet = styled.div`
   justify-content: center;
   align-items: center;
 
-  & ${AsteroidBelt} {
+  & ${AsteroidBelt}, & ${PlanetRings} {
     ${absoluteFillMixin};
     pointer-events: none;
     z-index: 5;

@@ -1,4 +1,4 @@
-import { getRandomInRange, isOdd } from '@helpers/math';
+import { getRandomInRange } from '@helpers/math';
 import Image from 'next/image';
 import { FC, useMemo } from 'react';
 import * as S from './Planet.styled';
@@ -7,18 +7,20 @@ import Crater from '@atoms/Crater';
 import { StrapiFile } from '@api/types';
 import AsteroidBelt from '@atoms/AsteroidBelt';
 import RotatingTitle from '@atoms/RotatingTitle/RotatingTitle';
+import PlanetRings from '@atoms/PlanetRings';
 
 export interface PlanetProps {
   icon: StrapiFile;
   color: string;
   title: string;
   url: string;
-  feature?: 'asteroids';
+  feature?: 'asteroids' | 'rings';
+  ringsColor?: string;
 }
 
 const Planet: FC<PlanetProps> = ({ icon, color, title, url, feature }) => {
   const craters = useMemo(() => generateCraters(7, 10), []);
-  const asteroidBeltTilt = useMemo(() => getRandomInRange(-30, 30), []);
+  const featureTilt = useMemo(() => getRandomInRange(-30, 30), []);
 
   return (
     <S.Planet>
@@ -60,10 +62,11 @@ const Planet: FC<PlanetProps> = ({ icon, color, title, url, feature }) => {
           ))}
         </S.CratersContainer>
 
-        {/* <RotatingTitle color={color} text={title} /> */}
+        <RotatingTitle color={color} text={title} />
       </S.Surface>
 
-      {feature === 'asteroids' && <AsteroidBelt tilt={asteroidBeltTilt} />}
+      {feature === 'asteroids' && <AsteroidBelt tilt={featureTilt} />}
+      {feature === 'rings' && <PlanetRings tilt={featureTilt} />}
     </S.Planet>
   );
 };

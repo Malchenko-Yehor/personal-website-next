@@ -35,3 +35,31 @@ Default.args = {
   title: 'Deutsche Bank',
   url: 'https://www.deutschebank.be/',
 } as PlanetProps;
+
+export const WithAsteroids = Template.bind({});
+
+WithAsteroids.args = {
+  icon: {
+    url: '/images/deutsche-bank.svg',
+    width: 141,
+    height: 141.6,
+  },
+  color: '#ff5f40',
+  title: 'Deutsche Bank',
+  url: 'https://www.deutschebank.be/',
+  feature: 'asteroids',
+} as PlanetProps;
+
+export const WithRings = Template.bind({});
+
+WithRings.args = {
+  icon: {
+    url: '/images/deutsche-bank.svg',
+    width: 141,
+    height: 141.6,
+  },
+  color: '#ff5f40',
+  title: 'Deutsche Bank',
+  url: 'https://www.deutschebank.be/',
+  feature: 'rings',
+} as PlanetProps;
