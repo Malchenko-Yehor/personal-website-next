@@ -1,5 +1,5 @@
 import { media } from '@styles/mixins';
-import { cPink, cPink50, cWhite, cWhite50, fontRubik } from '@styles/variables';
+import { cWhite, cWhite50, fontRubik } from '@styles/variables';
 import styled from 'styled-components';
 
 export const H2 = styled.h2`
