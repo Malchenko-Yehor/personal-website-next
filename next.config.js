@@ -4,16 +4,23 @@ module.exports = {
     defaultLocale: 'en',
   },
   images: {
-    domains: ['res.cloudinary.com']
+    domains: ['res.cloudinary.com'],
   },
   experimental: {
     // Enables the styled-components SWC transform
-    styledComponents: true
+    styledComponents: true,
   },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
-      use: ["@svgr/webpack"]
+      use: [
+        {
+          loader: '@svgr/webpack',
+          options: {
+            svgo: false,
+          },
+        },
+      ],
     });
 
     return config;

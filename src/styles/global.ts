@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import fonts from './fonts';
-import { cDarkBlue, cWhite } from './variables';
+import { cDarkBlue, cWhite, fontSans } from './variables';
 
 const GlobalStyle = createGlobalStyle`
   ${fonts};
@@ -14,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     background-color: ${cDarkBlue};
     color: ${cWhite};
+    font-family: ${fontSans}
   }
 
   button {

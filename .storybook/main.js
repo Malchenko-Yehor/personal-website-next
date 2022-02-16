@@ -12,7 +12,15 @@ module.exports = {
     config.module.rules.push({
       test: /\.svg$/,
       enforce: 'pre',
-      loader: require.resolve('@svgr/webpack'),
+      // loader: require.resolve('@svgr/webpack'),
+      use: [
+        {
+          loader: '@svgr/webpack',
+          options: {
+            svgo: false,
+          },
+        },
+      ],
     });
 
     return config;
