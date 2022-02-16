@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import * as S from './AsteroidBelt.styled';
-import AsteroidBeltAnimation from './asteroid-belt.svg';
+import AsteroidBeltAnimation from '@assets/illustrations/asteroid-belt.svg';
 
 export interface AsteroidBeltProps {
   tilt?: number;
