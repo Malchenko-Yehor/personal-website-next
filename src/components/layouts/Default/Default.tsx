@@ -4,12 +4,13 @@ import Navbar from '@organisms/Navbar';
 import Head from 'next/head';
 import { FC, Fragment } from 'react';
 import { PageProps } from 'types';
+import * as S from './Default.styled';
 
 export interface DefaultLayoutProps extends PageProps {
-  title: string
-};
+  title: string;
+}
 
-const DefaultLayout: FC<DefaultLayoutProps> = ({ children, title, mediaFiles }) => {
+const DefaultLayout: FC<DefaultLayoutProps> = ({ children, mediaFiles }) => {
   return (
     <Fragment>
       <Head>
@@ -19,13 +20,9 @@ const DefaultLayout: FC<DefaultLayoutProps> = ({ children, title, mediaFiles }) 
 
       <MobileMenu />
       <Navbar mediaFiles={mediaFiles} />
-      <main>
-        <Header title={title} />
-        {children}
-      </main>
+      <S.Main>{children}</S.Main>
     </Fragment>
   );
 };
-
 
 export default DefaultLayout;

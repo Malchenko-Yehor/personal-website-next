@@ -1,10 +1,10 @@
-import throttle from "@helpers/throttle";
-import React, { createContext, useEffect, useState } from "react";
+import throttle from '@helpers/throttle';
+import React, { createContext, useEffect, useState } from 'react';
 
 type ContextType = {
-  width: number,
-  height: number
-}
+  width: number;
+  height: number;
+};
 
 export const viewportContext = createContext<ContextType>({ width: 0, height: 0 });
 
@@ -12,23 +12,18 @@ const ViewportProvider = ({ children }) => {
   const [width, setWidth] = useState(getViewportWidth());
   const [height, setHeight] = useState(getViewportHeight());
 
-
   const handleWindowResize = throttle(() => {
     setWidth(window.innerWidth);
     setHeight(window.innerHeight);
   }, 150);
 
   useEffect(() => {
-    window.addEventListener("resize", handleWindowResize);
+    window.addEventListener('resize', handleWindowResize);
 
-    return () => window.removeEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener('resize', handleWindowResize);
   }, []);
 
-  return (
-    <viewportContext.Provider value={{ width, height }}>
-      {children}
-    </viewportContext.Provider>
-  );
+  return <viewportContext.Provider value={{ width, height }}>{children}</viewportContext.Provider>;
 };
 
 const getViewportWidth = () => {

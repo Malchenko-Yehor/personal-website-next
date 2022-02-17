@@ -18,7 +18,7 @@ interface LanguageSwitcherProps {
 const LanguageSwitcher: FC<LanguageSwitcherProps> = ({ mediaFiles }) => {
   const ref = useRef();
   const { locale, locales } = useRouter();
-  const angles = getPointsAnglesInRange(180, 360, locales?.length);
+  const angles = getPointsAnglesInRange(140, 400, locales?.length);
   const coordinates = getPointsCoordinates(angles);
   const [opened, setOpened] = useState(false);
   const languages = getLanguages(locales, mediaFiles);
@@ -59,7 +59,7 @@ interface SwitchProps {
 }
 
 const Switch: FC<SwitchProps> = ({ coordinates, opened, language }) => {
-  const buttonSize = 17;
+  const buttonSize = 24;
   const { x, y } = getFlagTranslate(coordinates, 35);
   const flagVariants: Variants = {
     closed: {

@@ -8,6 +8,7 @@ import { StrapiFile } from '@api/types';
 import AsteroidBelt from '@atoms/AsteroidBelt';
 import RotatingTitle from '@atoms/RotatingTitle/RotatingTitle';
 import PlanetRings from '@atoms/PlanetRings';
+import { isTouchDevice } from '@helpers/touch-device';
 
 export interface PlanetProps {
   icon: StrapiFile;
@@ -41,8 +42,6 @@ const Planet: FC<PlanetProps> = ({ icon, color, title, url, feature }) => {
 
           <S.Icon>
             <Image
-              width={icon.width}
-              height={icon.height}
               src={icon.url}
               alt={icon?.alternativeText}
               layout="fill"
@@ -51,22 +50,23 @@ const Planet: FC<PlanetProps> = ({ icon, color, title, url, feature }) => {
             />
           </S.Icon>
 
-          {craters.map((crater) => (
-            <Crater
-              key={crater.id}
-              size={crater.size}
-              leftPosition={crater.leftPosition}
-              topPosition={crater.topPosition}
-              fill={color}
-            />
-          ))}
+          {!isTouchDevice() &&
+            craters.map((crater) => (
+              <Crater
+                key={crater.id}
+                size={crater.size}
+                leftPosition={crater.leftPosition}
+                topPosition={crater.topPosition}
+                fill={color}
+              />
+            ))}
         </S.CratersContainer>
 
         <RotatingTitle color={color} text={title} />
       </S.Surface>
 
-      {feature === 'asteroids' && <AsteroidBelt tilt={featureTilt} />}
-      {feature === 'rings' && <PlanetRings tilt={featureTilt} />}
+      {feature === 'asteroids' && !isTouchDevice() && <AsteroidBelt tilt={featureTilt} />}
+      {feature === 'rings' && !isTouchDevice() && <PlanetRings tilt={featureTilt} />}
     </S.Planet>
   );
 };

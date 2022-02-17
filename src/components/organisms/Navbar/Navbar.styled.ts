@@ -2,19 +2,16 @@ import { BurgerButton } from '@atoms/BurgerButton/BurgerButton.styled';
 import { LanguageSwitcher } from '@molecules/LanguageSwitcher/LanguageSwitcher.styled';
 import { pseudoMixin } from '@styles/mixins';
 import { cBlack, ziTop } from '@styles/variables';
+import { motion } from 'framer-motion';
 import { media } from 'styled-bootstrap-grid';
 import styled from 'styled-components';
 
-export const Navbar = styled.nav`
+export const Navbar = styled(motion.nav)`
   padding: 10px 0;
   position: fixed;
   z-index: ${ziTop};
   left: 0;
   right: 0;
-
-  ${media.lg`
-    padding: 16px 0;
-  `}
 
   &::before {
     ${pseudoMixin};
@@ -28,10 +25,6 @@ export const Navbar = styled.nav`
 
   ${BurgerButton} {
     display: block;
-
-    ${media.lg`
-      display: none;
-    `}
   }
 
   ${LanguageSwitcher} {

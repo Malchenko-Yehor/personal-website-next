@@ -15,7 +15,6 @@ const PlanetsList: FC<PlanetsListProps> = ({ items }) => {
       {items.map((item, index) => (
         <Item
           key={item.id}
-          isEven={isEven(index + 1)}
           id={item.id}
           title={item.title}
           color={item.color}
@@ -30,14 +29,13 @@ const PlanetsList: FC<PlanetsListProps> = ({ items }) => {
 
 interface ItemProps extends PlanetProps {
   id: string;
-  isEven: boolean;
 }
 
-const Item: FC<ItemProps> = ({ title, color, icon, url, isEven, feature }) => {
+const Item: FC<ItemProps> = ({ title, color, icon, url, feature }) => {
   const { ref, inView } = useInView({ threshold: 0.5, triggerOnce: true });
 
   return (
-    <S.Item ref={ref} isAnimated={inView} isEven={isEven}>
+    <S.Item ref={ref} isAnimated={inView}>
       <Planet title={title} color={color} icon={icon} url={url} feature={feature} />
     </S.Item>
   );
