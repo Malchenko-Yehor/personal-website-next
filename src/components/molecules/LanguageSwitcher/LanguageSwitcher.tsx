@@ -13,9 +13,10 @@ import * as S from './LanguageSwitcher.styled';
 
 interface LanguageSwitcherProps {
   mediaFiles?: StrapiFile[];
+  showDelay?: number;
 }
 
-const LanguageSwitcher: FC<LanguageSwitcherProps> = ({ mediaFiles }) => {
+const LanguageSwitcher: FC<LanguageSwitcherProps> = ({ mediaFiles, showDelay = 0 }) => {
   const ref = useRef();
   const { locale, locales } = useRouter();
   const angles = getPointsAnglesInRange(140, 400, locales?.length);
@@ -35,8 +36,22 @@ const LanguageSwitcher: FC<LanguageSwitcherProps> = ({ mediaFiles }) => {
     setOpened(false);
   }, [locale]);
 
+  const variants: Variants = {
+    hidden: {
+      opacity: 0,
+      y: 100,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: showDelay,
+      },
+    },
+  };
+
   return (
-    <S.LanguageSwitcher ref={ref}>
+    <S.LanguageSwitcher ref={ref} variants={variants}>
       <S.OpenButton onClick={() => setOpened(!opened)}>
         <SatelliteIcon />
         {selectedLanguageFlagIcon && (

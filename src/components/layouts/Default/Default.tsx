@@ -1,5 +1,4 @@
-import Header from '@organisms/Header';
-import MobileMenu from '@organisms/MobileMenu';
+import Menu from '@organisms/MobileMenu';
 import Navbar from '@organisms/Navbar';
 import Head from 'next/head';
 import { FC, Fragment } from 'react';
@@ -18,8 +17,8 @@ const DefaultLayout: FC<DefaultLayoutProps> = ({ children, mediaFiles }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <MobileMenu />
-      <Navbar mediaFiles={mediaFiles} />
+      <Menu />
+      <Navbar />
       <S.Main>{children}</S.Main>
     </Fragment>
   );

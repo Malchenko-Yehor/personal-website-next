@@ -1,8 +1,8 @@
-import { cBlack } from '@styles/variables';
+import { cBlack, cDarkBlue } from '@styles/variables';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-export const LanguageSwitcher = styled.div`
+export const LanguageSwitcher = styled(motion.div)`
   position: relative;
   display: inline-flex;
 `;
@@ -35,6 +35,7 @@ export const Switch = styled(motion.div)`
   width: 24px;
   height: 24px;
   border-radius: 50%;
+  border: 1px solid ${cDarkBlue};
 `;
 
 export const FlagsAnchor = styled.ul`

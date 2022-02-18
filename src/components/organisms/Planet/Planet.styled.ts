@@ -1,17 +1,15 @@
 import { AsteroidBelt } from '@atoms/AsteroidBelt/AsteroidBelt.styled';
 import { PlanetRings } from '@atoms/PlanetRings/PlanetRings.styled';
-import { absoluteCenterMixin, absoluteFillMixin } from '@styles/mixins';
+import { absoluteCenterMixin, absoluteFillMixin, flexCenterMixin } from '@styles/mixins';
 import { cPureWhite, cWhite } from '@styles/variables';
 import { motion } from 'framer-motion';
 import { darken } from 'polished';
 import styled from 'styled-components';
 
 export const Planet = styled.div`
+  ${flexCenterMixin};
   position: relative;
   aspect-ratio: 1 / 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   & ${AsteroidBelt}, & ${PlanetRings} {
     ${absoluteFillMixin};

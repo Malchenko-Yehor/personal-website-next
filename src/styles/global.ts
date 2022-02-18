@@ -17,6 +17,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${fontSans}
   }
 
+  body.scroll-lock {
+    overflow: hidden;
+  }
+
   button {
     background-color: transparent;
     border: none;

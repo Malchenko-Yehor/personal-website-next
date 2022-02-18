@@ -1,6 +1,14 @@
 import { css } from 'styled-components';
 import { devices, sideIndent, sideIndentLg, sideIndentMd, sideIndentSm, sideIndentXl } from './variables';
 
+export const flexCenterMixin = () => {
+  return css`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  `;
+};
+
 export const centerMixin = () => {
   return css`
     margin-left: auto;

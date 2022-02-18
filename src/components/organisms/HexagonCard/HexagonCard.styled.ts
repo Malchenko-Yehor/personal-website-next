@@ -1,16 +1,14 @@
 import { ScaledText } from '@atoms/ScaledText/ScaledText.styled';
 import { StarsRating } from '@molecules/StarsRating/StarsRating.styled';
-import { absoluteFillMixin, media } from '@styles/mixins';
+import { absoluteFillMixin, flexCenterMixin, media } from '@styles/mixins';
 import { cBlack, fontRubik } from '@styles/variables';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const HexagonCard = styled(motion.div)`
-  position: relative;
-  display: flex;
+  ${flexCenterMixin};
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
   aspect-ratio: 183 / 210;
 

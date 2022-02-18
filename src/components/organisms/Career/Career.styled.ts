@@ -1,8 +1,9 @@
-import { H2 } from "@atoms/H2/H2.styled";
-import { Section } from "@atoms/Section/Section.styled";
-import { fontRubik } from "@styles/variables";
-import { media } from "styled-bootstrap-grid";
-import styled from "styled-components";
+import { H2 } from '@atoms/H2/H2.styled';
+import { Section } from '@atoms/Section/Section.styled';
+import { flexCenterMixin } from '@styles/mixins';
+import { fontRubik } from '@styles/variables';
+import { media } from 'styled-bootstrap-grid';
+import styled from 'styled-components';
 
 export const Career = styled(Section)`
   ${H2} {
@@ -15,12 +16,10 @@ export const Career = styled(Section)`
 `;
 
 export const Experience = styled.span`
+  ${flexCenterMixin};
   font-family: ${fontRubik};
   font-size: 25px;
   font-weight: 700;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 50px;
 
   & svg {
