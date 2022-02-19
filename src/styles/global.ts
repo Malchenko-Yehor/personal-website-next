@@ -14,7 +14,10 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     background-color: ${cDarkBlue};
     color: ${cWhite};
-    font-family: ${fontSans}
+    font-family: ${fontSans};
+    background-image: url('/images/illustrations/space.svg');
+    background-repeat: repeat-y;
+    background-size: 100% auto;
   }
 
   body.scroll-lock {
