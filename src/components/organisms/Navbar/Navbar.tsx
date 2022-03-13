@@ -3,15 +3,17 @@ import HomeLink from '@atoms/HomeLink';
 import { useMainDispatch, useMainSelector } from '@hooks/index';
 import { setMobileNavigationOpened } from '@slices/mobile-navigation';
 import Container from '@styles/Container';
-import { FC, useEffect, useRef, useState } from 'react';
+import { FC, MutableRefObject, useEffect, useRef, useState } from 'react';
 import { Col, Row } from 'styled-bootstrap-grid';
 import * as S from './Navbar.styled';
 import throttle from '@helpers/throttle';
 import { Variants } from 'framer-motion';
 
-export interface NavbarProps {}
+export interface NavbarProps {
+  scrollContainerRef?: MutableRefObject<HTMLElement>;
+}
 
-const Navbar: FC<NavbarProps> = ({}) => {
+const Navbar: FC<NavbarProps> = ({ scrollContainerRef }) => {
   const prevScrollPos = useRef<number>(0);
   const [visible, setVisible] = useState(true);
   const { opened } = useMainSelector((state) => state.mobileNavigation);
@@ -21,7 +23,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
   };
 
   const handleScroll = throttle(() => {
-    const currentScrollPos = window.pageYOffset;
+    const currentScrollPos = scrollContainerRef.current.scrollTop;
     const isScrolledUp = prevScrollPos.current > currentScrollPos;
 
     setVisible(isScrolledUp || currentScrollPos < 10);
@@ -30,9 +32,9 @@ const Navbar: FC<NavbarProps> = ({}) => {
   }, 150);
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    scrollContainerRef.current.addEventListener('scroll', handleScroll);
 
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => scrollContainerRef.current.removeEventListener('scroll', handleScroll);
   }, []);
 
   const navbarVariants: Variants = {

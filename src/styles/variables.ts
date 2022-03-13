@@ -56,3 +56,7 @@ export const sideIndentSm = '25px';
 export const sideIndentMd = '30px';
 export const sideIndentLg = '35px';
 export const sideIndentXl = '50px';
+
+// Elements sizes
+export const navbarHeight = '55px';
+export const scrollBarWidth = '6px';

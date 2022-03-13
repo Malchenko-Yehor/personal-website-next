@@ -77,3 +77,7 @@ export const media = {
   xl: `@media (min-width: ${devices.laptop.width}px)`,
   xxl: `@media (min-width: ${devices.pc.width}px)`,
 };
+
+export const getParallaxScaleFactor = (parallaxPerspective: number, zDistance: number) => {
+  return (parallaxPerspective - zDistance) / parallaxPerspective;
+};

@@ -1,0 +1,48 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="294" viewBox="0 0 375 294">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="mask" y="-518" width="375" height="812" fill="none"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#clip-path)">
+    <g id="front">
+      <g id="ground">
+        <path id="base" d="M-989.5,276.58621a484.39227,484.39227,0,0,1,86-31c131.39513-33.6864,193.88757,10.26965,379,31,125.19373,14.0202,246.58691,26.25036,377-26,53.91809-21.60242,51.70392-31.11945,101-46,127.37842-38.4505,249.48816-7.30481,318,11a801.71875,801.71875,0,0,1,105,36V345l-1366-.41379Z" fill="#141037"/>
+        <path id="light" d="M-68.79053,217.63554C-62.61637,215.19668-55.39715,212.6857-46.5,210c127.37842-38.4505,249.48816-7.30481,318,11a801.71875,801.71875,0,0,1,105,36" fill="none" stroke="#4f4da0" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <ellipse id="dog_shadow" data-name="dog shadow" cx="213" cy="262" rx="89.5" ry="15.76684" fill="#100f1a"/>
+      <g id="dog">
+        <path id="base-2" data-name="base" d="M228.12115,244.246c16.25177-5.98749,39.34639.85536,39.34639.85536,4.33045,1.61428,38.078,22.00579,23.09463,18.81784-40.20176-8.55357-58.16424-3.42143-58.16424-3.42143-41.05711,5.9875-53.0321-.85535-53.0321-.85535-3.42143-.85536-17.96249,0-17.96249,0-9.40892,0-12.83034-4.27679-12.83034-4.27679a1.18472,1.18472,0,0,1,0-1.71071c5.13214-17.96248-.85536-34.21426-.85536-34.21426-7.69821-19.67319,7.69821-41.91246,7.69821-41.91246,2.56607-23.95,0-35.925,0-35.925-6.84285-29.08212,10.26428-55.59817,10.26428-55.59817,6.84285-9.40892,5.98749-29.08212,5.98749-29.08212-33.3589,0,11.975-24.80533,11.975-24.80533,3.42143-6.84286,16.25177-6.84286,16.25177-6.84286C222.989-8.08415,217.85687,44.948,217.85687,44.948c28.22676,36.78033-2.56607,16.25177-2.56607,16.25177-5.13214,5.9875-1.71071,31.64819-1.71071,31.64819,8.55356,39.3464-.38017,52.23574-.38017,52.23574-2.09089,18.87683,1.23552,30.73384,1.23552,30.73384s14.42308,17.679,9.34993,45.61982a70.67732,70.67732,0,0,0-.79636,23.66405Z" fill="#c48435"/>
+        <g id="shadows">
+          <path id="shadow" d="M179.36583,257.9317c-18.81784-10.26427-26.516-29.93747-26.516-29.93747l2.06493,7.37474a30.00171,30.00171,0,0,0,17.35146,19.60454l7.09966,2.95819" fill="#a36534" stroke="#a36535" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path id="shadow-2" data-name="shadow" d="M221.27829,227.13887s-2.56606,17.10713-27.3714,20.52856c0,0,21.76747.26545,27.99086-3.71638C221.89775,243.95105,220.57041,231.41565,221.27829,227.13887Z" fill="#a36534" stroke="#a36535" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path id="shadow-3" data-name="shadow" d="M227.6307,65.19684c-3.87137.17378-12.69378-5.70783-12.69378-5.70783a22.81438,22.81438,0,0,0-3.9229,15.39642" fill="none" stroke="#a36534" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path id="shadow-4" data-name="shadow" d="M171.31374,55.21223c-5.7982,0-9.219-.74939-10.91374-1.98767" fill="none" stroke="#a36534" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path id="shadow-5" data-name="shadow" d="M287.10989,261.56719c-38.02756-7.64821-55.06584-2.78013-55.06584-2.78013-41.05711,5.98749-53.0321-.85536-53.0321-.85536" fill="none" stroke="#a36534" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path id="shadow-6" data-name="shadow" d="M213.62635,33.73983s3.033-1.62222,3.033,3.50991" fill="none" stroke="#a36534" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path id="shadow-7" data-name="shadow" d="M206.60988,131.6339a15.26068,15.26068,0,0,0,4.61033-3.23269A24.32953,24.32953,0,0,0,214.9,122.60843s4.53225,6.81334-3.31683,25.30674C211.58316,147.91517,211.43229,139.03716,206.60988,131.6339Z" fill="#a36533" stroke="#a36534" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        </g>
+        <g id="lights">
+          <path id="light-2" data-name="light" d="M228.60535,65.13516c-.50967-2.9597-3.752-8.79332-11.83974-19.33185,0,0,1.94662-7.69821-3.13926-12.06348" fill="none" stroke="#daa048" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path id="light-3" data-name="light" d="M160.53329,52.27029c3.45637-7.34952,23.72878-18.442,23.72878-18.442,3.42142-6.84285,16.25177-6.84285,16.25177-6.84285,4.49365-6.49083,7.91865-9.71093,10.52073-10.68736" fill="none" stroke="#daa048" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path id="light-4" data-name="light" d="M155.44253,122.6201a86.37792,86.37792,0,0,1,10.8091-35.104" fill="none" stroke="#daa048" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path id="light-5" data-name="light" d="M147.26705,211.61147c-1.54492-13.40839,5.08364-26.50312,8.14573-31.71843" fill="none" stroke="#daa048" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path id="light-6" data-name="light" d="M291.6837,263.05791c-5.32745-5.0792-22.31954-15.132-25.30741-16.24584,0,0-23.09463-6.84285-39.3464-.85536,0,0-16.87123,4.27679-33.97836,3.42143" fill="none" stroke="#daa048" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path id="light-7" data-name="light" d="M212.48883,175.81749s11.81958,14.48776,10.2957,37.96089" fill="none" stroke="#daa048" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path id="light-8" data-name="light" d="M215.33706,122.60843a143.15921,143.15921,0,0,0-3.40032-28.34193" fill="none" stroke="#daa048" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path id="light-9" data-name="light" d="M210.94292,154.37236s1.78181-10.20306-4.75131-22.73846" fill="none" stroke="#daa048" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path id="light-10" data-name="light" d="M157.92363,154.67251s-1.78181-10.20307,4.75131-22.73846" fill="none" stroke="#daa048" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path id="light-11" data-name="light" d="M149.856,254.16813s2.13839,5.47429,19.24552,3.42143" fill="none" stroke="#daa048" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        </g>
+        <g id="nose">
+          <path id="base-3" data-name="base" d="M217.25708,21.23833c-1.4207-6.40475-4.29976-10.01049-10.862-3.655a10.98392,10.98392,0,0,0,4.44786,3.27084A18.68042,18.68042,0,0,0,217.25708,21.23833Z" fill="#3d2e24"/>
+          <path id="light-12" data-name="light" d="M213.92,16.504c-1.44064-.91284-3.32884-.72938-5.79266,1.08559" fill="none" stroke="#755745" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        </g>
+        <g id="collar">
+          <path id="base-4" data-name="base" d="M212.48883,78.37618s-9.173-.06933-20.54776-.80279a94.36283,94.36283,0,0,1-21.46562-4.33648L169.244,78.37618s11.81011,3.638,21.73262,4.273c12.3392.78977,21.73263.85162,21.73263.85162Z" fill="#441116" stroke="#441116" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path id="light-13" data-name="light" d="M212.81,78.10515s-9.173-.06933-20.54777-.80279a89.85433,89.85433,0,0,1-17.25835-3.07058" fill="none" stroke="#621014" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

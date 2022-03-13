@@ -19,11 +19,7 @@ interface HomepageProps extends PageProps {
 export const Homepage: FC<HomepageProps> = (props) => {
   // const { title, widgetsZone } = props.homepage;
 
-  return (
-    <>
-      <Portfolio title="test" items={items} />
-    </>
-  );
+  return <>TEST</>;
 };
 
 // const getHomepageQuery = (locale: string) => {

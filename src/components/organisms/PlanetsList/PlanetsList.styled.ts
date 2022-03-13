@@ -7,12 +7,13 @@ const itemShiftAmountLg = 33;
 export const PlanetsList = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 0 0 25% 0;
+  padding: 0 0 18% 0;
   margin: 0;
   overflow: hidden;
 
   ${media.lg} {
     grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 7%;
   }
 `;
 

@@ -1,17 +1,17 @@
 import { BurgerButton } from '@atoms/BurgerButton/BurgerButton.styled';
 import { LanguageSwitcher } from '@molecules/LanguageSwitcher/LanguageSwitcher.styled';
-import { pseudoMixin } from '@styles/mixins';
-import { cBlack, ziTop } from '@styles/variables';
+import { media, pseudoMixin } from '@styles/mixins';
+import { cBlack, navbarHeight, scrollBarWidth, ziTop } from '@styles/variables';
 import { motion } from 'framer-motion';
-import { media } from 'styled-bootstrap-grid';
 import styled from 'styled-components';
 
 export const Navbar = styled(motion.nav)`
   padding: 10px 0;
-  position: fixed;
+  position: absolute;
   z-index: ${ziTop};
   left: 0;
   right: 0;
+  height: ${navbarHeight};
 
   &::before {
     ${pseudoMixin};
@@ -21,6 +21,10 @@ export const Navbar = styled(motion.nav)`
     left: 0;
     top: 0;
     background-color: ${cBlack};
+
+    ${media.lg} {
+      width: calc(100% - ${scrollBarWidth});
+    }
   }
 
   ${BurgerButton} {
@@ -30,8 +34,8 @@ export const Navbar = styled(motion.nav)`
   ${LanguageSwitcher} {
     display: none;
 
-    ${media.lg`
+    ${media.lg} {
       display: block;
-    `}
+    }
   }
 `;
