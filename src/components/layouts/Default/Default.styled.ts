@@ -6,19 +6,18 @@ export const Main = styled.main`
   position: relative;
   flex-grow: 1;
   padding-top: ${navbarHeight};
-
-  ${media.lg} {
-    padding-top: 80px;
-  }
 `;
 
 export const ParallaxContainer = styled.div`
   position: relative;
   perspective: 8px;
   perspective-origin: 0%;
+  transform-style: preserve-3d;
   height: calc(100vh);
   overflow-y: auto;
   overflow-x: hidden;
+  scrollbar-color: ${cWhite50};
+  scrollbar-width: ${scrollBarWidth};
 
   ${media.lg} {
     &::-webkit-scrollbar {
@@ -47,19 +46,18 @@ export const ParallaxFront = styled.div`
 `;
 
 interface BackgroundProps {
-  height: number;
+  bgHeight: number;
 }
 
 export const Background = styled.div<BackgroundProps>`
   position: absolute;
-  top: -${navbarHeight};
-  right: -6px;
-  width: calc(100% + 6px);
-  height: ${(props) => (props.height ? `calc(${props.height}px + ${navbarHeight})` : '100%')};
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: ${(props) => `${props.bgHeight}px`};
   background-image: url('/images/illustrations/space.svg');
   background-repeat: repeat-y;
   background-size: cover;
-  background-attachment: scroll;
   transform-origin: 0;
   transform: translateZ(-3px) scale(${getParallaxScaleFactor(8, -3)});
 `;

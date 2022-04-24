@@ -1,4 +1,4 @@
-import { useViewport } from '@hooks/index';
+import { useDimensions } from '@hooks/index';
 import Footer from '@organisms/Footer';
 import Menu from '@organisms/MobileMenu';
 import Navbar from '@organisms/Navbar';
@@ -14,14 +14,12 @@ export interface DefaultLayoutProps extends PageProps {
 const DefaultLayout: FC<DefaultLayoutProps> = ({ children }) => {
   const parallaxFrontRef = useRef<HTMLDivElement>();
   const [bgHeight, setBgHeight] = useState<number>();
-  const { height } = useViewport();
   const parallaxContainerRef = useRef<HTMLDivElement>();
+  const dimensions = useDimensions(parallaxFrontRef);
 
   useEffect(() => {
-    const parralaxFrontHeight = parallaxFrontRef.current.offsetHeight;
-
-    setBgHeight(parralaxFrontHeight);
-  }, [height]);
+    setBgHeight(dimensions.height);
+  }, [dimensions]);
 
   return (
     <Fragment>
@@ -30,11 +28,11 @@ const DefaultLayout: FC<DefaultLayoutProps> = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar scrollContainerRef={parallaxContainerRef} />
       <Menu />
 
       <S.ParallaxContainer ref={parallaxContainerRef}>
-        <S.Background height={bgHeight} />
+        <Navbar scrollContainerRef={parallaxContainerRef} />
+        <S.Background bgHeight={bgHeight} />
 
         <S.ParallaxFront ref={parallaxFrontRef}>
           <S.Main>{children}</S.Main>

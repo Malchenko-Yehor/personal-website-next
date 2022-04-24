@@ -25,9 +25,7 @@ const Navbar: FC<NavbarProps> = ({ scrollContainerRef }) => {
   const handleScroll = throttle(() => {
     const currentScrollPos = scrollContainerRef.current.scrollTop;
     const isScrolledUp = prevScrollPos.current > currentScrollPos;
-
     setVisible(isScrolledUp || currentScrollPos < 10);
-
     prevScrollPos.current = currentScrollPos;
   }, 150);
 
