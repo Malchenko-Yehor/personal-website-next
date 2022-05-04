@@ -55,17 +55,3 @@ export const useIsTouchDevice = () => {
 
   return isTouch;
 };
-
-export const useDimensions = (ref: MutableRefObject<HTMLElement>) => {
-  const [dimensions, setDimensions] = useState({ width: 1, height: 2 });
-
-  useEffect(() => {
-    if (ref.current) {
-      const { current } = ref;
-
-      setDimensions({ width: current.offsetWidth, height: current.offsetHeight });
-    }
-  }, [ref]);
-
-  return dimensions;
-};

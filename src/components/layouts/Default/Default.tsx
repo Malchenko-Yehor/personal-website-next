@@ -1,4 +1,3 @@
-import { useDimensions } from '@hooks/index';
 import Footer from '@organisms/Footer';
 import Menu from '@organisms/MobileMenu';
 import Navbar from '@organisms/Navbar';
@@ -15,11 +14,12 @@ const DefaultLayout: FC<DefaultLayoutProps> = ({ children }) => {
   const parallaxFrontRef = useRef<HTMLDivElement>();
   const [bgHeight, setBgHeight] = useState<number>();
   const parallaxContainerRef = useRef<HTMLDivElement>();
-  const dimensions = useDimensions(parallaxFrontRef);
 
   useEffect(() => {
-    setBgHeight(dimensions.height);
-  }, [dimensions]);
+    window.addEventListener('load', () => {
+      setBgHeight(parallaxFrontRef.current.offsetHeight * 0.88);
+    });
+  }, []);
 
   return (
     <Fragment>
