@@ -1,5 +1,5 @@
 import { isTouchDevice } from '@helpers/touch-device';
-import { MutableRefObject, RefObject, useContext, useEffect, useState } from 'react';
+import { MutableRefObject, RefObject, useContext, useEffect, useRef, useState } from 'react';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 import { MainDispatch, MainState } from 'stores/main-store';
 import { viewportContext } from '../stores/viewport';
@@ -54,4 +54,27 @@ export const useIsTouchDevice = () => {
   }, []);
 
   return isTouch;
+};
+
+export const useObservedDimensions = (ref: MutableRefObject<HTMLElement>) => {
+  const [dimensions, setdDimensions] = useState({ width: 0, height: 0 });
+  const resizeObserverRef = useRef(null);
+
+  useEffect(() => {
+    resizeObserverRef.current = new ResizeObserver((entries = []) => {
+      entries.forEach((entry) => {
+        const { width, height } = entry.contentRect;
+
+        setdDimensions({ width, height });
+      });
+    });
+
+    if (ref.current) resizeObserverRef.current.observe(ref.current);
+
+    return () => {
+      if (resizeObserverRef.current) resizeObserverRef.current.disconnect();
+    };
+  }, [ref]);
+
+  return dimensions;
 };

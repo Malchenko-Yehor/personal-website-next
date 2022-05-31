@@ -14,14 +14,14 @@ import * as S from './Timeline.styled';
 const entryAnimationDuration = 0.4;
 
 export interface Entry {
-  id: string,
-  infoCard: InfoCardProps
-  iconUrl?: string,
-};
+  id: string;
+  infoCard: InfoCardProps;
+  iconUrl?: string;
+}
 
 export interface TimelineProps {
-  entries: Array<Entry>
-};
+  entries: Array<Entry>;
+}
 
 const Timeline: FC<TimelineProps> = ({ entries }) => {
   const { ref: fadingLineRef, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -31,15 +31,10 @@ const Timeline: FC<TimelineProps> = ({ entries }) => {
   };
   const animate = inView ? 'visible' : 'hidden';
 
-
   return (
     <Container>
       <S.Timeline ref={fadingLineRef}>
-        <FadingLine
-          animate={animate}
-          variants={fadingLineVariants}
-          transition={{ duration: 0.5 }}
-        />
+        <FadingLine animate={animate} variants={fadingLineVariants} transition={{ duration: 0.5 }} />
         <S.EntriesList>
           {entries.map((entry, index) => (
             <Entry key={entry.id} {...entry} index={index} />
@@ -51,8 +46,8 @@ const Timeline: FC<TimelineProps> = ({ entries }) => {
 };
 
 interface EntryProps extends Entry {
-  index: number
-};
+  index: number;
+}
 
 const Entry: FC<EntryProps> = ({ iconUrl, infoCard, index }) => {
   const { ref, inView } = useInView({ threshold: 0.9, triggerOnce: true });
@@ -62,7 +57,7 @@ const Entry: FC<EntryProps> = ({ iconUrl, infoCard, index }) => {
 
   const getTransition = (duration: number) => ({
     duration,
-    type: "spring",
+    type: 'spring',
     damping: 10,
     mass: 0.75,
     stiffness: 100,
@@ -71,7 +66,7 @@ const Entry: FC<EntryProps> = ({ iconUrl, infoCard, index }) => {
   const infoCardVariants = {
     hidden: (isReversed: boolean) => ({
       opacity: 0,
-      x: isReversed ? -200 : 200
+      x: isReversed ? -200 : 200,
     }),
     visible: {
       opacity: 1,
@@ -80,18 +75,18 @@ const Entry: FC<EntryProps> = ({ iconUrl, infoCard, index }) => {
     },
     hover: (isReversed: boolean) => ({
       x: isReversed ? 15 : -15,
-    })
+    }),
   };
 
   const circleIconVariants = {
     hidden: { opacity: 0, scale: 0 },
     visible: { opacity: 1, scale: 1 },
-  }
+  };
 
   return (
     <S.Entry ref={ref}>
       <Row smJustifyContent={isReversed ? 'start' : 'end'}>
-        <Col col={3} sm={2} xl={1}>
+        <Col col={3} sm={2} lg={1}>
           <motion.div
             animate={inView ? 'visible' : 'hidden'}
             variants={circleIconVariants}
@@ -111,7 +106,7 @@ const Entry: FC<EntryProps> = ({ iconUrl, infoCard, index }) => {
           </motion.div>
         </Col>
         {/* Spacer */}
-        <Col lg={1} xl={2.5} smOrder={isReversed && -2} />
+        <Col lg={1.5} xl={2.5} smOrder={isReversed && -2} />
       </Row>
     </S.Entry>
   );
