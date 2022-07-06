@@ -20,7 +20,7 @@ const DefaultLayout: FC<DefaultLayoutProps> = ({ children }) => {
   useEffect(() => {
     const { height } = parallaxFrontDimensions;
 
-    setBgHeight(height * 0.88);
+    setBgHeight(height * 0.875);
   }, [parallaxFrontDimensions]);
 
   return (

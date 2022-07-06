@@ -1,6 +1,5 @@
 import { cWhite } from '@styles/variables';
 import { motion } from 'framer-motion';
-import { darken } from 'polished';
 import styled from 'styled-components';
 
 export const RotatingTitle = styled(motion.svg)`
@@ -17,6 +16,7 @@ export const RotatingTitle = styled(motion.svg)`
 
 export const TitleText = styled(motion.text)`
   fill: ${cWhite};
-  font-size: 10px;
-  font-family: 'Rock';
+  font-size: 12px;
+  font-family: 'Rubik';
+  text-transform: uppercase;
 `;

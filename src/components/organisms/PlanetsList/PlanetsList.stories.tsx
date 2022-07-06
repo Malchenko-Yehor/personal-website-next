@@ -33,7 +33,6 @@ Default.args = {
       color: '#ff5f40',
       title: 'Visit Qatar Mobile',
       url: 'https://www.deutschebank.be/',
-      feature: 'asteroids',
     },
     {
       id: uuid(),
@@ -90,7 +89,6 @@ Default.args = {
       color: '#4b70dd ',
       title: 'Tink',
       url: 'https://www.deutschebank.be/',
-      feature: 'asteroids',
     },
     {
       id: uuid(),
