@@ -1,7 +1,7 @@
 import CircleIcon from '@atoms/CircleIcon';
 import FadingLine from '@atoms/FadingLine/FadingLine.styled';
 import { isEven } from '@helpers/math';
-import { useViewport } from '@hooks/index';
+import { useViewport } from '@hooks/useViewport';
 import InfoCard, { InfoCardProps } from '@molecules/InfoCard/InfoCard';
 import Container from '@styles/Container';
 import { devices } from '@styles/variables';

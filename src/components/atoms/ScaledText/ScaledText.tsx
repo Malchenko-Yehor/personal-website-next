@@ -1,4 +1,4 @@
-import { useOnMediaQueryChange } from '@hooks/index';
+import { useOnMediaQueryChange } from '@hooks/useOnMediaQueryChange';
 import { devices } from '@styles/variables';
 import { FC, useLayoutEffect, useRef, useState } from 'react';
 import * as S from './ScaledText.styled';

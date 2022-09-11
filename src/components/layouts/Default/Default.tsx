@@ -1,3 +1,4 @@
+import { useObservedDimensions } from '@hooks/useObservedDimensions';
 import Footer from '@organisms/Footer';
 import Menu from '@organisms/MobileMenu';
 import Navbar from '@organisms/Navbar';
@@ -5,7 +6,6 @@ import Head from 'next/head';
 import { FC, Fragment, useEffect, useRef, useState } from 'react';
 import { PageProps } from 'types';
 import * as S from './Default.styled';
-import { useObservedDimensions } from '@hooks/index';
 
 export interface DefaultLayoutProps extends PageProps {
   title: string;

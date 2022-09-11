@@ -4,7 +4,7 @@ import { FC, useEffect, useMemo, useState } from 'react';
 import * as S from './HexagonList.styled';
 import { useInView } from 'react-intersection-observer';
 import { Transition, Variants } from 'framer-motion';
-import { useOnMediaQueryChange } from '@hooks/index';
+import { useOnMediaQueryChange } from '@hooks/useOnMediaQueryChange';
 
 export interface HexagonListItem extends HexagonCardProps {
   id: string;

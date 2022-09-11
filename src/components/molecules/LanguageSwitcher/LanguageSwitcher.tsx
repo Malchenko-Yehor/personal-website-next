@@ -1,7 +1,6 @@
 import LanguageFlag, { LanguageFlagProps } from '@atoms/LanguageFlag/LanguageFlag';
 import { isDevEnv } from '@helpers/env';
 import { getPointsAnglesInRange, getPointsCoordinates } from '@helpers/math';
-import { useOutsideClick } from '@hooks/index';
 import SatelliteIcon from '@icons/satellite.svg';
 import { Variants } from 'framer-motion';
 import { useRouter } from 'next/dist/client/router';
@@ -10,6 +9,7 @@ import { Coordinates } from 'types';
 import { StrapiFile } from 'api/types';
 
 import * as S from './LanguageSwitcher.styled';
+import { useOutsideClick } from '@hooks/useOutsideClick';
 
 interface LanguageSwitcherProps {
   mediaFiles?: StrapiFile[];
