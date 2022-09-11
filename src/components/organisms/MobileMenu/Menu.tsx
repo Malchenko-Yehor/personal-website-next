@@ -1,11 +1,11 @@
 import CrossButton from '@atoms/CrossButton';
 import SpaceShuttle from '@atoms/SpaceShuttle';
 import { lockBodyScroll, unlockBodyScroll } from '@helpers/body-scroll-lock';
-import { useMainDispatch, useMainSelector } from '@hooks/index';
+import useNavigationStore from '@hooks/useNavigationStore';
 import Clouds from '@molecules/Clouds';
 import LanguageSwitcher from '@molecules/LanguageSwitcher';
-import { setMobileNavigationOpened } from '@slices/mobile-navigation';
 import { FC, useEffect } from 'react';
+import shallow from 'zustand/shallow';
 import * as S from './Menu.styled';
 
 export interface MenuProps {
@@ -16,10 +16,13 @@ const CLOUDS_AMOUNT = 15;
 const SHUTTLE_SPEED = 1.5;
 
 const Menu: FC<MenuProps> = ({ alwaysOpened }) => {
-  const { opened } = useMainSelector((state) => state.mobileNavigation);
-  const dispatch = useMainDispatch();
+  const [opened, setNavigationOpened] = useNavigationStore(
+    (state) => [state.opened, state.setNavigationOpened],
+    shallow
+  );
+
   const onCrossButtonClick = () => {
-    dispatch(setMobileNavigationOpened(false));
+    setNavigationOpened(false);
   };
 
   useEffect(() => {

@@ -1,9 +1,11 @@
 import { FC } from 'react';
 import * as S from './Section.styled';
 export interface SectionProps {
-  noTopIndent?: boolean,
-  noBottomIndent?: boolean
-};
+  noTopIndent?: boolean;
+  noBottomIndent?: boolean;
+  title?: string;
+  navigable?: boolean;
+}
 
 const Section: FC<SectionProps> = ({ children, noTopIndent, noBottomIndent }) => {
   return (
@@ -12,6 +14,5 @@ const Section: FC<SectionProps> = ({ children, noTopIndent, noBottomIndent }) =>
     </S.Section>
   );
 };
-
 
 export default Section;

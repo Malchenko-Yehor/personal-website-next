@@ -1,13 +1,13 @@
 import BurgerButton from '@atoms/BurgerButton';
 import HomeLink from '@atoms/HomeLink';
-import { useMainDispatch, useMainSelector } from '@hooks/index';
-import { setMobileNavigationOpened } from '@slices/mobile-navigation';
+import throttle from '@helpers/throttle';
+import useNavigationStore from '@hooks/useNavigationStore';
 import Container from '@styles/Container';
+import { Variants } from 'framer-motion';
 import { FC, MutableRefObject, useEffect, useRef, useState } from 'react';
 import { Col, Row } from 'styled-bootstrap-grid';
+import shallow from 'zustand/shallow';
 import * as S from './Navbar.styled';
-import throttle from '@helpers/throttle';
-import { Variants } from 'framer-motion';
 
 export interface NavbarProps {
   scrollContainerRef?: MutableRefObject<HTMLElement>;
@@ -16,10 +16,13 @@ export interface NavbarProps {
 const Navbar: FC<NavbarProps> = ({ scrollContainerRef }) => {
   const prevScrollPos = useRef<number>(0);
   const [visible, setVisible] = useState(true);
-  const { opened } = useMainSelector((state) => state.mobileNavigation);
-  const dispatch = useMainDispatch();
+  const [opened, setNavigationOpened] = useNavigationStore(
+    (state) => [state.opened, state.setNavigationOpened],
+    shallow
+  );
+
   const onBurgerButtonClick = () => {
-    dispatch(setMobileNavigationOpened(true));
+    setNavigationOpened(true);
   };
 
   const handleScroll = throttle(() => {

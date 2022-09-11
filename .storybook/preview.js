@@ -1,14 +1,12 @@
-import { Fragment } from 'react';
+import { themes } from '@storybook/theming';
 import GlobalStyle from '@styles/global';
-import { GridThemeProvider } from 'styled-bootstrap-grid';
 import gridTheme from '@styles/grid';
 import { devices } from '@styles/variables';
-import ViewportProvider from '../src/stores/viewport';
-import mainStore from '../src/stores/main-store';
-import * as NextImage from 'next/image';
-import { Provider } from 'react-redux';
-import { themes } from '@storybook/theming';
 import { RouterContext } from 'next/dist/shared/lib/router-context';
+import * as NextImage from 'next/image';
+import { Fragment } from 'react';
+import { GridThemeProvider } from 'styled-bootstrap-grid';
+import ViewportProvider from '../src/stores/viewport';
 
 export const decorators = [
   (Story) => (
@@ -16,9 +14,7 @@ export const decorators = [
       <GlobalStyle />
       <GridThemeProvider gridTheme={gridTheme}>
         <ViewportProvider>
-          <Provider store={mainStore}>
-            <Story />
-          </Provider>
+          <Story />
         </ViewportProvider>
       </GridThemeProvider>
     </Fragment>
