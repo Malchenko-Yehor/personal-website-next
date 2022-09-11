@@ -17,7 +17,18 @@ module.exports = {
         {
           loader: '@svgr/webpack',
           options: {
-            svgo: false,
+            jsx: {
+              babelConfig: {
+                plugins: ['react-inline-svg-unique-id'],
+              },
+            },
+            svgoConfig: {
+              plugins: [
+                {
+                  prefixIds: false,
+                },
+              ],
+            },
           },
         },
       ],

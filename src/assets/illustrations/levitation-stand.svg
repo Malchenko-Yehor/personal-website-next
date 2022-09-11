@@ -1,0 +1,224 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="261.637" height="439.20376" viewBox="0 0 261.637 439.20376" overflow="visible">
+  <style>
+    .main-color {
+      fill: #ff1234;
+      stop-color: #ff1234;
+      stroke: #ff1234;
+    }
+  </style>
+  <defs>
+    <linearGradient id="linear-gradient" x1="131.22707" y1="176.5566" x2="131.22707" gradientUnits="userSpaceOnUse">
+      <stop offset="0" class="main-color" stop-opacity="0.8"/>
+      <stop offset="1" class="main-color" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="131.22707" y1="342.7783" x2="131.22707" y2="229.7783" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eee"/>
+      <stop offset="1" stop-color="#888"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <line x1="80.72707" y1="176.5566" x2="181.72707" y2="176.5566" fill="none" class="main-color" stroke-linecap="round" stroke-linejoin="round" style="transform-box: fill-box; transform-origin: 50% 50%">
+      <animate begin="0s" dur="5s" attributeName="opacity" to="0"  repeatCount="indefinite" />
+      <animateTransform  begin="0s" dur="5s" attributeName="transform" type="translate" from="0 0" to="0 -176.5566" repeatCount="indefinite" additive="sum"/>
+      <animateTransform  begin="0s" dur="5s" attributeName="transform" type="scale"  from="1 1" to="1.8811 1.8811"  repeatCount="indefinite" additive="sum"/>
+    </line>
+    <line x1="80.72707" y1="176.5566" x2="181.72707" y2="176.5566" fill="none" class="main-color" stroke-linecap="round" stroke-linejoin="round" style="transform-box: fill-box; transform-origin: 50% 50%">
+      <animate begin="-1s" dur="5s" attributeName="opacity" to="0"  repeatCount="indefinite" />
+      <animateTransform  begin="-1s" dur="5s" attributeName="transform" type="translate" from="0 0" to="0 -176.5566" repeatCount="indefinite" additive="sum"/>
+      <animateTransform  begin="-1s" dur="5s" attributeName="transform" type="scale"  from="1 1" to="1.8811 1.8811"  repeatCount="indefinite" additive="sum"/>
+    </line>
+    <line x1="80.72707" y1="176.5566" x2="181.72707" y2="176.5566" fill="none" class="main-color" stroke-linecap="round" stroke-linejoin="round" style="transform-box: fill-box; transform-origin: 50% 50%">
+      <animate begin="-2s" dur="5s" attributeName="opacity" to="0"  repeatCount="indefinite" />
+      <animateTransform  begin="-2s" dur="5s" attributeName="transform" type="translate" from="0 0" to="0 -176.5566" repeatCount="indefinite" additive="sum"/>
+      <animateTransform  begin="-2s" dur="5s" attributeName="transform" type="scale"  from="1 1" to="1.8811 1.8811"  repeatCount="indefinite" additive="sum"/>
+    </line>
+    <line x1="80.72707" y1="176.5566" x2="181.72707" y2="176.5566" fill="none" class="main-color" stroke-linecap="round" stroke-linejoin="round" style="transform-box: fill-box; transform-origin: 50% 50%">
+      <animate begin="-3s" dur="5s" attributeName="opacity" to="0"  repeatCount="indefinite" />
+      <animateTransform  begin="-3s" dur="5s" attributeName="transform" type="translate" from="0 0" to="0 -176.5566" repeatCount="indefinite" additive="sum"/>
+      <animateTransform  begin="-3s" dur="5s" attributeName="transform" type="scale"  from="1 1" to="1.8811 1.8811"  repeatCount="indefinite" additive="sum"/>
+    </line>
+    <line x1="80.72707" y1="176.5566" x2="181.72707" y2="176.5566" fill="none" class="main-color" stroke-linecap="round" stroke-linejoin="round" style="transform-box: fill-box; transform-origin: 50% 50%">
+      <animate begin="-4s" dur="5s" attributeName="opacity" to="0"  repeatCount="indefinite" />
+      <animateTransform  begin="-4s" dur="5s" attributeName="transform" type="translate" from="0 0" to="0 -176.5566" repeatCount="indefinite" additive="sum"/>
+      <animateTransform  begin="-4s" dur="5s" attributeName="transform" type="scale"  from="1 1" to="1.8811 1.8811"  repeatCount="indefinite" additive="sum"/>
+    </line>
+  </g>
+  <g id="glow">
+    <polygon points="182.2 176.557 226.227 0 36.227 0 80.2 176.557 182.2 176.557" fill="url(#linear-gradient)"/>
+  </g>
+  <g id="base">
+    <path id="base-2" data-name="base" d="M247.22707,236.90391a126.94623,126.94623,0,0,0-67.12561-67.12561H81.35268a126.94606,126.94606,0,0,0-67.12561,67.12561v98.74878A126.946,126.946,0,0,0,81.35268,402.7783h98.74878a126.94619,126.94619,0,0,0,67.12561-67.12561Z" fill="#ccc"/>
+    <path id="light" d="M239.72707,240.74322A118.77371,118.77371,0,0,0,176.92285,177.939H84.53129a118.77354,118.77354,0,0,0-62.80422,62.80422" fill="none" stroke="#e6e6e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+    <path id="light-2" data-name="light" d="M21.72707,332.81339a118.77357,118.77357,0,0,0,62.80422,62.80422h92.39156a118.77374,118.77374,0,0,0,62.80422-62.80422" fill="#ccc" stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+  </g>
+  <polyline points="58.771 242.781 51.727 234.278 40.137 234.278" fill="none" stroke="#666" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="187.22707" y1="223.00567" x2="187.22707" y2="194.56736" fill="none" stroke="#666" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="73.22658" y1="347.7259" x2="73.22658" y2="378.54295" fill="none" stroke="#666" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="69.72707" cy="348.2783" r="1.5" fill="#666"/>
+  <circle cx="49.72707" cy="237.2783" r="1.5" fill="#666"/>
+  <circle cx="183.72707" cy="216.2783" r="1.5" fill="#666"/>
+  <g id="side-part">
+    <path d="M9.33267,353.66048,29.4383,365.84571a6.44718,6.44718,0,0,0,9.78877-5.51361,75.76108,75.76108,0,0,0-.06285-24.07752c-2.76963-17.35595-7.93715-39.49616-7.93715-49.97628,0-10.40581,5.12276-32.30694,7.87818-49.60637a78.482,78.482,0,0,0,.12182-24.44742,6.44718,6.44718,0,0,0-9.78877-5.51362L9.33267,218.89612a6.44717,6.44717,0,0,0-3.1056,5.51362V348.14686A6.44717,6.44717,0,0,0,9.33267,353.66048Z" fill="#f7931e"/>
+    <polyline points="10.227 218.354 10.227 354.203 11.548 355.003 11.548 217.554" fill="#f15a24"/>
+    <path d="M30.22707,287.2783c0-10.40581,5.12276-32.30694,7.87818-49.60637a78.482,78.482,0,0,0,.12182-24.44742,6.44718,6.44718,0,0,0-9.78877-5.51362L8.33267,219.89612" fill="none" stroke="#f9ab53" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path d="M7.22707,306.29555v40.85131a6.44717,6.44717,0,0,0,3.1056,5.51362L30.4383,364.84571a6.35405,6.35405,0,0,0,4.62327.8105" fill="none" stroke="#d97708" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <g id="protrudingMetalPart">
+      <rect id="protrudingMetalPart-2" data-name="protrudingMetalPart" x="0.22707" y="314.7783" width="28" height="4" rx="1.39655" transform="translate(82.47418 7.11197) rotate(15.00021)" fill="#f7931e"/>
+      <path id="protrudingMetalPart-3" data-name="protrudingMetalPart" d="M27.75,320.40182l-.15619.58288a1.39654,1.39654,0,0,1-1.71042.98751l-24.348-6.52412a1.39654,1.39654,0,0,1-.9875-1.71042l.15618-.58288" fill="none" stroke="#d97708" stroke-miterlimit="10"/>
+      <path id="protrudingMetalPart-4" data-name="protrudingMetalPart" d="M.70412,313.15479l.15619-.58289a1.39656,1.39656,0,0,1,1.71042-.98751l24.348,6.52412a1.39656,1.39656,0,0,1,.98751,1.71042l-.15619.58289" fill="#f7931e" stroke="#f9ab53" stroke-miterlimit="10"/>
+    </g>
+    <g id="protrudingMetalPart-5" data-name="protrudingMetalPart">
+      <rect id="protrudingMetalPart-6" data-name="protrudingMetalPart" x="0.22707" y="254.7783" width="28" height="4" rx="1.39655" transform="translate(-65.97498 12.43196) rotate(-15.00015)" fill="#f7931e"/>
+      <path id="protrudingMetalPart-7" data-name="protrudingMetalPart" d="M27.75,253.1548l.15619.58289a1.39655,1.39655,0,0,1-.98751,1.71042l-24.348,6.52409a1.39657,1.39657,0,0,1-1.71043-.98751l-.15618-.58289" fill="none" stroke="#d97708" stroke-miterlimit="10"/>
+      <path id="protrudingMetalPart-8" data-name="protrudingMetalPart" d="M.70412,260.4018l-.15619-.58288a1.39656,1.39656,0,0,1,.98751-1.71042l24.348-6.52409a1.39655,1.39655,0,0,1,1.71042.9875l.15618.58289" fill="#f7931e" stroke="#f9ab53" stroke-miterlimit="10"/>
+    </g>
+  </g>
+  <g id="side-part-2" data-name="side-part">
+    <path d="M252.30433,353.66048,232.1987,365.84571a6.44718,6.44718,0,0,1-9.78877-5.51361,75.76108,75.76108,0,0,1,.06285-24.07752c2.76963-17.35595,7.93715-39.49616,7.93715-49.97628,0-10.40581-5.12276-32.30694-7.87818-49.60637a78.482,78.482,0,0,1-.12182-24.44742,6.44718,6.44718,0,0,1,9.78877-5.51362l20.10563,12.18523a6.44717,6.44717,0,0,1,3.1056,5.51362V348.14686A6.44717,6.44717,0,0,1,252.30433,353.66048Z" fill="#f7931e"/>
+    <polyline points="251.41 218.354 251.41 354.203 250.089 355.003 250.089 217.554" fill="#f15a24"/>
+    <path d="M231.40993,287.2783c0-10.40581-5.12276-32.30694-7.87818-49.60637a78.482,78.482,0,0,1-.12182-24.44742,6.44718,6.44718,0,0,1,9.78877-5.51362l20.10563,12.18523" fill="none" stroke="#f9ab53" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path d="M254.40993,306.29555v40.85131a6.44717,6.44717,0,0,1-3.1056,5.51362L231.1987,364.84571a6.35405,6.35405,0,0,1-4.62327.8105" fill="none" stroke="#d97708" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <g id="protrudingMetalPart-9" data-name="protrudingMetalPart">
+      <rect id="protrudingMetalPart-10" data-name="protrudingMetalPart" x="233.40993" y="314.7783" width="28" height="4" rx="1.39655" transform="translate(568.37873 558.72705) rotate(164.99979)" fill="#f7931e"/>
+      <path id="protrudingMetalPart-11" data-name="protrudingMetalPart" d="M233.887,320.40182l.15619.58288a1.39655,1.39655,0,0,0,1.71042.98751l24.348-6.52412a1.39654,1.39654,0,0,0,.9875-1.71042l-.15618-.58288" fill="none" stroke="#d97708" stroke-miterlimit="10"/>
+      <path id="protrudingMetalPart-12" data-name="protrudingMetalPart" d="M260.93288,313.15479l-.15619-.58289a1.39656,1.39656,0,0,0-1.71042-.98751l-24.348,6.52412a1.39655,1.39655,0,0,0-.9875,1.71042l.15618.58289" fill="#f7931e" stroke="#f9ab53" stroke-miterlimit="10"/>
+    </g>
+    <g id="protrudingMetalPart-13" data-name="protrudingMetalPart">
+      <rect id="protrudingMetalPart-14" data-name="protrudingMetalPart" x="233.40993" y="254.7783" width="28" height="4" rx="1.39655" transform="matrix(-0.96593, -0.25882, 0.25882, -0.96593, 419.92964, 568.84195)" fill="#f7931e"/>
+      <path id="protrudingMetalPart-15" data-name="protrudingMetalPart" d="M233.887,253.1548l-.15619.58289a1.39655,1.39655,0,0,0,.98751,1.71042l24.348,6.52409a1.39657,1.39657,0,0,0,1.71043-.98751l.15618-.58289" fill="none" stroke="#d97708" stroke-miterlimit="10"/>
+      <path id="protrudingMetalPart-16" data-name="protrudingMetalPart" d="M260.93288,260.4018l.15619-.58288a1.39656,1.39656,0,0,0-.98751-1.71042l-24.348-6.52409a1.39655,1.39655,0,0,0-1.71043.9875l-.15618.58289" fill="#f7931e" stroke="#f9ab53" stroke-miterlimit="10"/>
+    </g>
+  </g>
+  <path id="indicator-screen" d="M77.72707,286.2783a53.5,53.5,0,1,1,53.5,53.5,53.5,53.5,0,0,1-53.5-53.5" stroke-miterlimit="10" stroke-width="6" stroke="url(#linear-gradient-2)"/>
+  <g id="indicator" style="transform-box: fill-box; transform-origin: 50% 50%">
+    <animateTransform attributeName="transform" type="rotate" begin="0s" from="0" to="-360" dur="10s" repeatCount="indefinite" additive="sum"/>
+
+    <line x1="131.22365" y1="249.0336" x2="131.22365" y2="267.57618" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <line x1="137.02536" y1="249.48823" x2="134.13707" y2="267.80448" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.98"/>
+    <line x1="142.68544" y1="250.84101" x2="136.97936" y2="268.4838" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.96"/>
+    <line x1="148.06571" y1="253.05893" x2="139.68114" y2="269.59756" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.94"/>
+    <line x1="153.03484" y1="256.08783" x2="142.17646" y2="271.11857" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.92"/>
+    <line x1="157.47151" y1="259.85379" x2="144.4044" y2="273.0097" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.9"/>
+    <line x1="161.26743" y1="264.26486" x2="146.31057" y2="275.22478" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.88"/>
+    <line x1="164.32991" y1="269.21336" x2="147.84844" y2="277.70974" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.86"/>
+    <line x1="166.58422" y1="274.57848" x2="148.98047" y2="280.40392" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.84"/>
+    <line x1="167.9753" y1="280.22927" x2="149.67903" y2="283.24154" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.82"/>
+    <line x1="168.46921" y1="286.02776" x2="149.92705" y2="286.15334" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.8"/>
+    <line x1="168.05389" y1="291.83242" x2="149.71849" y2="289.06823" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.78"/>
+    <line x1="166.73946" y1="297.50152" x2="149.05843" y2="291.91506" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.76"/>
+    <line x1="164.55804" y1="302.89669" x2="147.963" y2="294.62432" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.74"/>
+    <line x1="161.56285" y1="307.88622" x2="146.45892" y2="297.12988" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.72"/>
+    <line x1="157.82703" y1="312.3483" x2="144.58293" y2="299.37058" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.7"/>
+    <line x1="153.44177" y1="316.174" x2="142.3808" y2="301.29171" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.68"/>
+    <line x1="148.51413" y1="319.26993" x2="139.90632" y2="302.84638" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.66"/>
+    <line x1="143.16439" y1="321.56052" x2="137.21987" y2="303.99663" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.64"/>
+    <line x1="137.52315" y1="322.98984" x2="134.38704" y2="304.71438" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.62"/>
+    <line x1="131.72814" y1="323.523" x2="131.47699" y2="304.98212" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.6"/>
+    <line x1="125.9208" y1="323.147" x2="128.56075" y2="304.7933" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.58"/>
+    <line x1="120.24292" y1="321.871" x2="125.70952" y2="304.15254" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.56"/>
+    <line x1="114.8331" y1="319.72616" x2="122.9929" y2="303.07548" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.54"/>
+    <line x1="109.82341" y1="316.76484" x2="120.47721" y2="301.58841" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.52"/>
+    <line x1="105.33613" y1="313.05932" x2="118.22386" y2="299.72763" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.5"/>
+    <line x1="101.48082" y1="308.70007" x2="116.28786" y2="297.53857" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.48"/>
+    <line x1="98.35159" y1="303.7935" x2="114.71647" y2="295.07467" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.46"/>
+    <line x1="96.02483" y1="298.4594" x2="113.54805" y2="292.39607" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.44"/>
+    <line x1="94.55733" y1="292.82798" x2="112.81113" y2="289.56817" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.42"/>
+    <line x1="93.98493" y1="287.0367" x2="112.52369" y2="286.65999" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.4"/>
+    <line x1="94.3216" y1="281.22696" x2="112.69275" y2="283.74255" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.38"/>
+    <line x1="95.55911" y1="275.54057" x2="113.31419" y2="280.88704" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.36"/>
+    <line x1="97.66727" y1="270.11635" x2="114.37283" y2="278.16319" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.34"/>
+    <line x1="100.5946" y1="265.08671" x2="115.84283" y2="275.63749" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.32"/>
+    <line x1="104.26964" y1="260.57444" x2="117.68831" y2="273.37159" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.3"/>
+    <line x1="108.60268" y1="256.6897" x2="119.8642" y2="271.42081" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.28"/>
+    <line x1="113.48794" y1="253.52731" x2="122.31741" y2="269.83277" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.26"/>
+    <line x1="118.80616" y1="251.16447" x2="124.98803" y2="268.64623" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.24"/>
+    <line x1="124.42752" y1="249.65887" x2="127.81088" y2="267.89017" fill="none" class="main-color" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" opacity="0.22"/>
+  </g>
+  <g id="thruster">
+    <g id="thruster-flame" style="transform-box: fill-box; transform-origin: 50% 50%">
+      <path d="M94.01217,411.66844a16.25351,16.25351,0,0,1,2.36511,6.48761c.60572,3.35319,1.18844,6.71161,1.63672,10.09137.46856,3.38942.8586,6.77474,1.04194,10.2033a.50652.50652,0,0,1-.98275.185c-.82135-1.78085-8.31129-29.49586-4.061-26.96729Z" fill="aqua"/>
+      <animateTransform attributeName="transform" type="scale" begin="-0s" from="1 1" to="1.2 2" dur="0.1s" repeatCount="indefinite" additive="sum"/>
+    </g>
+    <g id="thruster-flame-2" style="transform-box: fill-box; transform-origin: 50% 50%" data-name="thruster-flame">
+      <path d="M99.38082,411.618a16.25459,16.25459,0,0,1,2.18719,6.54975c.514,3.36841,1.00489,6.74154,1.36078,10.13226.376,3.401.67348,6.79552.7632,10.228a.50651.50651,0,0,1-.98739.15815c-.77245-1.80277-7.50357-29.71137-3.32378-27.06813Z" fill="aqua"/>
+      <animateTransform attributeName="transform" type="scale" begin="-0.025s" from="1 1" to="1.2 2" dur="0.1s" repeatCount="indefinite" additive="sum"/>      
+    </g>
+    <g id="thruster-flame-3" style="transform-box: fill-box; transform-origin: 50% 50%" data-name="thruster-flame">
+      <path d="M104.66176,411.58653a16.25285,16.25285,0,0,1,2.051,6.59369c.444,3.37828.86493,6.7609,1.15039,10.15826.30537,3.408.53238,6.80808.551,10.24158a.50653.50653,0,0,1-.9905.13764c-.735-1.81822-6.88575-29.86079-2.76184-27.13117Z" fill="aqua"/>
+      <animateTransform attributeName="transform" type="scale" begin="-0.05s" from="1 1" to="1.2 2" dur="0.1s" repeatCount="indefinite" additive="sum"/>      
+    </g>
+    <g id="thruster-flame-4" style="transform-box: fill-box; transform-origin: 50% 50%" data-name="thruster-flame">
+      <path d="M110.38637,411.53221a16.2542,16.2542,0,0,1,1.69678,6.69354c.26351,3.39721.50353,6.79737.60767,10.20514.12338,3.41946.169,6.82682.00465,10.25641a.50652.50652,0,0,1-.99642.08466c-.63612-1.87387-5.28859-30.15465-1.31268-27.23975Z" fill="aqua"/>
+      <animateTransform attributeName="transform" type="scale" begin="-0.75s" from="1 1" to="1.2 2" dur="0.1s" repeatCount="indefinite" additive="sum"/>      
+    </g>
+    <g id="thruster-flame-5" style="transform-box: fill-box; transform-origin: 50% 50%" data-name="thruster-flame">
+      <path d="M116.43453,411.522a16.25254,16.25254,0,0,1,1.17761,6.80413c.00176,3.40745-.02014,6.816-.178,10.22168-.13967,3.41887-.35591,6.81965-.78331,10.22644a.50651.50651,0,0,1-.99995.00788c-.49024-1.91723-2.95654-30.47176.78369-27.26013Z" fill="aqua"/>
+      <animateTransform attributeName="transform" type="scale" begin="-0.1s" from="1 1" to="1.2 2" dur="0.1s" repeatCount="indefinite" additive="sum"/>      
+    </g>
+    <g id="thruster-flame-6" style="transform-box: fill-box; transform-origin: 50% 50%" data-name="thruster-flame">
+      <path d="M121.43453,411.522a16.25254,16.25254,0,0,1,1.17761,6.80413c.00176,3.40745-.02014,6.816-.178,10.22168-.13967,3.41887-.35591,6.81965-.78331,10.22644a.50651.50651,0,0,1-.99995.00788c-.49024-1.91723-2.95654-30.47176.78369-27.26013Z" fill="aqua"/>
+      <animateTransform attributeName="transform" type="scale" begin="-0.125s" from="1 1" to="1.2 2" dur="0.1s" repeatCount="indefinite" additive="sum"/>      
+    </g>
+    <g id="thruster-flame-7" style="transform-box: fill-box; transform-origin: 50% 50%" data-name="thruster-flame">
+      <path d="M126.43453,411.522a16.25254,16.25254,0,0,1,1.17761,6.80413c.00176,3.40745-.02014,6.816-.178,10.22168-.13967,3.41887-.35591,6.81965-.78331,10.22644a.50651.50651,0,0,1-.99995.00788c-.49024-1.91723-2.95654-30.47176.78369-27.26013Z" fill="aqua"/>
+      <animateTransform attributeName="transform" type="scale" begin="-0.15s" from="1 1" to="1.2 2" dur="0.1s" repeatCount="indefinite" additive="sum"/>      
+    </g>
+    <g id="thruster-flame-8" style="transform-box: fill-box; transform-origin: 50% 50%" data-name="thruster-flame">
+      <path d="M131.43453,411.522a16.25254,16.25254,0,0,1,1.17761,6.80413c.00176,3.40745-.02014,6.816-.178,10.22168-.13967,3.41887-.35591,6.81965-.78331,10.22644a.50651.50651,0,0,1-1,.00788c-.49024-1.91723-2.95654-30.47176.78369-27.26013Z" fill="aqua"/>
+      <animateTransform attributeName="transform" type="scale" begin="-0.175s" from="1 1" to="1.2 2" dur="0.1s" repeatCount="indefinite" additive="sum"/>      
+    </g>
+    <g id="thruster-flame-9" style="transform-box: fill-box; transform-origin: 50% 50%" data-name="thruster-flame">
+      <path d="M136.43453,411.522a16.25254,16.25254,0,0,1,1.17761,6.80413c.00176,3.40745-.02014,6.816-.178,10.22168-.13967,3.41887-.35591,6.81965-.78331,10.22644a.50651.50651,0,0,1-1,.00788c-.49024-1.91723-2.95654-30.47176.78369-27.26013Z" fill="aqua"/>
+      <animateTransform attributeName="transform" type="scale" begin="-0.2s" from="1 1" to="1.2 2" dur="0.1s" repeatCount="indefinite" additive="sum"/>      
+    </g>
+    <g id="thruster-flame-10" style="transform-box: fill-box; transform-origin: 50% 50%" data-name="thruster-flame">
+      <path d="M141.43453,411.522a16.25254,16.25254,0,0,1,1.17761,6.80413c.00176,3.40745-.02014,6.816-.178,10.22168-.13967,3.41887-.35591,6.81965-.78331,10.22644a.50651.50651,0,0,1-1,.00788c-.49024-1.91723-2.95654-30.47176.78369-27.26013Z" fill="aqua"/>
+      <animateTransform attributeName="transform" type="scale" begin="-0.225s" from="1 1" to="1.2 2" dur="0.1s" repeatCount="indefinite" additive="sum"/>      
+    </g>
+    <g id="thruster-flame-11" style="transform-box: fill-box; transform-origin: 50% 50%" data-name="thruster-flame">
+      <path d="M146.43453,411.522a16.25254,16.25254,0,0,1,1.17761,6.80413c.00176,3.40745-.02014,6.816-.178,10.22168-.13967,3.41887-.35591,6.81965-.78331,10.22644a.50651.50651,0,0,1-1,.00788c-.49024-1.91723-2.95654-30.47176.78369-27.26013Z" fill="aqua"/>
+      <animateTransform attributeName="transform" type="scale" begin="-0.25s" from="1 1" to="1.2 2" dur="0.1s" repeatCount="indefinite" additive="sum"/>      
+    </g>
+    <g id="thruster-flame-12" style="transform-box: fill-box; transform-origin: 50% 50%" data-name="thruster-flame">
+      <path d="M152.02761,411.552a16.25265,16.25265,0,0,1,.88025,6.84894c-.14661,3.40424-.31686,6.80863-.62293,10.20423-.28842,3.4095-.65253,6.79761-1.22777,10.18261a.50654.50654,0,0,1-.9994-.03563c-.40637-1.9366-1.62689-30.57194,1.96985-27.20015Z" fill="aqua"/>
+      <animateTransform attributeName="transform" type="scale" begin="-0.275s" from="1 1" to="1.2 2" dur="0.1s" repeatCount="indefinite" additive="sum"/>      
+    </g>
+    <g id="thruster-flame-13" style="transform-box: fill-box; transform-origin: 50% 50%" data-name="thruster-flame">
+      <path d="M157.56869,411.602a16.25264,16.25264,0,0,1,.60668,6.8786c-.36947,4.52991-.8181,9.05494-1.48639,13.5531-.32311,2.25312-.6975,4.50238-1.17517,6.74384a.50454.50454,0,0,1-.99713-.07538c-.13519-2.28784-.16705-4.56781-.1477-6.84393.01566-4.54745.25262-9.08851.56848-13.62244a16.25352,16.25352,0,0,1,1.63409-6.70917.54793.54793,0,0,1,.99714.07538Z" fill="aqua"/>
+      <animateTransform attributeName="transform" type="scale" begin="-0.3s" from="1 1" to="1.2 2" dur="0.1s" repeatCount="indefinite" additive="sum"/>      
+    </g>
+    <g id="thruster-flame-14" style="transform-box: fill-box; transform-origin: 50% 50%" data-name="thruster-flame">
+      <path d="M162.98061,411.65483a16.253,16.253,0,0,1,.39691,6.89386c-.50725,4.51649-1.09342,9.02582-1.89838,13.50152-.39159,2.24225-.83428,4.47907-1.37994,6.705a.50459.50459,0,0,1-.99444-.10577c-.06543-2.29084-.0279-4.57074.06079-6.84522.1541-4.54485.52928-9.07664.983-13.59881a16.25343,16.25343,0,0,1,1.83765-6.65632.548.548,0,0,1,.99438.10578Z" fill="aqua"/>
+      <animateTransform attributeName="transform" type="scale" begin="-0.325s" from="1 1" to="1.2 2" dur="0.1s" repeatCount="indefinite" additive="sum"/>      
+    </g>
+    <g id="thruster-flame-15" style="transform-box: fill-box; transform-origin: 50% 50%" data-name="thruster-flame">
+      <path d="M168.86513,411.81169a16.25455,16.25455,0,0,1-.05786,6.90509c-.80355,4.47327-1.68537,8.93424-2.7832,13.34717-.53845,2.21161-1.12744,4.41443-1.81848,6.59954a.50456.50456,0,0,1-.98529-.171c.08557-2.29017.27313-4.56269.51129-6.82636.45316-4.52481,1.12572-9.0221,1.87635-13.50458a16.25394,16.25394,0,0,1,2.27184-6.52087.548.548,0,0,1,.98535.171Z" fill="aqua"/>
+      <animateTransform attributeName="transform" type="scale" begin="-0.35s" from="1 1" to="1.2 2" dur="0.1s" repeatCount="indefinite" additive="sum"/>      
+    </g>
+    <polygon id="thruster-2" data-name="thruster" points="73.865 400.567 187.296 400.567 169.296 417.744 92.227 417.744 73.865 400.567" fill="#333"/>
+    <line id="thruster-3" data-name="thruster" x1="169.29604" y1="416.74382" x2="92.22707" y2="416.74382" fill="none" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+  <g id="bottom-part">
+    <path id="bottom-part-2" data-name="bottom-part" d="M214.86184,383.28123,189.979,400.30565a1.50242,1.50242,0,0,1-.84668.26171H72.32082a1.50247,1.50247,0,0,1-.84668-.26171L46.59426,383.28123a1.50019,1.50019,0,0,1,.84668-2.73828s17.762-2,23.68268-2c15.02586,0,34.10345,6,60.10345,6,27,0,45.75-6,61-6,5.447,0,21.78809,2,21.78809,2a1.5002,1.5002,0,0,1,.84668,2.73828Z" fill="#f7931e"/>
+    <line id="light-3" data-name="light" x1="188.22658" y1="399.56736" x2="73.22658" y2="399.56736" fill="none" stroke="#f9ab53" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="light-4" data-name="light" d="M47.25657,381.55429a1.5007,1.5007,0,0,1,.18437-.01134s17.762-2,23.68268-2c15.02586,0,34.10345,6,60.10345,6,27,0,45.75-6,61-6,5.447,0,21.78809,2,21.78809,2" fill="none" stroke="#f9ab53" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+  <g id="inner-ring">
+    <path id="inner-ring-2" data-name="inner-ring" d="M49.52578,307.927A84.51511,84.51511,0,1,0,48.032,271.404m0,0A85.24882,85.24882,0,0,0,49.52578,307.927m82.26089,42.70563a64.91391,64.91391,0,1,1,64.91391-64.91391A64.91392,64.91392,0,0,1,131.78667,350.63261Z" fill="#f7931e"/>
+    <path id="shadow" d="M54.72712,316.269a82.372,82.372,0,0,0,153-.00022M70.40385,257.90424c10.284-23.007,33.89556-39.09945,61.37928-39.09945,27.701,0,51.46837,16.3479,61.62072,39.64647" fill="none" stroke="#d97708" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+    <path id="light-5" data-name="light" d="M208.667,264.115a80.39322,80.39322,0,0,0-155,.41563m144.41351,37.19728c-6.27811,29.61664-33.56935,51.90473-66.2852,51.90473-33.53038,0-61.36268-23.41173-66.7148-54.13026" fill="none" stroke="#f9ab53" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+    <line id="part" x1="66.87289" y1="285.7783" x2="80.72707" y2="285.7783" fill="#f7931e" stroke="#f7931e" stroke-miterlimit="10" stroke-width="4"/>
+    <line id="part-2" data-name="part" x1="181.87289" y1="285.7783" x2="196.72707" y2="285.7783" fill="#f7931e" stroke="#f7931e" stroke-miterlimit="10" stroke-width="4"/>
+  </g>
+  <path d="M164.22707,367.7783c19.37683-2.63623,30.6272-10.3728,36.5-15.5,38.63892-33.733,20.30139-107.98962,11-120a13.49766,13.49766,0,0,1-3-6c-1.28271-6.648,3.96973-10.74756,9-22,3.37439-7.54822,5.06152-11.32229,4-15-2.65857-9.21063-20.09521-11.47821-25-12" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  <g id="cable-panel">
+    <path id="cable-panel-2" data-name="cable-panel" d="M98.46359,360.20337h66.35379a3.57218,3.57218,0,0,1,3.20385,4.64507l-2.01531,7.34323a3.38772,3.38772,0,0,1-3.20385,2.58663H100.47889a3.38771,3.38771,0,0,1-3.20384-2.58663l-2.01531-7.34323A3.57217,3.57217,0,0,1,98.46359,360.20337Z" fill="#f15a24"/>
+    <line id="shadow-2" data-name="shadow" x1="163.99048" y1="373.2783" x2="99.29048" y2="373.2783" fill="none" stroke="#d8440e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="cable-panel-3" data-name="cable-panel" d="M96.14048,363.33824a3.27125,3.27125,0,0,1,2.99682-2.113h65.00637a3.27124,3.27124,0,0,1,2.99681,2.113" fill="none" stroke="#f48157" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+  <rect id="hologram-projector" x="74.22707" y="160.7783" width="113" height="12" rx="2.72414" fill="#333"/>
+  <g id="top-part">
+    <path id="top-part-2" data-name="top-part" d="M214.86184,189.82908,189.979,172.80467a1.50243,1.50243,0,0,0-.84668-.26172H72.32082a1.50248,1.50248,0,0,0-.84668.26172L46.59426,189.82908a1.50019,1.50019,0,0,0,.84668,2.73828s17.762,2,23.68268,2c15.02586,0,34.10345-6,60.10345-6,27,0,45.75,6,61,6,5.447,0,21.78809-2,21.78809-2a1.5002,1.5002,0,0,0,.84668-2.73828Z" fill="#f7931e"/>
+    <path id="top-part-3" data-name="top-part" d="M212.72805,189.82908l-24.25174-17.02441a1.43845,1.43845,0,0,0-.82521-.26172H73.80214a1.43845,1.43845,0,0,0-.82521.26172L48.72805,189.82908" fill="none" stroke="#f9ab53" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+  </g>
+</svg>

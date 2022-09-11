@@ -1,17 +1,22 @@
 export interface DateRange {
-  startDate: Date,
-  endDate: Date | 'now'
+  startDate: Date;
+  endDate: Date | 'now';
 }
 export interface Coordinates {
-  x: number,
-  y: number
-};
+  x: number;
+  y: number;
+}
 
 export interface Icon {
-  src: string,
-  alt: string
-};
+  src: string;
+  alt: string;
+}
 
 export interface PageProps {
-  mediaFiles: StrapiFile[]
+  mediaFiles: StrapiFile[];
+}
+
+export interface Point {
+  x: number;
+  y: number;
 }
