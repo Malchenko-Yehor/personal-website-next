@@ -1,6 +1,6 @@
-import { media } from "styled-bootstrap-grid";
-import styled, { css } from "styled-components";
-import { SectionProps } from "./Section";
+import { media } from 'styled-bootstrap-grid';
+import styled, { css } from 'styled-components';
+import { SectionProps } from './Section';
 
 export const Section = styled.section<SectionProps>`
   padding: 40px 0;
@@ -21,7 +21,15 @@ export const Section = styled.section<SectionProps>`
     padding: 75px 0;
   `}
 
-  ${props => props.noTopIndent && css`padding-top: 0`};
-  
-  ${props => props.noBottomIndent && css`padding-bottom: 0`};
+  ${(props) =>
+    props.noTopIndent &&
+    css`
+      padding-top: 0;
+    `};
+
+  ${(props) =>
+    props.noBottomIndent &&
+    css`
+      padding-bottom: 0;
+    `};
 `;

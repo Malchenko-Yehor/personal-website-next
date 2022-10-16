@@ -11,7 +11,7 @@ export interface PortfolioProps extends PlanetsListProps {
 
 const Portfolio: FC<PortfolioProps> = ({ title, items }) => {
   return (
-    <S.Portfolio>
+    <S.Portfolio navigable title={title}>
       <Container>
         <AnimatedH2 text={title} />
         <PlanetsList items={items} />

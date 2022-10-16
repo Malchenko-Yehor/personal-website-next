@@ -1,5 +1,5 @@
 import { H2 } from '@atoms/H2/H2.styled';
-import { Section } from '@atoms/Section/Section.styled';
+import Section from '@atoms/Section';
 import { flexCenterMixin } from '@styles/mixins';
 import { fontRubik } from '@styles/variables';
 import { media } from 'styled-bootstrap-grid';

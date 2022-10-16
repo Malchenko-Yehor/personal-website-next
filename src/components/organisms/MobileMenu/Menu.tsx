@@ -4,6 +4,8 @@ import { lockBodyScroll, unlockBodyScroll } from '@helpers/body-scroll-lock';
 import useNavigationStore from '@hooks/useNavigationStore';
 import Clouds from '@molecules/Clouds';
 import LanguageSwitcher from '@molecules/LanguageSwitcher';
+import NavLinksList from '@organisms/NavLinksList';
+import { Variants } from 'framer-motion';
 import { FC, useEffect } from 'react';
 import shallow from 'zustand/shallow';
 import * as S from './Menu.styled';
@@ -13,7 +15,7 @@ export interface MenuProps {
 }
 
 const CLOUDS_AMOUNT = 15;
-const SHUTTLE_SPEED = 1.5;
+const SHUTTLE_SPEED = 1;
 
 const Menu: FC<MenuProps> = ({ alwaysOpened }) => {
   const [opened, setNavigationOpened] = useNavigationStore(
@@ -21,7 +23,7 @@ const Menu: FC<MenuProps> = ({ alwaysOpened }) => {
     shallow
   );
 
-  const onCrossButtonClick = () => {
+  const close = () => {
     setNavigationOpened(false);
   };
 
@@ -30,18 +32,40 @@ const Menu: FC<MenuProps> = ({ alwaysOpened }) => {
     else unlockBodyScroll();
   }, [opened]);
 
+  const variants: Variants = {
+    hidden: {
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0,
+      },
+    },
+    visible: {
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: SHUTTLE_SPEED + 1,
+      },
+    },
+  };
+
   return (
-    <S.Menu opened={opened || alwaysOpened} initial="hidden" animate={opened ? 'visible' : 'hidden'}>
+    <S.Menu
+      opened={opened || alwaysOpened}
+      initial="hidden"
+      animate={opened ? 'visible' : 'hidden'}
+      variants={variants}
+    >
       <SpaceShuttle visible={opened || alwaysOpened} speed={SHUTTLE_SPEED} />
       <Clouds
         visible={opened || alwaysOpened}
         cloudsAmount={CLOUDS_AMOUNT}
         animationSpeed={SHUTTLE_SPEED - 0.5}
-        delay={0.2}
+        delay={0.3}
       />
-      <CrossButton onClick={onCrossButtonClick} animated={opened || alwaysOpened} delay={SHUTTLE_SPEED + 1} />
+      <CrossButton onClick={close} animated={opened || alwaysOpened} delay={SHUTTLE_SPEED + 1} />
 
-      <LanguageSwitcher showDelay={SHUTTLE_SPEED + 1} />
+      <LanguageSwitcher />
+
+      <NavLinksList onLinkClick={close} />
     </S.Menu>
   );
 };

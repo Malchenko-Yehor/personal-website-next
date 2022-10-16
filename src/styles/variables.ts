@@ -34,6 +34,7 @@ export const devices = {
 export const cTransparent = 'transparent';
 export const cBlack = '#212121';
 export const cWhite = '#F9EEF2';
+export const cWhite80 = '#ccc';
 export const cWhite50 = '#828282';
 export const cOrange = '#FEC107';
 export const cOrange50 = '#806104';

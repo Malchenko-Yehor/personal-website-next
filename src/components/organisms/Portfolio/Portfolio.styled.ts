@@ -1,4 +1,4 @@
-import { Section } from '@atoms/Section/Section.styled';
+import Section from '@atoms/Section';
 import { PlanetsList } from '@organisms/PlanetsList/PlanetsList.styled';
 import styled from 'styled-components';
 

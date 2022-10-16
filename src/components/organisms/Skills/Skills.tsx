@@ -10,7 +10,7 @@ export interface SkillsProps extends HexagonListProps {
 
 const Skills: FC<SkillsProps> = ({ title, items }) => {
   return (
-    <S.Skills>
+    <S.Skills navigable title={title}>
       <Container>
         <Row justifyContent="center">
           <Col lg={10} xl={8}>

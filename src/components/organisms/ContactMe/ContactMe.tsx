@@ -11,7 +11,7 @@ export interface ContactMeProps extends HoloListProps {
 
 const ContactMe: FC<ContactMeProps> = ({ title, items }) => {
   return (
-    <Section>
+    <Section navigable title={title}>
       <Container>
         <AnimatedH2 text={title} />
 

@@ -1,5 +1,5 @@
 import { getRandomInRange } from '@helpers/math';
-import { cWhite } from '@styles/variables';
+import { cWhite80 } from '@styles/variables';
 import { motion, Variants } from 'framer-motion';
 import { FC } from 'react';
 import * as S from './Clouds.styled';
@@ -55,7 +55,7 @@ const Cloud: FC<CloudProps> = ({ visible, order, cloudsAmount, animationSpeed, d
       r: ['5%', '15%', '15%', '65%'],
       transition: {
         times: [0, 0.3, 0.5, 1],
-        duration: 1.7,
+        duration: 1.4,
         delay: (order * animationSpeed) / cloudsAmount + delay,
       },
     },
@@ -65,7 +65,7 @@ const Cloud: FC<CloudProps> = ({ visible, order, cloudsAmount, animationSpeed, d
     <motion.circle
       cx={cx}
       cy={cy}
-      fill={cWhite}
+      fill={cWhite80}
       initial="hidden"
       animate={visible ? 'visible' : 'hidden'}
       variants={cloudVariants}

@@ -13,10 +13,9 @@ import { useOutsideClick } from '@hooks/useOutsideClick';
 
 interface LanguageSwitcherProps {
   mediaFiles?: StrapiFile[];
-  showDelay?: number;
 }
 
-const LanguageSwitcher: FC<LanguageSwitcherProps> = ({ mediaFiles, showDelay = 0 }) => {
+const LanguageSwitcher: FC<LanguageSwitcherProps> = ({ mediaFiles }) => {
   const ref = useRef();
   const { locale, locales } = useRouter();
   const angles = getPointsAnglesInRange(140, 400, locales?.length);
@@ -44,9 +43,6 @@ const LanguageSwitcher: FC<LanguageSwitcherProps> = ({ mediaFiles, showDelay = 0
     visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        delay: showDelay,
-      },
     },
   };
 

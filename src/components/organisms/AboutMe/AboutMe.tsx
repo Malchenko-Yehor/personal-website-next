@@ -45,7 +45,7 @@ const AboutMe: FC<AboutMeProps> = ({ title, intro, interests }) => {
   };
 
   return (
-    <S.AboutMe ref={ref}>
+    <S.AboutMe ref={ref} navigable title={title}>
       <Container>
         <motion.div initial="hidden" animate={inView ? 'visible' : 'hidden'} transition={transition}>
           <Row justifyContent="center" mdJustifyContent="between">
