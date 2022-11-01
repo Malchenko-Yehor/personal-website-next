@@ -15,6 +15,6 @@ export const Default = Template.bind({});
 Default.args = {
   color: '#0ff',
   icon: {
-    url: '/images/emakina.svg',
+    url: '/media/images/emakina.svg',
   },
 } as ColouredIconProps;

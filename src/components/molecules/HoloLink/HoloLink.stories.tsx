@@ -16,7 +16,7 @@ Default.args = {
   url: 'https://github.com/Malchenko-Yehor',
   color: '#0ff',
   icon: {
-    url: '/images/github.svg',
+    url: '/media/images/github.svg',
   },
 } as HoloLinkProps;
 
@@ -26,6 +26,6 @@ AlternativeColor.args = {
   url: 'https://github.com/Malchenko-Yehor',
   color: '#ff0',
   icon: {
-    url: '/images/github.svg',
+    url: '/media/images/github.svg',
   },
 } as HoloLinkProps;

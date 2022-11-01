@@ -26,7 +26,7 @@ Default.args = {
     {
       id: uuid(),
       icon: {
-        url: '/images/visit-qatar.svg',
+        url: '/media/images/visit-qatar.svg',
         width: 141,
         height: 141.6,
       },
@@ -37,7 +37,7 @@ Default.args = {
     {
       id: uuid(),
       icon: {
-        url: '/images/visit-qatar.svg',
+        url: '/media/images/visit-qatar.svg',
         width: 141,
         height: 141.6,
       },
@@ -49,7 +49,7 @@ Default.args = {
     {
       id: uuid(),
       icon: {
-        url: '/images/facq.svg',
+        url: '/media/images/facq.svg',
         width: 141,
         height: 141.6,
       },
@@ -60,7 +60,7 @@ Default.args = {
     {
       id: uuid(),
       icon: {
-        url: '/images/emakina-white.svg',
+        url: '/media/images/emakina-white.svg',
         width: 141,
         height: 141.6,
       },
@@ -71,7 +71,7 @@ Default.args = {
     {
       id: uuid(),
       icon: {
-        url: '/images/deutsche-bank.svg',
+        url: '/media/images/deutsche-bank.svg',
         width: 141,
         height: 141.6,
       },
@@ -82,7 +82,7 @@ Default.args = {
     {
       id: uuid(),
       icon: {
-        url: '/images/tink.svg',
+        url: '/media/images/tink.svg',
         width: 141,
         height: 141.6,
       },
@@ -93,7 +93,7 @@ Default.args = {
     {
       id: uuid(),
       icon: {
-        url: '/images/gwo-white.svg',
+        url: '/media/images/gwo-white.svg',
         width: 141,
         height: 141.6,
       },
@@ -104,7 +104,7 @@ Default.args = {
     {
       id: uuid(),
       icon: {
-        url: '/images/gwo-white.svg',
+        url: '/media/images/gwo-white.svg',
         width: 141,
         height: 141.6,
       },

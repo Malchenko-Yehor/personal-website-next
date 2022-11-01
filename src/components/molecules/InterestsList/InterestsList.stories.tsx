@@ -19,42 +19,42 @@ Default.args = {
       id: uuid(),
       title: 'Biking',
       icon: {
-        url: '/images/bike.svg',
+        url: '/media/images/bike.svg',
       },
     },
     {
       id: uuid(),
       title: 'Coding',
       icon: {
-        url: '/images/coding.svg',
+        url: '/media/images/coding.svg',
       },
     },
     {
       id: uuid(),
       title: 'Kickboxing',
       icon: {
-        url: '/images/boxing.svg',
+        url: '/media/images/boxing.svg',
       },
     },
     {
       id: uuid(),
       title: 'Gaming',
       icon: {
-        url: '/images/gamepad.svg',
+        url: '/media/images/gamepad.svg',
       },
     },
     {
       id: uuid(),
       title: 'Workout',
       icon: {
-        url: '/images/workout.svg',
+        url: '/media/images/workout.svg',
       },
     },
     {
       id: uuid(),
       title: 'Playing guitar',
       icon: {
-        url: '/images/guitar.svg',
+        url: '/media/images/guitar.svg',
       },
     },
   ],

@@ -95,7 +95,7 @@ const Switch: FC<SwitchProps> = ({ coordinates, opened, language }) => {
 export const getLanguages = (locales: string[], mediaFiles?: StrapiFile[]) => {
   const languages: LanguageFlagProps[] = locales.map((locale) => {
     const flagIconUrl = mediaFiles?.find((file) => file.name.match(`${locale}.svg`))?.url;
-    const devFlagUrl = `/images/flags/${locale}.svg`;
+    const devFlagUrl = `/media/images/flags/${locale}.svg`;
 
     return {
       locale,

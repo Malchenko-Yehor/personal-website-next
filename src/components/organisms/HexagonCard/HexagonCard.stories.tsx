@@ -29,7 +29,7 @@ export const Default = Template.bind({});
 
 Default.args = {
   image: {
-    url: '/images/react.svg',
+    url: '/media/images/react.svg',
     alternativeText: 'react',
   },
   title: 'React',
@@ -39,7 +39,7 @@ export const LongTitle = Template.bind({});
 
 LongTitle.args = {
   image: {
-    url: '/images/javascript.svg',
+    url: '/media/images/javascript.svg',
     alternativeText: 'react',
   },
   title: 'JavaScript',

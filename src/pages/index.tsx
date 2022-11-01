@@ -1,43 +1,46 @@
-import { FC } from 'react';
 import { GetStaticProps } from 'next';
-import queryApi from 'api/apollo';
-import { getPageQuery, widgetsZoneQuery } from 'api/queries';
-import { PageProps } from 'types';
-import DefaultLayout from '@layouts/Default';
-import WidgetsZone from '@organisms/WidgetsZone';
-import Portfolio from '@organisms/Portfolio';
-import { StrapiFile, Widget } from 'api/types';
-import { v4 as uuid } from 'uuid';
+import { FC } from 'react';
+import { client } from '../../.tina/__generated__/client';
+import { useTina } from 'tinacms/dist/react';
+import { PageQuery } from '../../.tina/__generated__/types';
+import Image from 'next/image';
 
-interface HomepageProps extends PageProps {
-  homepage: {
-    title: string;
-    widgetsZone: Widget[];
-  };
+interface TinaProps {
+  query: string;
+  variables: object;
+  data: object;
 }
 
-export const Homepage: FC<HomepageProps> = (props) => {
-  // const { title, widgetsZone } = props.homepage;
+export const Homepage: FC<TinaProps> = (props) => {
+  const { page: data } = useTina(props).data as PageQuery;
 
-  return <>TEST</>;
+  return (
+    <>
+      <h1>{data.title}</h1>
+      <Image src={data.image} layout="fill" />
+      <ul>
+        {data.testimonial.map((item) => (
+          <li key={item.quote}>
+            <p>{item.author}</p>
+            <p>{item.role}</p>
+            <p>{item.quote}</p>
+          </li>
+        ))}
+      </ul>
+    </>
+  );
 };
 
-// const getHomepageQuery = (locale: string) => {
-//   const homepageQuery = `
-//     homepage(locale: "${locale}") {
-//       title
-//       ${widgetsZoneQuery}
-//     }
-//   `;
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  const homepageResponse = await client.queries.page({ relativePath: 'Homepage.md' });
 
-//   return getPageQuery(homepageQuery);
-// };
-
-// export const getStaticProps: GetStaticProps = async ({ locale }) => {
-//   const query = getHomepageQuery(locale);
-//   const props = await queryApi(query);
-
-//   return { props };
-// };
+  return {
+    props: {
+      data: homepageResponse.data,
+      query: homepageResponse.query,
+      variables: homepageResponse.variables,
+    },
+  };
+};
 
 export default Homepage;

@@ -27,7 +27,7 @@ export const Default = Template.bind({});
 
 Default.args = {
   icon: {
-    url: '/images/deutsche-bank.svg',
+    url: '/media/images/deutsche-bank.svg',
     width: 141,
     height: 141.6,
   },
@@ -40,7 +40,7 @@ export const WithAsteroids = Template.bind({});
 
 WithAsteroids.args = {
   icon: {
-    url: '/images/deutsche-bank.svg',
+    url: '/media/images/deutsche-bank.svg',
     width: 141,
     height: 141.6,
   },
@@ -54,7 +54,7 @@ export const WithRings = Template.bind({});
 
 WithRings.args = {
   icon: {
-    url: '/images/deutsche-bank.svg',
+    url: '/media/images/deutsche-bank.svg',
     width: 141,
     height: 141.6,
   },

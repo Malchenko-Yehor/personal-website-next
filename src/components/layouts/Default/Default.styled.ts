@@ -55,7 +55,7 @@ export const Background = styled.div<BackgroundProps>`
   top: 0;
   width: 100%;
   height: ${(props) => `${props.bgHeight}px`};
-  background-image: url('/images/illustrations/space.svg');
+  background-image: url('/media/images/illustrations/space.svg');
   background-repeat: repeat-y;
   background-size: cover;
   transform-origin: 0;

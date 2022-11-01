@@ -14,7 +14,7 @@ const items = [
     url: 'https://github.com/Malchenko-Yehor',
     color: '#0ff',
     icon: {
-      url: '/images/github.svg',
+      url: '/media/images/github.svg',
     },
   },
   {
@@ -22,7 +22,7 @@ const items = [
     url: 'https://github.com/Malchenko-Yehor',
     color: '#fff',
     icon: {
-      url: '/images/linkedin.svg',
+      url: '/media/images/linkedin.svg',
     },
   },
   {
@@ -30,7 +30,7 @@ const items = [
     url: 'https://github.com/Malchenko-Yehor',
     color: '#ff0',
     icon: {
-      url: '/images/mail.svg',
+      url: '/media/images/mail.svg',
     },
   },
   {
@@ -38,7 +38,7 @@ const items = [
     url: 'https://github.com/Malchenko-Yehor',
     color: '#f0f',
     icon: {
-      url: '/images/telegram.svg',
+      url: '/media/images/telegram.svg',
     },
   },
   {
@@ -46,7 +46,7 @@ const items = [
     url: 'https://github.com/Malchenko-Yehor',
     color: '#f0f',
     icon: {
-      url: '/images/telegram.svg',
+      url: '/media/images/telegram.svg',
     },
   },
   {
@@ -54,7 +54,7 @@ const items = [
     url: 'https://github.com/Malchenko-Yehor',
     color: '#f0f',
     icon: {
-      url: '/images/telegram.svg',
+      url: '/media/images/telegram.svg',
     },
   },
   {
@@ -62,7 +62,7 @@ const items = [
     url: 'https://github.com/Malchenko-Yehor',
     color: '#f0f',
     icon: {
-      url: '/images/telegram.svg',
+      url: '/media/images/telegram.svg',
     },
   },
   {
@@ -70,7 +70,7 @@ const items = [
     url: 'https://github.com/Malchenko-Yehor',
     color: '#f0f',
     icon: {
-      url: '/images/telegram.svg',
+      url: '/media/images/telegram.svg',
     },
   },
   {
@@ -78,7 +78,7 @@ const items = [
     url: 'https://github.com/Malchenko-Yehor',
     color: '#f0f',
     icon: {
-      url: '/images/telegram.svg',
+      url: '/media/images/telegram.svg',
     },
   },
 ];

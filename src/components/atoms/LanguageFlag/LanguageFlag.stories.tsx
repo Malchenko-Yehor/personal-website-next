@@ -21,7 +21,7 @@ export const Default = Template.bind({});
 
 Default.args = {
   icon: {
-    src: '/images/flags/pl.svg',
+    src: '/media/images/flags/pl.svg',
     alt: 'poland flag',
   },
   locale: 'pl',

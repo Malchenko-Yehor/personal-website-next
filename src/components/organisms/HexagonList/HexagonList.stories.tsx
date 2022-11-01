@@ -30,7 +30,7 @@ LongList.args = {
       title: 'React',
       rating: 3,
       image: {
-        url: '/images/react.svg',
+        url: '/media/images/react.svg',
         alternativeText: 'react',
       },
     },
@@ -39,7 +39,7 @@ LongList.args = {
       title: 'HTML',
       rating: 4,
       image: {
-        url: '/images/html.svg',
+        url: '/media/images/html.svg',
         alternativeText: 'html',
       },
     },
@@ -48,7 +48,7 @@ LongList.args = {
       title: 'CSS',
       rating: 4,
       image: {
-        url: '/images/css.svg',
+        url: '/media/images/css.svg',
         alternativeText: 'css',
       },
     },
@@ -57,7 +57,7 @@ LongList.args = {
       title: 'JavaScript',
       rating: 4,
       image: {
-        url: '/images/javascript.svg',
+        url: '/media/images/javascript.svg',
         alternativeText: 'javascript',
       },
     },
@@ -66,7 +66,7 @@ LongList.args = {
       title: 'TypeScript',
       rating: 3,
       image: {
-        url: '/images/typescript.svg',
+        url: '/media/images/typescript.svg',
         alternativeText: 'typescript',
       },
     },
@@ -75,7 +75,7 @@ LongList.args = {
       title: 'Webpack',
       rating: 2,
       image: {
-        url: '/images/webpack.svg',
+        url: '/media/images/webpack.svg',
         alternativeText: 'webpack',
       },
     },
@@ -84,7 +84,7 @@ LongList.args = {
       title: 'Jest',
       rating: 2,
       image: {
-        url: '/images/jest.svg',
+        url: '/media/images/jest.svg',
         alternativeText: 'jest',
       },
     },
@@ -93,7 +93,7 @@ LongList.args = {
       title: 'Vue',
       rating: 1,
       image: {
-        url: '/images/vue.svg',
+        url: '/media/images/vue.svg',
         alternativeText: 'vue',
       },
     },
@@ -102,7 +102,7 @@ LongList.args = {
       title: 'Git',
       rating: 3,
       image: {
-        url: '/images/git.svg',
+        url: '/media/images/git.svg',
         alternativeText: 'git',
       },
     },
@@ -111,7 +111,7 @@ LongList.args = {
       title: 'MJML',
       rating: 2,
       image: {
-        url: '/images/mjml.svg',
+        url: '/media/images/mjml.svg',
         alternativeText: 'mjml',
       },
     },
@@ -120,7 +120,7 @@ LongList.args = {
       title: 'Adobe Xd',
       rating: 2,
       image: {
-        url: '/images/adobe-xd.svg',
+        url: '/media/images/adobe-xd.svg',
         alternativeText: 'adobe xd',
       },
     },
@@ -129,7 +129,7 @@ LongList.args = {
       title: 'React',
       rating: 3,
       image: {
-        url: '/images/react.svg',
+        url: '/media/images/react.svg',
         alternativeText: 'react',
       },
     },
@@ -138,7 +138,7 @@ LongList.args = {
       title: 'HTML',
       rating: 4,
       image: {
-        url: '/images/html.svg',
+        url: '/media/images/html.svg',
         alternativeText: 'html',
       },
     },
@@ -147,7 +147,7 @@ LongList.args = {
       title: 'CSS',
       rating: 4,
       image: {
-        url: '/images/css.svg',
+        url: '/media/images/css.svg',
         alternativeText: 'css',
       },
     },
@@ -156,7 +156,7 @@ LongList.args = {
       title: 'JavaScript',
       rating: 4,
       image: {
-        url: '/images/javascript.svg',
+        url: '/media/images/javascript.svg',
         alternativeText: 'javascript',
       },
     },
@@ -165,7 +165,7 @@ LongList.args = {
       title: 'TypeScript',
       rating: 2,
       image: {
-        url: '/images/typescript.svg',
+        url: '/media/images/typescript.svg',
         alternativeText: 'typescript',
       },
     },
@@ -174,7 +174,7 @@ LongList.args = {
       title: 'Vue',
       rating: 1,
       image: {
-        url: '/images/vue.svg',
+        url: '/media/images/vue.svg',
         alternativeText: 'vue',
       },
     },
@@ -183,7 +183,7 @@ LongList.args = {
       title: 'Git',
       rating: 3,
       image: {
-        url: '/images/git.svg',
+        url: '/media/images/git.svg',
         alternativeText: 'git',
       },
     },
@@ -192,7 +192,7 @@ LongList.args = {
       title: 'Adobe Xd',
       rating: 2,
       image: {
-        url: '/images/adobe-xd.svg',
+        url: '/media/images/adobe-xd.svg',
         alternativeText: 'adobe xd',
       },
     },
