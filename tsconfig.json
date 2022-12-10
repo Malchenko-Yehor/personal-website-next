@@ -1,50 +1,23 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "paths": {
-      "@atoms/*": [
-        "components/atoms/*"
-      ],
-      "@molecules/*": [
-        "components/molecules/*"
-      ],
-      "@organisms/*": [
-        "components/organisms/*"
-      ],
-      "@layouts/*": [
-        "components/layouts/*"
-      ],
-      "@helpers/*": [
-        "helpers/*"
-      ],
-      "@styles/*": [
-        "styles/*"
-      ],
-      "@assets/*": [
-        "assets/*"
-      ],
-      "@icons/*": [
-        "assets/icons/*"
-      ],
-      "@hooks/*": [
-        "hooks/*"
-      ],
-      "@slices/*": [
-        "stores/slices/*"
-      ],
-      "@stores/*": [
-        "stores/*"
-      ],
-      "@api/*": [
-        "api/*"
-      ]
+      "@tina/*": [".tina/*"],
+      "@atoms/*": ["src/components/atoms/*"],
+      "@molecules/*": ["src/components/molecules/*"],
+      "@organisms/*": ["src/components/organisms/*"],
+      "@layouts/*": ["src/components/layouts/*"],
+      "@helpers/*": ["src/helpers/*"],
+      "@styles/*": ["src/styles/*"],
+      "@assets/*": ["src/assets/*"],
+      "@icons/*": ["src/assets/icons/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@slices/*": ["src/stores/slices/*"],
+      "@stores/*": ["src/stores/*"],
+      "@api/*": ["src/api/*"]
     },
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -58,13 +31,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "src/__mocks__/svgr-mock.js"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/__mocks__/svgr-mock.js"],
+  "exclude": ["node_modules"]
 }

@@ -1,5 +1,5 @@
 import { defineConfig } from 'tinacms';
-import pageCollection from './collections/page';
+import pageCollection from './collections/pageCollection';
 
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || 'main';

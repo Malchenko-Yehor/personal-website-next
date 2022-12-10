@@ -14,16 +14,14 @@ export const Default = Template.bind({});
 
 Default.args = {
   title: 'Biking',
-  icon: {
-    url: '/media/images/bike.svg',
-  },
+  iconUrl: '/media/images/bike.svg',
+  iconAlt: 'Biking',
 } as InterestProps;
 
 export const LongText = Template.bind({});
 
 LongText.args = {
   title: 'Lorem ipsum dolor sit amet',
-  icon: {
-    url: '/media/images/bike.svg',
-  },
+  iconUrl: '/media/images/bike.svg',
+  iconAlt: 'Lorem ipsum dolor sit amet',
 } as InterestProps;

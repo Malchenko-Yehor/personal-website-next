@@ -1,18 +1,18 @@
-import Container from '@styles/Container';
-import { FC } from 'react';
-import * as S from './AboutMe.styled';
 import AstronautIllustration from '@assets/illustrations/astronaut.svg';
-import { Col, Row } from 'styled-bootstrap-grid';
 import H1 from '@atoms/H1';
 import Paragraph from '@atoms/Paragraph';
 import InterestsList, { InterestsListItem } from '@molecules/InterestsList/InterestsList';
-import { useInView } from 'react-intersection-observer';
+import Container from '@styles/Container';
 import { motion, Transition, Variants } from 'framer-motion';
+import { FC } from 'react';
+import { useInView } from 'react-intersection-observer';
+import { Col, Row } from 'styled-bootstrap-grid';
+import * as S from './AboutMe.styled';
 
 export interface AboutMeProps {
   title: string;
   intro: string;
-  interests: InterestsListItem[];
+  interests?: InterestsListItem[];
 }
 
 const AboutMe: FC<AboutMeProps> = ({ title, intro, interests }) => {
@@ -61,7 +61,7 @@ const AboutMe: FC<AboutMeProps> = ({ title, intro, interests }) => {
               <motion.div variants={textVariants}>
                 <Paragraph text={intro} />
               </motion.div>
-              <InterestsList items={interests} />
+              {interests && <InterestsList items={interests} />}
             </Col>
           </Row>
         </motion.div>

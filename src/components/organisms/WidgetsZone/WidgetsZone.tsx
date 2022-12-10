@@ -1,46 +1,27 @@
-import { getMappedCareer } from '@api/mappings';
-import { Widget, WidgetType } from '@api/types';
-import Section from '@atoms/Section';
-import Career from '@organisms/Career';
-import { FC, Fragment } from 'react';
+import AboutMe from '@organisms/AboutMe';
+import { FC } from 'react';
+import { PageWidgets } from '@tina/__generated__/types';
 
-export interface WidgetsZoneProps {
-  widgets: Widget[];
+interface Props {
+  widgets: PageWidgets[];
 }
 
-const WidgetsZone: FC<WidgetsZoneProps> = ({ widgets }) => {
-  if (!widgets.length) return null;
+const PageWidgetsZone: FC<Props> = ({ widgets }) => {
+  if (!widgets) return null;
 
   return (
-    <Fragment>
-      {widgets.map((widget) => (
-        <WidgetItem key={widget.id} {...widget} />
-      ))}
-    </Fragment>
+    <>
+      {widgets.map((widget, i) => {
+        switch (widget.__typename) {
+          case 'PageWidgetsAboutMe':
+            return <AboutMe {...widget} key={i + widget.__typename} />;
+
+          default:
+            return null;
+        }
+      })}
+    </>
   );
 };
 
-export interface WidgetProps {
-  __typename: WidgetType;
-  [x: string]: unknown;
-}
-
-const WidgetItem: FC<Widget> = (props) => {
-  const widget = getWidget(props);
-
-  if (widget) return <Section>{widget}</Section>;
-
-  return;
-};
-
-const getWidget = (widgetData: Widget) => {
-  switch (widgetData.__typename) {
-    case WidgetType.Career:
-      return <Career {...getMappedCareer(widgetData)} />;
-
-    default:
-      return null;
-  }
-};
-
-export default WidgetsZone;
+export default PageWidgetsZone;

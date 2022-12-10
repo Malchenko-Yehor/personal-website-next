@@ -18,44 +18,38 @@ Default.args = {
     {
       id: uuid(),
       title: 'Biking',
-      icon: {
-        url: '/media/images/bike.svg',
-      },
+      iconUrl: '/media/images/bike.svg',
+      iconAlt: 'Biking',
     },
     {
       id: uuid(),
       title: 'Coding',
-      icon: {
-        url: '/media/images/coding.svg',
-      },
+      iconUrl: '/media/images/coding.svg',
+      iconAlt: 'Coding',
     },
     {
       id: uuid(),
       title: 'Kickboxing',
-      icon: {
-        url: '/media/images/boxing.svg',
-      },
+      iconUrl: '/media/images/boxing.svg',
+      iconAlt: 'Kickboxing',
     },
     {
       id: uuid(),
       title: 'Gaming',
-      icon: {
-        url: '/media/images/gamepad.svg',
-      },
+      iconUrl: '/media/images/gamepad.svg',
+      iconAlt: 'Gaming',
     },
     {
       id: uuid(),
       title: 'Workout',
-      icon: {
-        url: '/media/images/workout.svg',
-      },
+      iconUrl: '/media/images/workout.svg',
+      iconAlt: 'Workout',
     },
     {
       id: uuid(),
       title: 'Playing guitar',
-      icon: {
-        url: '/media/images/guitar.svg',
-      },
+      iconUrl: '/media/images/guitar.svg',
+      iconAlt: 'Playing guitar',
     },
   ],
 } as InterestsListProps;

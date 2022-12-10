@@ -27,7 +27,7 @@ const InterestsList: FC<InterestsListProps> = ({ items }) => {
     <S.InterestsList>
       {items.map((item) => (
         <S.Item key={item.id} variants={itemVariants}>
-          <Interest title={item.title} icon={item.icon} />
+          <Interest title={item.title} iconUrl={item.iconUrl} iconAlt={item.iconAlt} />
         </S.Item>
       ))}
     </S.InterestsList>

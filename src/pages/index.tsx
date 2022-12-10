@@ -1,9 +1,9 @@
+import PageWidgetsZone from '@organisms/WidgetsZone';
+import { client } from '@tina/__generated__/client';
+import { PageQuery } from '@tina/__generated__/types';
 import { GetStaticProps } from 'next';
 import { FC } from 'react';
-import { client } from '../../.tina/__generated__/client';
 import { useTina } from 'tinacms/dist/react';
-import { PageQuery } from '../../.tina/__generated__/types';
-import Image from 'next/image';
 
 interface TinaProps {
   query: string;
@@ -16,23 +16,13 @@ export const Homepage: FC<TinaProps> = (props) => {
 
   return (
     <>
-      <h1>{data.title}</h1>
-      <Image src={data.image} layout="fill" />
-      <ul>
-        {data.testimonial.map((item) => (
-          <li key={item.quote}>
-            <p>{item.author}</p>
-            <p>{item.role}</p>
-            <p>{item.quote}</p>
-          </li>
-        ))}
-      </ul>
+      <PageWidgetsZone widgets={data.widgets} />
     </>
   );
 };
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  const homepageResponse = await client.queries.page({ relativePath: 'Homepage.md' });
+  const homepageResponse = await client.queries.page({ relativePath: `${locale}/Homepage.md` });
 
   return {
     props: {
